@@ -20,3 +20,9 @@ Sponsored by the Open Source project Flagsmith https://github.com/Flagsmith/flag
    b. Fill in the feature flag form with these details and click `Create Feature`
 
    ![Save feature flag screenshot](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/f0399aae-2b2f-4e47-83e2-9d3d21797a42)
+
+7. Get your environment key from Flagsmith and add to `.env` file
+
+![How to get environment key](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/0fb56934-2d27-486a-9859-365672771407)
+
+8. Run the project with `npm run dev`

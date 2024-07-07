@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.4",
     "flagsmith": "^4.0.3",
     "next": "14.2.4",
     "react": "^18",
