@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# HealthCheck
 
-## Getting Started
+How friendly is your GitHub Open Source repo? This project will check to make sure you are using Best Practices to get more users, contributors and stars.
 
-First, run the development server:
+Sponsored by the Open Source project Flagsmith https://github.com/Flagsmith/flagsmith
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Quickstart guide
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone this GitHub repo
+2. Install the dependencies with `npm ci`
+3. Copy `.env.example` to `.env` (you will need an environment key from Flagsmith, this is shown later on)
+4. Create a free account on Flagsmith https://www.flagsmith.com (you can also sign in with GitHub)
+5. Create an Organisation and Project
+6. Create the feature flag `tagline` with these steps
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   a. Click `Create Feature`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ![Create feature screenshot](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/20bcf62c-a4be-487c-80ee-f5d39bcafde6)
 
-## Learn More
+   b. Fill in the feature flag form with these details and click `Create Feature`
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ![Save feature flag screenshot](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/f0399aae-2b2f-4e47-83e2-9d3d21797a42)
