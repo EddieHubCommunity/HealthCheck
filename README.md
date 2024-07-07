@@ -1,8 +1,9 @@
+> [!NOTE]
+> Sponsored by the Open Source project Flagsmith https://github.com/Flagsmith/flagsmith
+
 # HealthCheck
 
 How friendly is your GitHub Open Source repo? This project will check to make sure you are using Best Practices to get more users, contributors and stars.
-
-Sponsored by the Open Source project Flagsmith https://github.com/Flagsmith/flagsmith
 
 ## Quickstart guide
 
