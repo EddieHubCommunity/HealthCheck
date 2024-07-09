@@ -27,9 +27,19 @@ How friendly is your GitHub Open Source repo? This project will check to make su
    c. (OPTIONAL) Import the flags to your Flagsmith account using the file `./flagsmith.json` (note this will be per environment, for example `development`)
 
    ![Import flags on Flagsmith](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/f45351af-2013-4928-826a-c9dad33038a4)
-   
-8. Get your environment key from Flagsmith and add to `.env` file
+
+7. Get your environment key from Flagsmith and add to `.env` file
 
 ![How to get environment key](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/0fb56934-2d27-486a-9859-365672771407)
 
 8. Run the project with `npm run dev`
+
+---
+
+TODO
+
+- prisma
+- go to github's api
+- save api data
+- make healthcheck and save results
+- redirect to results page

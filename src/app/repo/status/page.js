@@ -132,7 +132,7 @@ const repo = {
   has_discussions: true,
   forks_count: 4012,
   mirror_url: null,
-  archived: false,
+  archived: true,
   disabled: false,
   open_issues_count: 102,
   license: {
