@@ -3,6 +3,9 @@ import { createFlagsmithInstance } from "flagsmith/isomorphic";
 
 import "./globals.css";
 import Providers from "./providers";
+import Header from "@/components/Header";
+import classNames from "@/utils/classNames";
+import Banner from "@/components/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +25,15 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <Providers serverState={serverState}>
-        <body className={inter.className}>{children}</body>
+        <body
+          className={classNames("bg-slate-900 text-white", inter.className)}
+        >
+          <Banner />
+          <Header />
+          <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            {children}
+          </main>
+        </body>
       </Providers>
     </html>
   );
