@@ -10,7 +10,7 @@ export default function topics(repo) {
 
   if (repo.topics.length > 0) {
     response.status = "success";
-    response.description = "You have a good number o repo topics.";
+    response.description = "You have a good number of repo topics.";
     response.extra = "No action required.";
   }
 

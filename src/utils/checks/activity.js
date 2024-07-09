@@ -22,13 +22,13 @@ export default function activity(repo) {
   if (diff > min && diff < max) {
     response.status = "warning";
     response.description = "Your project needs more recent activity.";
-    response.extra = "Are there any bugs that can be fixed.";
+    response.extra = "Are there any bugs that can be fixed?";
   }
 
   if (diff >= max) {
     response.status = "error";
-    response.description = "There has been no recent activity.";
-    response.extra = "Are there any features that can be implemented.";
+    response.description = `There has been no activity for ${diff} days.`;
+    response.extra = "Are there any features that can be implemented?";
   }
 
   return response;
