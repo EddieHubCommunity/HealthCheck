@@ -10,7 +10,9 @@ import {
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import Image from "next/image";
 
+import logo from "../../public/logo.svg";
 import config from "@/config/app.json";
 import classNames from "@/utils/classNames";
 
@@ -42,10 +44,12 @@ export default function Header({ session, user }) {
         <div className="relative flex h-16 justify-between">
           <div className="relative z-10 flex px-2 lg:px-0 gap-6">
             <div className="flex flex-shrink-0 items-center">
-              <img
-                alt="Your Company"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              <Image
+                alt="Open Source HealthCheck"
+                src={logo}
                 className="h-8 w-auto"
+                height={32}
+                width={32}
               />
             </div>
             <div className="flex items-end text-gray-400 text-sm">
