@@ -1,4 +1,13 @@
-# 0.2.0 (2024-07-09)
+# [0.3.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.2.0...v0.3.0) (2024-07-09)
+
+
+### Features
+
+* logo ([83fbbb1](https://github.com/EddieHubCommunity/HealthCheck/commit/83fbbb1025283c62428bffd16cf40a8a525a58ca))
+
+
+
+# [0.2.0](https://github.com/EddieHubCommunity/HealthCheck/compare/5f019a2dfba0291e7aeba88c5fa4c28ef7e0bdeb...v0.2.0) (2024-07-09)
 
 
 ### Bug Fixes
