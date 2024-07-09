@@ -5,7 +5,7 @@
 
 How friendly is your GitHub Open Source Repo? This project will check to make sure you are using Best Practices to attract more users, contributors and Stars, as well as suggest steps as to how you can improve the Repo to achieve this.
 
-![Screenshot of repo checks](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/9a343ad0-448c-4dc4-8f1e-27d6cb38a603)
+![Screenshot of repo checks](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/b0ca90de-0091-461b-835a-4b3cefef88ab)
 
 ## Quickstart guide
 
