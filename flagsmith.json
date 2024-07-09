@@ -1,0 +1,32 @@
+[
+  {
+    "name": "tagline",
+    "default_enabled": true,
+    "is_server_key_only": false,
+    "initial_value": "How friendly is your Open Source project?",
+    "value": "How friendly is your Open Source project?",
+    "type": "unicode",
+    "enabled": true,
+    "multivariate": []
+  },
+  {
+    "name": "checks",
+    "default_enabled": true,
+    "is_server_key_only": false,
+    "initial_value": "[\"topics\",\"description\",\"url\"]",
+    "value": "[\"topics\",\"description\",\"url\"]",
+    "type": "unicode",
+    "enabled": true,
+    "multivariate": []
+  },
+  {
+    "name": "welcome",
+    "default_enabled": false,
+    "is_server_key_only": false,
+    "initial_value": "Any feedback let us know!",
+    "value": "Any feedback let us know! Thank you!",
+    "type": "unicode",
+    "enabled": true,
+    "multivariate": []
+  }
+]
