@@ -12,9 +12,9 @@ How friendly is your GitHub Open Source repo? This project will check to make su
 3. Copy `.env.example` to `.env` (you will need an environment key from Flagsmith, this is shown later on)
 4. Create a free account on Flagsmith https://www.flagsmith.com (you can also sign in with GitHub)
 5. Create an Organisation and Project
-6. Create the feature flag `tagline` with these steps
+6. Create the feature flags with these steps
 
-   a. Click `Create Feature`
+   a. Create the feature `tagline` by clicking `Create Feature`
 
    ![Create feature screenshot](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/20bcf62c-a4be-487c-80ee-f5d39bcafde6)
 
