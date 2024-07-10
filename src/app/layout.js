@@ -6,6 +6,7 @@ import Providers from "./providers";
 import Header from "@/components/Header";
 import classNames from "@/utils/classNames";
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,13 +27,17 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <Providers serverState={serverState}>
         <body
-          className={classNames("bg-slate-900 text-white", inter.className)}
+          className={classNames(
+            "bg-slate-900 text-white flex flex-col min-h-screen",
+            inter.className
+          )}
         >
           <Banner />
           <Header />
-          <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
             {children}
           </main>
+          <Footer />
         </body>
       </Providers>
     </html>
