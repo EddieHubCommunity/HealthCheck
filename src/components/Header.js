@@ -13,7 +13,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logo from "../../public/logo.svg";
-import config from "@/config/app.json";
 import classNames from "@/utils/classNames";
 
 const navigation = [
@@ -52,8 +51,8 @@ export default function Header({ session, user }) {
                 width={32}
               />
             </div>
-            <div className="flex items-end text-gray-400 text-sm">
-              v{config.version}
+            <div className="flex items-end text-gray-400 text-xl">
+              The Open Source HealthCheck
             </div>
           </div>
           <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
@@ -95,14 +94,14 @@ export default function Header({ session, user }) {
             </DisclosureButton>
           </div>
           <div className="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
-            <button
+            {/* <button
               type="button"
               className="relative flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
               <BellIcon aria-hidden="true" className="h-6 w-6" />
-            </button>
+            </button> */}
 
             {/* Profile dropdown */}
             {session && (
