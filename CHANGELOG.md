@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.5.0...v0.6.0) (2024-07-10)
+
+
+### Features
+
+* issue and default branch check ([f0b19c1](https://github.com/EddieHubCommunity/HealthCheck/commit/f0b19c186a4ca466b103c79ea123254ba1e94728))
+
+
+
 # [0.5.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.4.0...v0.5.0) (2024-07-10)
 
 
