@@ -24,7 +24,7 @@ export default function Input({
       name={id}
       id={id}
       className={classNames(
-        "block w-full rounded-md border-0 sm:text-sm sm:leading-6 bg-slate-600",
+        "block w-full rounded-md border-0 sm:text-sm sm:leading-6 bg-gray-800",
         error
           ? "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500"
           : "ring-gray-300 focus-within:ring-indigo-600",
