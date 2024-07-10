@@ -5,6 +5,7 @@ import {
   StarIcon,
   TicketIcon,
 } from "@heroicons/react/20/solid";
+import { formatDistance } from "date-fns";
 
 import Heading from "@/components/Heading";
 import List from "@/components/List";
@@ -207,7 +208,12 @@ export default function Page() {
         extras={[
           { icon: StarIcon, text: repo.stargazers_count },
           { icon: LanguageIcon, text: repo.language },
-          { icon: ClockIcon, text: repo.updated_at },
+          {
+            icon: ClockIcon,
+            text: formatDistance(repo.updated_at, new Date(), {
+              addSuffix: true,
+            }),
+          },
           { icon: TicketIcon, text: repo.open_issues },
         ]}
       />
