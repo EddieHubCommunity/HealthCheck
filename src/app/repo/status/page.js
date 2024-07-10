@@ -9,6 +9,7 @@ import {
 import Heading from "@/components/Heading";
 import List from "@/components/List";
 import checks from "@/utils/checks/index";
+import Stats from "@/components/Stats";
 
 const repo = {
   id: 405139301,
@@ -210,7 +211,14 @@ export default function Page() {
           { icon: TicketIcon, text: repo.open_issues },
         ]}
       />
-      <List data={results} />
+      <Stats
+        data={[
+          { name: "Success", stat: results.summary.success?.length || 0 },
+          { name: "Warning", stat: results.summary.warning?.length || 0 },
+          { name: "Error", stat: results.summary.error?.length || 0 },
+        ]}
+      />
+      <List data={results.checks} />
     </>
   );
 }

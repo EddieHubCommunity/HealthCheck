@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Heading({ title, actions = [], extras = [] }) {
   return (
-    <div className="lg:flex lg:items-center lg:justify-between mt-4 mb-12">
+    <div className="lg:flex lg:items-center lg:justify-between mt-4">
       <div className="min-w-0 flex-1">
         <h2 className="text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">
           {title}
