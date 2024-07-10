@@ -1,4 +1,5 @@
 import List from "@/components/List";
+import Title from "@/components/Title";
 
 const repos = [
   {
@@ -30,7 +31,7 @@ const repos = [
 export default function Page() {
   return (
     <>
-      <h1>List</h1>
+      <Title text="Repo list" />
       <List data={repos} />
     </>
   );
