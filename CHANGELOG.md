@@ -1,3 +1,12 @@
+## [0.7.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.1...v0.7.2) (2024-07-12)
+
+
+### Bug Fixes
+
+* copy example env file on install ([ce1fcad](https://github.com/EddieHubCommunity/HealthCheck/commit/ce1fcadd3fdf67e80783b7ae7efc31d0d95a6e0c))
+
+
+
 ## [0.7.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.0...v0.7.1) (2024-07-12)
 
 
@@ -40,15 +49,6 @@
 
 * improved add github url form ([bbcd17d](https://github.com/EddieHubCommunity/HealthCheck/commit/bbcd17d48eb7f1f9ba2203ea96732bf6319ddf79))
 * improved displayed date ([e833b0d](https://github.com/EddieHubCommunity/HealthCheck/commit/e833b0d9c4d2495fa510f70522a30fbcfca99ddb))
-
-
-
-# [0.6.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.5.0...v0.6.0) (2024-07-10)
-
-
-### Features
-
-* issue and default branch check ([f0b19c1](https://github.com/EddieHubCommunity/HealthCheck/commit/f0b19c186a4ca466b103c79ea123254ba1e94728))
 
 
 
