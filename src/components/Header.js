@@ -117,10 +117,12 @@ export default function Header({ session, user }) {
                   <MenuButton className="relative flex rounded-full bg-gray-800 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
-                    <img
-                      alt=""
+                    <Image
+                      alt="Profile picture of logged in user"
                       src={user.imageUrl}
                       className="h-8 w-8 rounded-full"
+                      height={32}
+                      width={32}
                     />
                   </MenuButton>
                 </div>
@@ -171,13 +173,10 @@ export default function Header({ session, user }) {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
+              className={`
+                ${path === item.href ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"}
+                block rounded-md px-3 py-2 text-base font-medium
+              `}
             >
               {item.name}
             </DisclosureButton>
@@ -187,10 +186,12 @@ export default function Header({ session, user }) {
           <div className="border-t border-gray-700 pb-3 pt-4">
             <div className="flex items-center px-4">
               <div className="flex-shrink-0">
-                <img
-                  alt=""
+                <Image
+                  alt="Profile picture of logged in user"
                   src={user.imageUrl}
                   className="h-10 w-10 rounded-full"
+                  height={48}
+                  width={48}
                 />
               </div>
               <div className="ml-3">

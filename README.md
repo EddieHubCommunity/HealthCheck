@@ -9,6 +9,9 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
 ## Quickstart guide
 
+> [!CAUTION]
+> Node `v21+` is required 
+
 1. Clone this GitHub Repo
 2. Install the dependencies with `npm ci`
 3. Copy `.env.example` to `.env` (you will need an environment key from Flagsmith, this is shown later on)
@@ -26,7 +29,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    c. (OPTIONAL) Import the flags to your Flagsmith account using the file `./flagsmith.json` (note this will be per environment, for example `development`)
 
-   ![Import flags on Flagsmith](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/f45351af-2013-4928-826a-c9dad33038a4)
+   ![Import flags on Flagsmith](https://github.com/user-attachments/assets/825525e2-11ec-48a5-9c89-a45353142c29)
 
 7. Get your environment key from Flagsmith and add to `.env` file
 

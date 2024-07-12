@@ -4,7 +4,7 @@
     "default_enabled": true,
     "is_server_key_only": false,
     "initial_value": "How friendly is your Open Source project?",
-    "value": "How friendly is your Open Source project?",
+    "value": "How friendly is your Open Source Repo?",
     "type": "unicode",
     "enabled": true,
     "multivariate": []
@@ -20,11 +20,11 @@
     "multivariate": []
   },
   {
-    "name": "welcome",
-    "default_enabled": false,
+    "name": "news",
+    "default_enabled": true,
     "is_server_key_only": false,
-    "initial_value": "Any feedback let us know!",
-    "value": "Any feedback let us know! Thank you!",
+    "initial_value": "Have you seen our latest feature XYZ?",
+    "value": "Have you seen our latest feature XYZ?",
     "type": "unicode",
     "enabled": true,
     "multivariate": []
