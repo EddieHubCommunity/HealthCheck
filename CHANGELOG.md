@@ -1,3 +1,12 @@
+## [0.7.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.3...v0.7.4) (2024-07-12)
+
+
+### Bug Fixes
+
+* latest flagsmith feature flags export ([587320d](https://github.com/EddieHubCommunity/HealthCheck/commit/587320d6c69090d9522de0470ce680a4ce6fbd67))
+
+
+
 ## [0.7.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.2...v0.7.3) (2024-07-12)
 
 
@@ -39,15 +48,6 @@
 * playwright setup and basic tests ([ca9cc19](https://github.com/EddieHubCommunity/HealthCheck/commit/ca9cc19826662590b260b0805ae98cca4ab13613))
 * run lint and build on github actions ([ac989dc](https://github.com/EddieHubCommunity/HealthCheck/commit/ac989dc923d07960acc77683fca5930465c5e3b3))
 * setup husky ([01ef604](https://github.com/EddieHubCommunity/HealthCheck/commit/01ef6047cc38562a6746f578c95bc6dedd766c8f))
-
-
-
-## [0.6.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.1...v0.6.2) (2024-07-12)
-
-
-### Bug Fixes
-
-* engines to package for groupBy support ([#13](https://github.com/EddieHubCommunity/HealthCheck/issues/13)) ([b35b70c](https://github.com/EddieHubCommunity/HealthCheck/commit/b35b70cf5f037aaa3e8bd7f4b04400c166752c6e))
 
 
 
