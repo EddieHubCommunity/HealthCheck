@@ -1,3 +1,12 @@
+## [0.7.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.2...v0.7.3) (2024-07-12)
+
+
+### Bug Fixes
+
+* removed build action ([07ea3dc](https://github.com/EddieHubCommunity/HealthCheck/commit/07ea3dc212f9a8aceecee0c0577c40c3a74c38d6))
+
+
+
 ## [0.7.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.1...v0.7.2) (2024-07-12)
 
 
@@ -39,16 +48,6 @@
 ### Bug Fixes
 
 * engines to package for groupBy support ([#13](https://github.com/EddieHubCommunity/HealthCheck/issues/13)) ([b35b70c](https://github.com/EddieHubCommunity/HealthCheck/commit/b35b70cf5f037aaa3e8bd7f4b04400c166752c6e))
-
-
-
-## [0.6.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.0...v0.6.1) (2024-07-10)
-
-
-### Bug Fixes
-
-* improved add github url form ([bbcd17d](https://github.com/EddieHubCommunity/HealthCheck/commit/bbcd17d48eb7f1f9ba2203ea96732bf6319ddf79))
-* improved displayed date ([e833b0d](https://github.com/EddieHubCommunity/HealthCheck/commit/e833b0d9c4d2495fa510f70522a30fbcfca99ddb))
 
 
 
