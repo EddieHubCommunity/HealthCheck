@@ -1,3 +1,4 @@
+'use client'
 import {
   Disclosure,
   DisclosureButton,
@@ -14,6 +15,8 @@ import Image from "next/image";
 
 import logo from "../../public/logo.svg";
 import classNames from "@/utils/classNames";
+
+import { usePathname } from "next/navigation";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -37,6 +40,10 @@ export default function Header({ session, user }) {
       { name: "Sign Out", href: "#" },
     ];
   }
+
+
+  const path = usePathname();
+
   return (
     <Disclosure as="header" className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-700 lg:px-8">
@@ -125,7 +132,7 @@ export default function Header({ session, user }) {
                     <MenuItem key={item.name}>
                       <Link
                         href={item.href}
-                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
+                        className='block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 active:bg-gray-700 active:text-white'
                       >
                         {item.name}
                       </Link>
@@ -144,14 +151,13 @@ export default function Header({ session, user }) {
             <Link
               key={item.name}
               href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={classNames(
-                item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "inline-flex items-center rounded-md px-3 py-2 text-sm font-medium"
-              )}
+              className={`inline-flex items-center rounded-md px-3 py-2 text-sm font-medium ${
+                path === item.href ? "bg-gray-900 text-white" : "text-gray-300 hover:bg-gray-700 hover:text-white"
+              }`}
+  
+             
             >
+
               {item.name}
             </Link>
           ))}

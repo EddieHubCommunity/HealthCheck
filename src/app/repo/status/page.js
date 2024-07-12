@@ -1,3 +1,4 @@
+'use client'
 import {
   ClockIcon,
   CodeBracketIcon,
@@ -11,6 +12,7 @@ import Heading from "@/components/Heading";
 import List from "@/components/List";
 import checks from "@/utils/checks/index";
 import Stats from "@/components/Stats";
+
 
 const repo = {
   id: 405139301,
@@ -195,7 +197,7 @@ const repo = {
   subscribers_count: 54,
 };
 
-const results = checks(repo);
+  const results = checks(repo);
 
 export default function Page() {
   return (

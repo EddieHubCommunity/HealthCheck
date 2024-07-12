@@ -27,5 +27,6 @@ export default function issues(repo) {
       "Try creating some more, or asking the community for ideas.";
   }
 
+  
   return response;
 }
