@@ -1,3 +1,12 @@
+## [0.6.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.1...v0.6.2) (2024-07-12)
+
+
+### Bug Fixes
+
+* engines to package for groupBy support ([#13](https://github.com/EddieHubCommunity/HealthCheck/issues/13)) ([b35b70c](https://github.com/EddieHubCommunity/HealthCheck/commit/b35b70cf5f037aaa3e8bd7f4b04400c166752c6e))
+
+
+
 ## [0.6.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.0...v0.6.1) (2024-07-10)
 
 
@@ -42,15 +51,6 @@
 ### Features
 
 * summary stats on repo report ([cf7f0ba](https://github.com/EddieHubCommunity/HealthCheck/commit/cf7f0ba9479ad2fbe795d936a53c506546fd5e83))
-
-
-
-# [0.3.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.2.0...v0.3.0) (2024-07-09)
-
-
-### Features
-
-* logo ([83fbbb1](https://github.com/EddieHubCommunity/HealthCheck/commit/83fbbb1025283c62428bffd16cf40a8a525a58ca))
 
 
 
