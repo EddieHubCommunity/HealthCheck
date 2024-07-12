@@ -1,3 +1,20 @@
+# [0.7.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.2...v0.7.0) (2024-07-12)
+
+
+### Bug Fixes
+
+* lint errors ([f6368b3](https://github.com/EddieHubCommunity/HealthCheck/commit/f6368b3c58b33a8d06bfc39f12462d2ec9338b82))
+* test command for github action ([7d5ea43](https://github.com/EddieHubCommunity/HealthCheck/commit/7d5ea43318dde0a682a3ea81274c3e7f847cd2e5))
+
+
+### Features
+
+* playwright setup and basic tests ([ca9cc19](https://github.com/EddieHubCommunity/HealthCheck/commit/ca9cc19826662590b260b0805ae98cca4ab13613))
+* run lint and build on github actions ([ac989dc](https://github.com/EddieHubCommunity/HealthCheck/commit/ac989dc923d07960acc77683fca5930465c5e3b3))
+* setup husky ([01ef604](https://github.com/EddieHubCommunity/HealthCheck/commit/01ef6047cc38562a6746f578c95bc6dedd766c8f))
+
+
+
 ## [0.6.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.1...v0.6.2) (2024-07-12)
 
 
@@ -42,15 +59,6 @@
 * page title abstracted ([cd925d2](https://github.com/EddieHubCommunity/HealthCheck/commit/cd925d2eafe29d0401c730f7532ded8e142dce7a))
 * project name to header ([76d1f74](https://github.com/EddieHubCommunity/HealthCheck/commit/76d1f74c7dad675e08c3f98559ecd06294dacecf))
 * tailwind config for aspect-ration ([3a7216d](https://github.com/EddieHubCommunity/HealthCheck/commit/3a7216daf5859db5a9b620f7f6d73eda7c11f12a))
-
-
-
-# [0.4.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.3.0...v0.4.0) (2024-07-10)
-
-
-### Features
-
-* summary stats on repo report ([cf7f0ba](https://github.com/EddieHubCommunity/HealthCheck/commit/cf7f0ba9479ad2fbe795d936a53c506546fd5e83))
 
 
 
