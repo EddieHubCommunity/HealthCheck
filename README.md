@@ -9,6 +9,9 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
 ## Quickstart guide
 
+> [!Tip]
+> Node `v21+` is required 
+
 1. Clone this GitHub Repo
 2. Install the dependencies with `npm ci`
 3. Copy `.env.example` to `.env` (you will need an environment key from Flagsmith, this is shown later on)
