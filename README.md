@@ -9,7 +9,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
 ## Quickstart guide
 
-> [!Tip]
+> [!CAUTION]
 > Node `v21+` is required 
 
 1. Clone this GitHub Repo
