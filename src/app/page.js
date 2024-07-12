@@ -1,5 +1,5 @@
 import Tagline from "@/components/Tagline";
-import Welcome from "@/components/Welcome";
+import News from "@/components/News";
 import {
   ArrowTrendingUpIcon,
   PencilSquareIcon,
@@ -31,6 +31,7 @@ const incentives = [
 export default function Page() {
   return (
     <div>
+      <News />
       <Tagline />
       <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">

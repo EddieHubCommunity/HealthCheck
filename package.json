@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tests": "npx playwright test"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
@@ -24,6 +25,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "^20.14.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
