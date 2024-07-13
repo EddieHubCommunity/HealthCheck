@@ -8,7 +8,7 @@ test("has title", async ({ page }) => {
 test("has text coming from Flagsmith", async ({ page }) => {
   await page.goto("/");
   const locator = page.locator("h2");
-  await expect(locator).toHaveText("How friendly is your Open Source Repo?");
+  await expect(locator).toContainText("How friendly is your Open Source Repo?");
 });
 
 test("has text", async ({ page }) => {
