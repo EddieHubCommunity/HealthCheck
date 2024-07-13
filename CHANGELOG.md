@@ -1,3 +1,13 @@
+## [0.7.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.4...v0.7.5) (2024-07-13)
+
+
+### Bug Fixes
+
+* flagsmith to client file ([e4f0d4e](https://github.com/EddieHubCommunity/HealthCheck/commit/e4f0d4e95f1a860773515e55ef0f26609dd13796))
+* improved playwright test coverage ([41f43c0](https://github.com/EddieHubCommunity/HealthCheck/commit/41f43c0d220990c035ecc0689face85eaba2c368))
+
+
+
 ## [0.7.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.3...v0.7.4) (2024-07-12)
 
 
@@ -31,23 +41,6 @@
 ### Bug Fixes
 
 * github actions to latest nodejs ([10718aa](https://github.com/EddieHubCommunity/HealthCheck/commit/10718aa58cdded6c35517cd380f56d059c794ed7))
-
-
-
-# [0.7.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.6.2...v0.7.0) (2024-07-12)
-
-
-### Bug Fixes
-
-* lint errors ([f6368b3](https://github.com/EddieHubCommunity/HealthCheck/commit/f6368b3c58b33a8d06bfc39f12462d2ec9338b82))
-* test command for github action ([7d5ea43](https://github.com/EddieHubCommunity/HealthCheck/commit/7d5ea43318dde0a682a3ea81274c3e7f847cd2e5))
-
-
-### Features
-
-* playwright setup and basic tests ([ca9cc19](https://github.com/EddieHubCommunity/HealthCheck/commit/ca9cc19826662590b260b0805ae98cca4ab13613))
-* run lint and build on github actions ([ac989dc](https://github.com/EddieHubCommunity/HealthCheck/commit/ac989dc923d07960acc77683fca5930465c5e3b3))
-* setup husky ([01ef604](https://github.com/EddieHubCommunity/HealthCheck/commit/01ef6047cc38562a6746f578c95bc6dedd766c8f))
 
 
 
