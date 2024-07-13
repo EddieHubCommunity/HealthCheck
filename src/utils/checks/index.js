@@ -5,7 +5,6 @@ import issues from "./issues";
 import topics from "./topics";
 import url from "./url";
 
-
 export default function checks(repo) {
   const checks = [
     description(repo),
@@ -18,6 +17,5 @@ export default function checks(repo) {
 
   const summary = Object.groupBy(checks, ({ status }) => status);
   
-
   return { checks, summary };
 }
