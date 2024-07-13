@@ -1,4 +1,3 @@
-'use client'
 import activity from "./activity";
 import defaultBranch from "./defaultBranch";
 import description from "./description";
