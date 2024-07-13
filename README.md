@@ -10,7 +10,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 ## Quickstart guide
 
 > [!CAUTION]
-> Node `v21+` is required 
+> Node `v21+` is required
 
 1. Clone this GitHub Repo
 2. Install the dependencies with `npm ci`
@@ -27,7 +27,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    ![Save feature flag screenshot](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/f0399aae-2b2f-4e47-83e2-9d3d21797a42)
 
-   c. (OPTIONAL) Import the flags to your Flagsmith account using the file `./flagsmith.json` (note this will be per environment, for example `development`)
+   c. (OPTIONAL) Import the flags to your Flagsmith account using the file `src/config/flagsmith.json` (note this will be per environment, for example `development`)
 
    ![Import flags on Flagsmith](https://github.com/user-attachments/assets/825525e2-11ec-48a5-9c89-a45353142c29)
 

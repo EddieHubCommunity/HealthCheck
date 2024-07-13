@@ -3,8 +3,8 @@
     "name": "tagline",
     "default_enabled": true,
     "is_server_key_only": false,
-    "initial_value": "How friendly is your Open Source project?",
-    "value": "How friendly is your Open Source Repo?",
+    "initial_value": "LOCAL: How friendly is your Open Source project?",
+    "value": "LOCAL: How friendly is your Open Source Repo?",
     "type": "unicode",
     "enabled": true,
     "multivariate": []
@@ -23,8 +23,8 @@
     "name": "news",
     "default_enabled": true,
     "is_server_key_only": false,
-    "initial_value": "Have you seen our latest feature XYZ?",
-    "value": "Have you seen our latest feature XYZ?",
+    "initial_value": "LOCAL: Have you seen our latest feature XYZ?",
+    "value": "LOCAL: Have you seen our latest feature XYZ?",
     "type": "unicode",
     "enabled": true,
     "multivariate": []

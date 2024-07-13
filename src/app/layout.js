@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import { createFlagsmithInstance } from "flagsmith/isomorphic";
 
 import "./globals.css";
 import Providers from "./providers";
@@ -7,6 +6,7 @@ import Header from "@/components/Header";
 import classNames from "@/utils/classNames";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
+import flagsmith from "@/config/flagsmith";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,16 +16,11 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const flagsmith = createFlagsmithInstance();
-  await flagsmith.init({
-    environmentID: process.env.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID,
-  });
-  const serverState = flagsmith.getState();
-  console.log(serverState);
+  const flagsmithServerState = await flagsmith();
 
   return (
     <html lang="en">
-      <Providers serverState={serverState}>
+      <Providers serverState={flagsmithServerState}>
         <body
           className={classNames(
             "bg-slate-900 text-white flex flex-col min-h-screen",
