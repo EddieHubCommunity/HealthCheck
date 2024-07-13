@@ -6,7 +6,6 @@ import {
   TicketIcon,
 } from "@heroicons/react/20/solid";
 import { formatDistance } from "date-fns";
-
 import Heading from "@/components/Heading";
 import List from "@/components/List";
 import checks from "@/utils/checks/index";
