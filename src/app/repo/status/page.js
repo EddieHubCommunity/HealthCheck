@@ -11,7 +11,6 @@ import List from "@/components/List";
 import checks from "@/utils/checks/index";
 import Stats from "@/components/Stats";
 
-
 const repo = {
   id: 405139301,
   node_id: "MDEwOlJlcG9zaXRvcnk0MDUxMzkzMDE=",
