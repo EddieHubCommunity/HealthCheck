@@ -37,13 +37,13 @@ export default function Page() {
         <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
           <div className="grid grid-cols-1 items-center gap-x-16 gap-y-10 lg:grid-cols-2">
             <div>
-              <h2 className="text-4xl font-bold tracking-tight">
+              <h3 className="text-4xl font-bold tracking-tight">
                 Is your GitHub Repo
                 <br />
                 <span className="text-red-700">RED</span>,{" "}
                 <span className="text-orange-500">AMBER</span> or{" "}
                 <span className="text-green-600">GREEN</span>?
-              </h2>
+              </h3>
               <p className="mt-4 text-gray-300">
                 Whether you are looking for funding or running a community
                 project, it is important that your GitHub Repo is discoverable
@@ -71,7 +71,7 @@ export default function Page() {
                   <incentive.icon className="h-16 w-16" />
                 </div>
                 <div className="mt-4 sm:ml-6 sm:mt-0 lg:ml-0 lg:mt-6">
-                  <h3 className="text-sm font-medium">{incentive.name}</h3>
+                  <h4 className="text-sm font-medium">{incentive.name}</h4>
                   <p className="mt-2 text-sm text-gray-300">
                     {incentive.description}
                   </p>

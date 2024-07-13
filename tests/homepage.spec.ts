@@ -2,19 +2,26 @@ import { test, expect } from "@playwright/test";
 
 test("has title", async ({ page }) => {
   await page.goto("/");
-
-  // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/HealthCheck/);
 });
 
-test("get flagsmith link", async ({ page }) => {
+test("has text coming from Flagsmith", async ({ page }) => {
+  await page.goto("/");
+  const locator = page.locator("h2");
+  await expect(locator).toHaveText("How friendly is your Open Source Repo?");
+});
+
+test("has text", async ({ page }) => {
+  await page.goto("/");
+  const locator = page.locator("h3");
+  await expect(locator).toHaveText(/RED, AMBER or GREEN/);
+});
+
+test("click flagsmith link", async ({ page }) => {
   await page.goto("/");
 
-  // Click the get started link.
-  // await page.getByRole("link", { name: "Visit their website" }).click();
-
-  const page1Promise = page.waitForEvent("popup");
+  const page2Promise = page.waitForEvent("popup");
   await page.getByRole("link", { name: "Visit their website" }).click();
-  const page1 = await page1Promise;
-  await expect(page1).toHaveURL(/flagsmith.com/);
+  const page2 = await page2Promise;
+  await expect(page2).toHaveURL(/flagsmith.com/);
 });
