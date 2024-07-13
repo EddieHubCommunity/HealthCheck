@@ -16,7 +16,6 @@ export default function checks(repo) {
     defaultBranch(repo),
   ];
 
-  
   const summary = Object.groupBy(checks, ({ status }) => status);
   
 
