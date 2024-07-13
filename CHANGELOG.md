@@ -1,3 +1,12 @@
+## [0.7.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.5...v0.7.6) (2024-07-13)
+
+
+### Bug Fixes
+
+* handle testing environment using defaults ([#26](https://github.com/EddieHubCommunity/HealthCheck/issues/26)) ([1f2e969](https://github.com/EddieHubCommunity/HealthCheck/commit/1f2e96903990568c9fd378a47a65f94ef1fc5671))
+
+
+
 ## [0.7.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.4...v0.7.5) (2024-07-13)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * copy example env file on install ([ce1fcad](https://github.com/EddieHubCommunity/HealthCheck/commit/ce1fcadd3fdf67e80783b7ae7efc31d0d95a6e0c))
-
-
-
-## [0.7.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.0...v0.7.1) (2024-07-12)
-
-
-### Bug Fixes
-
-* github actions to latest nodejs ([10718aa](https://github.com/EddieHubCommunity/HealthCheck/commit/10718aa58cdded6c35517cd380f56d059c794ed7))
 
 
 
