@@ -16,6 +16,5 @@ export default function checks(repo) {
   ];
 
   const summary = Object.groupBy(checks, ({ status }) => status);
-  
   return { checks, summary };
 }
