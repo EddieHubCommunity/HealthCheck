@@ -195,7 +195,7 @@ const repo = {
   subscribers_count: 54,
 };
 
-  const results = checks(repo);
+const results = checks(repo);
 
 export default function Page() {
   return (
