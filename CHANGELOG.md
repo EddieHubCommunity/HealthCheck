@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.6...v0.8.0) (2024-07-14)
+
+
+### Features
+
+* authentication and prisma ([0134d05](https://github.com/EddieHubCommunity/HealthCheck/commit/0134d0534517d8e90ebcf610a3a093978a40440a))
+
+
+
 ## [0.7.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.5...v0.7.6) (2024-07-13)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * removed build action ([07ea3dc](https://github.com/EddieHubCommunity/HealthCheck/commit/07ea3dc212f9a8aceecee0c0577c40c3a74c38d6))
-
-
-
-## [0.7.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.1...v0.7.2) (2024-07-12)
-
-
-### Bug Fixes
-
-* copy example env file on install ([ce1fcad](https://github.com/EddieHubCommunity/HealthCheck/commit/ce1fcadd3fdf67e80783b7ae7efc31d0d95a6e0c))
 
 
 
