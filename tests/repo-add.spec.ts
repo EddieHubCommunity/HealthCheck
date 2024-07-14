@@ -1,6 +1,9 @@
 import { test, expect } from "@playwright/test";
 
-test("test url required", async ({ page }) => {
+// marking tests as skipped as need to be logged into to access this page
+// mocking login with playwright will be added soon
+
+test.skip("test url required", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("link", { name: "Add" }).click();
   await page.getByLabel("url").click();
@@ -9,7 +12,7 @@ test("test url required", async ({ page }) => {
   await expect(page.locator("#url-error")).toContainText("Invalid url");
 });
 
-test("test valid url navigates to the report page", async ({ page }) => {
+test.skip("test valid url navigates to the report page", async ({ page }) => {
   await page.goto("/");
   await page.getByRole("link", { name: "Add" }).click();
   await page.getByLabel("url").click();

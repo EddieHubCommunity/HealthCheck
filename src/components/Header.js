@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Disclosure,
   DisclosureButton,
@@ -11,30 +13,35 @@ import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
+import { signIn, signOut } from "next-auth/react";
 
 import logo from "../../public/logo.svg";
 import classNames from "@/utils/classNames";
 
-const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Add", href: "/repo/add", current: false },
-  { name: "Repos", href: "/repo/list", current: false },
-];
-
-export default function Header({ session, user }) {
+export default function Header({ session }) {
   const profile = {
     name: session ? session.user.name : "Guest",
     email: session ? session.user.email : "unknown",
-    imageUrl: session
+    image: session
       ? session.user.image
       : "https://images.unsplash.com/photo-1589254066213-a0c9dc853511?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   };
-  let userNavigation = [];
 
-  if (user) {
+  let navigation = [
+    { name: "Home", href: "/", current: true },
+    { name: "All Repos", href: "/repo/list", current: false },
+  ];
+  let userNavigation = [];
+  if (session) {
+    navigation.push({ name: "Add", href: "/repo/add", current: false });
+    navigation.push({
+      name: "My Repos",
+      href: "/account/repo",
+      current: false,
+    });
     userNavigation = [
       { name: "Settings", href: "/account/profile" },
-      { name: "Sign Out", href: "#" },
+      { name: "Sign Out", href: "#", onClick: async () => await signOut() },
     ];
   }
   return (
@@ -103,6 +110,16 @@ export default function Header({ session, user }) {
               <BellIcon aria-hidden="true" className="h-6 w-6" />
             </button> */}
 
+            {!session && (
+              <button
+                type="button"
+                className="text-indigo-100 rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm font-medium hover:bg-opacity-10"
+                onClick={async () => await signIn()}
+              >
+                Sign In
+              </button>
+            )}
+
             {/* Profile dropdown */}
             {session && (
               <Menu as="div" className="relative ml-4 flex-shrink-0">
@@ -112,7 +129,7 @@ export default function Header({ session, user }) {
                     <span className="sr-only">Open user menu</span>
                     <Image
                       alt="Profile picture of logged in user"
-                      src={user.imageUrl}
+                      src={profile.image}
                       className="h-8 w-8 rounded-full"
                       height={32}
                       width={32}
@@ -127,6 +144,7 @@ export default function Header({ session, user }) {
                     <MenuItem key={item.name}>
                       <Link
                         href={item.href}
+                        onClick={item.onClick}
                         className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100"
                       >
                         {item.name}
@@ -179,13 +197,27 @@ export default function Header({ session, user }) {
             </DisclosureButton>
           ))}
         </div>
+        {!session && (
+          <div className="border-t border-gray-700 pb-3 pt-4">
+            <div className="flex items-center px-4">
+              <DisclosureButton
+                as="a"
+                onClick={async () => await signIn()}
+                className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+              >
+                Sign in
+              </DisclosureButton>
+            </div>
+          </div>
+        )}
+
         {session && (
           <div className="border-t border-gray-700 pb-3 pt-4">
             <div className="flex items-center px-4">
               <div className="flex-shrink-0">
                 <Image
                   alt="Profile picture of logged in user"
-                  src={user.imageUrl}
+                  src={profile.image}
                   className="h-10 w-10 rounded-full"
                   height={48}
                   width={48}
@@ -193,20 +225,20 @@ export default function Header({ session, user }) {
               </div>
               <div className="ml-3">
                 <div className="text-base font-medium text-white">
-                  {user.name}
+                  {profile.name}
                 </div>
                 <div className="text-sm font-medium text-gray-400">
-                  {user.email}
+                  {profile.email}
                 </div>
               </div>
-              <button
+              {/* <button
                 type="button"
                 className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 <span className="absolute -inset-1.5" />
                 <span className="sr-only">View notifications</span>
                 <BellIcon aria-hidden="true" className="h-6 w-6" />
-              </button>
+              </button> */}
             </div>
             <div className="mt-3 space-y-1 px-2">
               {userNavigation.map((item) => (
@@ -214,6 +246,7 @@ export default function Header({ session, user }) {
                   key={item.name}
                   as="a"
                   href={item.href}
+                  onClick={item.onClick}
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   {item.name}

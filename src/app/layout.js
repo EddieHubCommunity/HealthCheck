@@ -1,3 +1,4 @@
+import { getServerSession } from "next-auth/next";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
@@ -7,6 +8,7 @@ import classNames from "@/utils/classNames";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import flagsmith from "@/config/flagsmith";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const flagsmithServerState = await flagsmith();
+  const session = await getServerSession(authOptions);
 
   return (
     <html lang="en">
@@ -28,7 +31,7 @@ export default async function RootLayout({ children }) {
           )}
         >
           <Banner />
-          <Header />
+          <Header session={session} />
           <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
             {children}
           </main>

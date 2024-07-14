@@ -35,4 +35,8 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
 ![How to get environment key](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/0fb56934-2d27-486a-9859-365672771407)
 
-8. Run the project with `npm run dev`
+8. To be able to log in using GitHub OAuth
+   a. create a GitHub OAuth app on GitHub https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
+   b. In your GitHub OAuth app, GitHub will generate the `client id` and `client secret`, add these to your the `.env` file
+
+9. Run the project with `npm run dev`
