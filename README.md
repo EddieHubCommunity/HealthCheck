@@ -39,4 +39,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
    a. create a GitHub OAuth app on GitHub https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
    b. In your GitHub OAuth app, GitHub will generate the `client id` and `client secret`, add these to your the `.env` file
 
-9. Run the project with `docker compose -f docker-compose.local.yaml up -d`
+9. Run the project with one of these:
+   a. Locally `npm run dev`
+   OR
+   b. Docker compose `docker compose -f docker-compose.local.yaml up -d`
