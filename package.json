@@ -19,6 +19,7 @@
     "@auth/prisma-adapter": "^2.4.1",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.4",
+    "@octokit/rest": "^21.0.0",
     "@prisma/client": "^5.16.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
