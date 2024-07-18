@@ -1,3 +1,12 @@
+## [0.9.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.9.0...v0.9.1) (2024-07-18)
+
+
+### Bug Fixes
+
+* use node 22.4 for npm failure workaround ([#34](https://github.com/EddieHubCommunity/HealthCheck/issues/34)) ([a1eaef9](https://github.com/EddieHubCommunity/HealthCheck/commit/a1eaef9408b83ae7c130f8e3696cd7d0fec54798))
+
+
+
 # [0.9.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.8.0...v0.9.0) (2024-07-18)
 
 
@@ -32,15 +41,6 @@
 
 * flagsmith to client file ([e4f0d4e](https://github.com/EddieHubCommunity/HealthCheck/commit/e4f0d4e95f1a860773515e55ef0f26609dd13796))
 * improved playwright test coverage ([41f43c0](https://github.com/EddieHubCommunity/HealthCheck/commit/41f43c0d220990c035ecc0689face85eaba2c368))
-
-
-
-## [0.7.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.3...v0.7.4) (2024-07-12)
-
-
-### Bug Fixes
-
-* latest flagsmith feature flags export ([587320d](https://github.com/EddieHubCommunity/HealthCheck/commit/587320d6c69090d9522de0470ce680a4ce6fbd67))
 
 
 
