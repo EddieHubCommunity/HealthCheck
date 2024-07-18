@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.8.0...v0.9.0) (2024-07-18)
+
+
+### Features
+
+* dockerise local dev ([#30](https://github.com/EddieHubCommunity/HealthCheck/issues/30)) ([9f5edee](https://github.com/EddieHubCommunity/HealthCheck/commit/9f5edee2586d2f441757060c6cfb40d01fe2d215))
+
+
+
 # [0.8.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.6...v0.8.0) (2024-07-14)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * latest flagsmith feature flags export ([587320d](https://github.com/EddieHubCommunity/HealthCheck/commit/587320d6c69090d9522de0470ce680a4ce6fbd67))
-
-
-
-## [0.7.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.2...v0.7.3) (2024-07-12)
-
-
-### Bug Fixes
-
-* removed build action ([07ea3dc](https://github.com/EddieHubCommunity/HealthCheck/commit/07ea3dc212f9a8aceecee0c0577c40c3a74c38d6))
 
 
 
