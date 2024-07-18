@@ -13,6 +13,19 @@ const authOptions = {
       clientSecret: process.env.GITHUB_SECRET,
     }),
   ],
+  callbacks: {
+    async signIn({ user, account, profile, email, credentials }) {
+      console.log(user, account, profile, email, credentials);
+      user.username = user.id;
+
+      return true;
+    },
+    async session({ session, token, user }) {
+      session.user.id = user.id;
+
+      return session;
+    },
+  },
 };
 
 const handler = NextAuth(authOptions);

@@ -33,10 +33,10 @@ export default function Header({ session }) {
   ];
   let userNavigation = [];
   if (session) {
-    navigation.push({ name: "Add", href: "/repo/add", current: false });
+    navigation.push({ name: "Add", href: "/account/repo/add", current: false });
     navigation.push({
       name: "My Repos",
-      href: "/account/repo",
+      href: "/account/repo/list",
       current: false,
     });
     userNavigation = [
