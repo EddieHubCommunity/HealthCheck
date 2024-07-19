@@ -68,9 +68,9 @@ export async function performChecks(formData) {
       githubResponse: {
         connect: { id: githubResponseRepo.id },
       },
-      red: results.summary.error.length,
-      amber: results.summary.warning.length,
-      green: results.summary.success.length,
+      red: results.summary.error?.length || 0,
+      amber: results.summary.warning?.length || 0,
+      green: results.summary.success?.length || 0,
       healthchecks: results.checks.map((check) => check.id),
       data: results.checks,
     },
