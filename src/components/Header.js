@@ -40,7 +40,7 @@ export default function Header({ session }) {
       current: false,
     });
     userNavigation = [
-      { name: "Settings", href: "/account/profile" },
+      // { name: "Settings", href: "/account/profile" },
       { name: "Sign Out", href: "#", onClick: async () => await signOut() },
     ];
   }
