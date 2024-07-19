@@ -6,33 +6,7 @@ import prisma from "@/models/db";
 import List from "@/components/List";
 import Title from "@/components/Title";
 import Form from "./form";
-
-const repos = [
-  {
-    id: 1,
-    href: "/repo/status",
-    title: "10/5/2024",
-    status: "success",
-    extra: "Initiated 1m 32s ago",
-    description: "Deploys from GitHub",
-  },
-  {
-    id: 2,
-    href: "/repo/status",
-    title: "2/3/2024",
-    status: "warning",
-    extra: "Initiated 1m 32s ago",
-    description: "Deploys from GitHub",
-  },
-  {
-    id: 3,
-    href: "/repo/status",
-    title: "1/1/2024",
-    status: "error",
-    extra: "Initiated 1m 32s ago",
-    description: "Deploys from GitHub",
-  },
-];
+import { worstCheck } from "@/utils/checks";
 
 export default async function Page({ params }) {
   const { id } = params;
@@ -52,18 +26,20 @@ export default async function Page({ params }) {
       },
     },
   });
-  console.log("======", repository);
+
   return (
     <>
-      <Title text="Check list">
+      <Title
+        text={`Check list for the repo: ${repository.owner} / ${repository.repo}`}
+      >
         <Form id={id} />
       </Title>
       <List
         data={repository.checks.map((check) => ({
           id: check.id,
-          href: `/account/repo/status/${check.id}`,
-          title: "1/1/2024",
-          status: "error",
+          href: `/account/repo/report/${check.id}`,
+          title: `Error: ${check.red}, Warning: ${check.amber}, Successful: ${check.green}`,
+          status: worstCheck(check),
           extra: `Added ${formatDistance(check.createdAt, new Date(), {
             addSuffix: true,
           })}`,

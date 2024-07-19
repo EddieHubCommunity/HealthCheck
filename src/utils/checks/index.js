@@ -23,3 +23,7 @@ export default function checks(repo) {
 export function checkSummary(checks) {
   return Object.groupBy(checks, ({ status }) => status);
 }
+
+export function worstCheck(check) {
+  return check.red > 0 ? "error" : check.amber > 0 ? "warning" : "success";
+}

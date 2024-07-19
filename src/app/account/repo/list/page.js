@@ -5,6 +5,7 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import prisma from "@/models/db";
 import List from "@/components/List";
 import Title from "@/components/Title";
+import { worstCheck } from "@/utils/checks";
 
 export default async function Page() {
   const session = await getServerSession(authOptions);
@@ -15,9 +16,20 @@ export default async function Page() {
   const user = await prisma.user.findUnique({
     where: { id: session.user.id },
     include: {
-      repositories: true,
+      repositories: {
+        include: {
+          checks: {
+            orderBy: {
+              createdAt: "desc",
+            },
+            take: 1,
+          },
+        },
+      },
     },
   });
+
+  console.log(user.repositories[0].checks);
 
   return (
     <>
@@ -27,11 +39,21 @@ export default async function Page() {
           id: repo.id,
           href: `/account/repo/checks/${repo.id}`,
           title: `${repo.owner} / ${repo.repo}`,
-          status: "-",
-          extra: `Added ${formatDistance(repo.createdAt, new Date(), {
+          status: repo.checks[0] ? worstCheck(repo.checks[0]) : "-",
+          description: `Added ${formatDistance(repo.createdAt, new Date(), {
             addSuffix: true,
           })}`,
-          description: "-",
+          extra: repo.checks[0]
+            ? `Last check performed ${formatDistance(
+                repo.checks[0].createdAt,
+                new Date(),
+                {
+                  addSuffix: true,
+                }
+              )} with ${repo.checks[0].red} error(s), ${
+                repo.checks[0].amber
+              } warning(s), ${repo.checks[0].green} success(es)`
+            : "No checks performed yet",
         }))}
       />
     </>

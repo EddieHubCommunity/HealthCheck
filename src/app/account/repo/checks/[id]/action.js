@@ -1,5 +1,6 @@
 "use server";
 
+import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth/next";
 import { differenceInHours } from "date-fns";
 
@@ -59,7 +60,7 @@ export async function performChecks(formData) {
   const results = checks(githubResponseRepo.repo);
 
   // save results
-  await prisma.check.create({
+  const check = await prisma.check.create({
     data: {
       repository: {
         connect: { id },
@@ -75,5 +76,5 @@ export async function performChecks(formData) {
     },
   });
 
-  // redirect
+  redirect(`/account/repo/report/${check.id}`);
 }
