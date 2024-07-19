@@ -1,3 +1,12 @@
+## [0.10.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.0...v0.10.1) (2024-07-19)
+
+
+### Bug Fixes
+
+* when no check type found ([8e0c37e](https://github.com/EddieHubCommunity/HealthCheck/commit/8e0c37e17577c3c3fe4f0c2b1f0ac7e1e6686c9d))
+
+
+
 # [0.10.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.9.1...v0.10.0) (2024-07-19)
 
 
@@ -44,15 +53,6 @@
 ### Features
 
 * authentication and prisma ([0134d05](https://github.com/EddieHubCommunity/HealthCheck/commit/0134d0534517d8e90ebcf610a3a093978a40440a))
-
-
-
-## [0.7.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.5...v0.7.6) (2024-07-13)
-
-
-### Bug Fixes
-
-* handle testing environment using defaults ([#26](https://github.com/EddieHubCommunity/HealthCheck/issues/26)) ([1f2e969](https://github.com/EddieHubCommunity/HealthCheck/commit/1f2e96903990568c9fd378a47a65f94ef1fc5671))
 
 
 
