@@ -1,3 +1,12 @@
+# [0.11.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.2...v0.11.0) (2024-07-20)
+
+
+### Features
+
+* badges to put in repo's readme ([319bb5f](https://github.com/EddieHubCommunity/HealthCheck/commit/319bb5f4554be10f93cd2309f31b9a76c4ae5ced))
+
+
+
 ## [0.10.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.1...v0.10.2) (2024-07-20)
 
 
@@ -45,15 +54,6 @@
 ### Bug Fixes
 
 * use node 22.4 for npm failure workaround ([#34](https://github.com/EddieHubCommunity/HealthCheck/issues/34)) ([a1eaef9](https://github.com/EddieHubCommunity/HealthCheck/commit/a1eaef9408b83ae7c130f8e3696cd7d0fec54798))
-
-
-
-# [0.9.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.8.0...v0.9.0) (2024-07-18)
-
-
-### Features
-
-* dockerise local dev ([#30](https://github.com/EddieHubCommunity/HealthCheck/issues/30)) ([9f5edee](https://github.com/EddieHubCommunity/HealthCheck/commit/9f5edee2586d2f441757060c6cfb40d01fe2d215))
 
 
 
