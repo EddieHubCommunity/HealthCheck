@@ -5,8 +5,9 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import prisma from "@/models/db";
 import List from "@/components/List";
 import Title from "@/components/Title";
-import Form from "./form";
+import Form, { FormBadge } from "./form";
 import { worstCheck } from "@/utils/checks";
+import ActionPanel from "@/components/ActionPanel";
 
 export default async function Page({ params }) {
   const { id } = params;
@@ -34,6 +35,9 @@ export default async function Page({ params }) {
       >
         <Form id={id} />
       </Title>
+      <ActionPanel>
+        <FormBadge id={id} prepend={process.env.NEXTAUTH_URL} />
+      </ActionPanel>
       <List
         data={repository.checks.map((check) => ({
           id: check.id,

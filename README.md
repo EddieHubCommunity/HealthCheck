@@ -7,7 +7,23 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
 ![Screenshot of repo checks](https://github.com/user-attachments/assets/9ba48d9a-4aca-4bf2-ae2d-3997c8248a80)
 
-## Quickstart guide
+## Features
+
+- [x] GitHub OAuth
+- [x] Integration with Flagsmith
+- [x] Add GitHub repo URL
+- [x] List of checks and show detailed report
+- [x] Badges to show latest status in project's README
+- [ ] ...
+
+## Usage
+
+1. Login with your GitHub _(only public info required)_
+2. Add GitHub repo URL
+3. Run HealthCheck against repo and view the report
+4. Add a HealthCheck badge to your project
+
+## Quickstart guide for local development
 
 > [!CAUTION]
 > Node `v21+` is required
