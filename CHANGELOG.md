@@ -1,3 +1,13 @@
+## [0.10.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.1...v0.10.2) (2024-07-20)
+
+
+### Bug Fixes
+
+* add repo ([796eff1](https://github.com/EddieHubCommunity/HealthCheck/commit/796eff12a14bdc0d051fd66c530396785423ead3))
+* removed profile settings ([fa1c0eb](https://github.com/EddieHubCommunity/HealthCheck/commit/fa1c0ebb51835220e64eb62624d7e112afdb4a5a))
+
+
+
 ## [0.10.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.0...v0.10.1) (2024-07-19)
 
 
@@ -44,15 +54,6 @@
 ### Features
 
 * dockerise local dev ([#30](https://github.com/EddieHubCommunity/HealthCheck/issues/30)) ([9f5edee](https://github.com/EddieHubCommunity/HealthCheck/commit/9f5edee2586d2f441757060c6cfb40d01fe2d215))
-
-
-
-# [0.8.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.7.6...v0.8.0) (2024-07-14)
-
-
-### Features
-
-* authentication and prisma ([0134d05](https://github.com/EddieHubCommunity/HealthCheck/commit/0134d0534517d8e90ebcf610a3a093978a40440a))
 
 
 
