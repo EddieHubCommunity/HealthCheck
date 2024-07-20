@@ -56,8 +56,8 @@ export async function getRepo(prevState, formData) {
           },
         },
         url,
-        owner,
-        repo,
+        owner: response.data.owner.login,
+        repo: response.data.name,
       },
     });
   }
