@@ -29,8 +29,6 @@ export default async function Page() {
     },
   });
 
-  console.log(user.repositories[0].checks);
-
   return (
     <>
       <Title text="Repo list" />

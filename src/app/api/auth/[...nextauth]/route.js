@@ -15,7 +15,6 @@ const authOptions = {
   ],
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
-      console.log(user, account, profile, email, credentials);
       user.username = user.id;
 
       return true;
