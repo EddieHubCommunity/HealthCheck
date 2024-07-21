@@ -14,11 +14,13 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 import { signIn, signOut } from "next-auth/react";
+import { usePathname } from "next/navigation";
 
 import logo from "../../public/logo.svg";
 import classNames from "@/utils/classNames";
 
 export default function Header({ session }) {
+  const path = usePathname();
   const profile = {
     name: session ? session.user.name : "Guest",
     email: session ? session.user.email : "unknown",
@@ -28,16 +30,15 @@ export default function Header({ session }) {
   };
 
   let navigation = [
-    { name: "Home", href: "/", current: true },
-    { name: "All Repos", href: "/repo/list", current: false },
+    { name: "Home", href: "/" },
+    { name: "All Repos", href: "/repo/list" },
   ];
   let userNavigation = [];
   if (session) {
-    navigation.push({ name: "Add", href: "/account/repo/add", current: false });
+    navigation.push({ name: "Add", href: "/account/repo/add" });
     navigation.push({
       name: "My Repos",
       href: "/account/repo/list",
-      current: false,
     });
     userNavigation = [
       // { name: "Settings", href: "/account/profile" },
@@ -164,9 +165,9 @@ export default function Header({ session }) {
             <Link
               key={item.name}
               href={item.href}
-              aria-current={item.current ? "page" : undefined}
+              aria-current={path === item.href ? "page" : undefined}
               className={classNames(
-                item.current
+                path === item.href
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:bg-gray-700 hover:text-white",
                 "inline-flex items-center rounded-md px-3 py-2 text-sm font-medium"
@@ -185,9 +186,9 @@ export default function Header({ session }) {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? "page" : undefined}
+              aria-current={path === item.href ? "page" : undefined}
               className={classNames(
-                item.current
+                path === item.href
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:bg-gray-700 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium"
