@@ -23,7 +23,7 @@ export default function News() {
           <p className="text-sm text-blue-700">{news.value}</p>
           <p className="mt-3 text-sm md:ml-6 md:mt-0">
             <a
-              href="#"
+              href="https://github.com/EddieHubCommunity/HealthCheck"
               className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
             >
               Details
