@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getServerSession } from "next-auth/next";
 import { formatDistance } from "date-fns";
 
@@ -28,6 +29,8 @@ export default async function Page({ params }) {
     },
   });
 
+  const badgeSrc = `${process.env.NEXTAUTH_URL}/api/badges/report/${id}`;
+
   return (
     <>
       <Title
@@ -36,7 +39,8 @@ export default async function Page({ params }) {
         <Form id={id} />
       </Title>
       <ActionPanel>
-        <FormBadge id={id} prepend={process.env.NEXTAUTH_URL} />
+        <FormBadge id={id} src={badgeSrc} />
+        <img src={badgeSrc} className="mt-2" />
       </ActionPanel>
       <List
         data={repository.checks.map((check) => ({
