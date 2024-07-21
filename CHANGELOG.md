@@ -1,3 +1,18 @@
+# [0.12.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.11.0...v0.12.0) (2024-07-21)
+
+
+### Bug Fixes
+
+* news alert has gh link ([245bcf4](https://github.com/EddieHubCommunity/HealthCheck/commit/245bcf4bb2cafbd21d704b567cc48767ff08b503))
+* removed debug code ([e846374](https://github.com/EddieHubCommunity/HealthCheck/commit/e846374b846d37a0e1590ceb5d7870b664fcd151))
+
+
+### Features
+
+* badge example code ([a4adbd5](https://github.com/EddieHubCommunity/HealthCheck/commit/a4adbd58ad03c5e26642452e7bc1b09eb6b6531b))
+
+
+
 # [0.11.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.2...v0.11.0) (2024-07-20)
 
 
@@ -45,15 +60,6 @@
 * protect pages with auth ([4b093bf](https://github.com/EddieHubCommunity/HealthCheck/commit/4b093bfac08ce8cd2485c03d4fe1fd72ae807a1d))
 * repository validation model ([6eca5f3](https://github.com/EddieHubCommunity/HealthCheck/commit/6eca5f3de2e5d1484bd5c7f89801a8f8ff07e6fb))
 * stats have status colours ([93482bb](https://github.com/EddieHubCommunity/HealthCheck/commit/93482bbc286ce7bc71d2771ee2c89d7f8ad7e14e))
-
-
-
-## [0.9.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.9.0...v0.9.1) (2024-07-18)
-
-
-### Bug Fixes
-
-* use node 22.4 for npm failure workaround ([#34](https://github.com/EddieHubCommunity/HealthCheck/issues/34)) ([a1eaef9](https://github.com/EddieHubCommunity/HealthCheck/commit/a1eaef9408b83ae7c130f8e3696cd7d0fec54798))
 
 
 
