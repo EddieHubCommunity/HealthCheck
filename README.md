@@ -55,9 +55,11 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    a. create a GitHub OAuth app on GitHub https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
 
+   ![GitHub OAuth app](https://github.com/user-attachments/assets/cf2e4358-4b13-4c86-a8bb-5c6d83c37b4a)
+
    b. In your GitHub OAuth app, GitHub will generate the `client id` and `client secret`, add these to your the `.env` file
 
-9. Run the project with one of these
+10. Run the project with one of these
 
    a. Locally `npm run dev`
 
