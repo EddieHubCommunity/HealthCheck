@@ -1,3 +1,12 @@
+## [0.13.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.0...v0.13.1) (2024-07-22)
+
+
+### Bug Fixes
+
+* url in description check ([#47](https://github.com/EddieHubCommunity/HealthCheck/issues/47)) ([7abf2c2](https://github.com/EddieHubCommunity/HealthCheck/commit/7abf2c2a7ec6881772c67477246ab3ab1cea7ba1))
+
+
+
 # [0.13.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.12.0...v0.13.0) (2024-07-21)
 
 
@@ -38,15 +47,6 @@
 
 * add repo ([796eff1](https://github.com/EddieHubCommunity/HealthCheck/commit/796eff12a14bdc0d051fd66c530396785423ead3))
 * removed profile settings ([fa1c0eb](https://github.com/EddieHubCommunity/HealthCheck/commit/fa1c0ebb51835220e64eb62624d7e112afdb4a5a))
-
-
-
-## [0.10.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.0...v0.10.1) (2024-07-19)
-
-
-### Bug Fixes
-
-* when no check type found ([8e0c37e](https://github.com/EddieHubCommunity/HealthCheck/commit/8e0c37e17577c3c3fe4f0c2b1f0ac7e1e6686c9d))
 
 
 
