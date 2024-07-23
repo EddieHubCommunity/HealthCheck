@@ -13,7 +13,8 @@
     "lint": "next lint",
     "test": "npx playwright test",
     "prepare": "husky",
-    "postinstall": "shx cp -n ./.env.example ./.env"
+    "postinstall": "shx cp -n ./.env.example ./.env",
+    "db:migrate:dev": "npx prisma migrate dev"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",

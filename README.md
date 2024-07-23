@@ -59,8 +59,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    b. In your GitHub OAuth app, GitHub will generate the `client id` and `client secret`, add these to your the `.env` file
 
-10. Run the project with one of these
+9. Run the project with one of these
 
-   a. Locally `npm run dev`
-
-   b. Docker compose `docker compose -f docker-compose.local.yaml up -d`
+   a. If you have Postgres installed, you can run the app locally `npm run dev` OR
+   b. If you don't have Postgres installed, you can use Docker Compose to run the database and the app `docker compose -f docker-compose.yaml up -d`, after the containers are ready, run the command `npm run db:migrate:dev`
