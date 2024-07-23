@@ -1,19 +1,4 @@
 services:
-  app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile.dev
-    environment:
-      - DATABASE_URL=postgresql://user:password@postgres:5432/healthcheck?schema=public
-    depends_on:
-      postgres:
-        condition: service_healthy
-    ports:
-      - 3000:3000
-    networks:
-      - healthcheck
-    restart: always
-
   postgres:
     image: postgres:16.3-alpine
     ports:
@@ -30,6 +15,21 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres:5432/healthcheck?schema=public
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - 3000:3000
+    networks:
+      - healthcheck
+    restart: always
 
 networks:
   healthcheck:

@@ -62,4 +62,4 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 9. Run the project with one of these
 
    a. If you have Postgres installed, you can run the app locally `npm run dev` OR
-   b. If you don't have Postgres installed, you can use Docker Compose to run the database and the app `docker compose -f docker-compose.yaml up -d`
+   b. If you don't have Postgres installed, you can use Docker Compose to run the database and the app `docker compose -f docker-compose.yaml up -d`, after the containers are ready, run the command `npm run db:migrate:dev`
