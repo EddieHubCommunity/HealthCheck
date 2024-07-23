@@ -2,7 +2,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: ./Dockerfile.local
+      dockerfile: ./Dockerfile.dev
     environment:
       - DATABASE_URL=postgresql://user:password@postgres:5432/healthcheck?schema=public
     depends_on:

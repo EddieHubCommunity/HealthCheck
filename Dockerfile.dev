@@ -1,0 +1,10 @@
+FROM node:22.4.1-alpine
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN npm ci
+RUN npx prisma migrate dev
+
+CMD npm run dev
