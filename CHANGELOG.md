@@ -1,3 +1,12 @@
+## [0.13.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.1...v0.13.2) (2024-07-23)
+
+
+### Bug Fixes
+
+* docker compose db connection ([#51](https://github.com/EddieHubCommunity/HealthCheck/issues/51)) ([983bf39](https://github.com/EddieHubCommunity/HealthCheck/commit/983bf39f48f423d884120bfdd51206f1bef99a90))
+
+
+
 ## [0.13.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.0...v0.13.1) (2024-07-22)
 
 
@@ -37,16 +46,6 @@
 ### Features
 
 * badges to put in repo's readme ([319bb5f](https://github.com/EddieHubCommunity/HealthCheck/commit/319bb5f4554be10f93cd2309f31b9a76c4ae5ced))
-
-
-
-## [0.10.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.1...v0.10.2) (2024-07-20)
-
-
-### Bug Fixes
-
-* add repo ([796eff1](https://github.com/EddieHubCommunity/HealthCheck/commit/796eff12a14bdc0d051fd66c530396785423ead3))
-* removed profile settings ([fa1c0eb](https://github.com/EddieHubCommunity/HealthCheck/commit/fa1c0ebb51835220e64eb62624d7e112afdb4a5a))
 
 
 
