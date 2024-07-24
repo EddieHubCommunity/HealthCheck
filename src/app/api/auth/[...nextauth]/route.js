@@ -14,11 +14,6 @@ const authOptions = {
     }),
   ],
   callbacks: {
-    async signIn({ user, account, profile, email, credentials }) {
-      user.username = user.id;
-
-      return true;
-    },
     async session({ session, token, user }) {
       session.user.id = user.id;
 
