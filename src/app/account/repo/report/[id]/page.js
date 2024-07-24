@@ -84,14 +84,16 @@ export default async function Page({ params }) {
         ]}
       />
       <List
-        data={check.data.map((check) => ({
-          id: check.id,
-          href: `/checks/${check.id}`,
-          title: check.title,
-          status: check.status,
-          extra: check.extra,
-          description: check.description,
-        }))}
+        data={check.data
+          .filter((item) => item.status)
+          .map((check) => ({
+            id: check.id,
+            href: `/checks/${check.id}`,
+            title: check.title,
+            status: check.status,
+            extra: check.extra,
+            description: check.description,
+          }))}
       />
     </>
   );
