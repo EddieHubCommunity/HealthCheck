@@ -1,11 +1,9 @@
 import { Octokit } from "@octokit/rest";
+import extractOwnerRepo from "./extractOwnerRepo";
 
 export default async function getRepoApi(url, token) {
   // get owner and repo name from url
-  const urlObject = new URL(url);
-  const path = urlObject.pathname.split("/");
-  const owner = path[1];
-  const repo = path[2];
+  const { owner, repo } = extractOwnerRepo(url);
 
   // get data from github api using user's API
   const octokit = new Octokit({
