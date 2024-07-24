@@ -2,7 +2,7 @@ export default function defaultBranch(repo) {
   const defaultBranchName = "main";
 
   let response = {
-    id: "defaultBranch",
+    id: "default-branch",
     href: "/repo/status",
     title: "Default Branch",
   };
@@ -13,7 +13,7 @@ export default function defaultBranch(repo) {
     response.extra = "No action required.";
   }
 
-  if (!repo.default_branch !== defaultBranchName) {
+  if (repo.default_branch !== defaultBranchName) {
     response.status = "warning";
     response.description =
       "You are not using the recommended default branch name.";
