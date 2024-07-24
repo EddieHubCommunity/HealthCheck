@@ -1,18 +1,33 @@
 import activity from "./activity";
 import defaultBranch from "./defaultBranch";
 import description from "./description";
+import goodFirstIssue from "./goodFirstIssue";
 import issues from "./issues";
 import topics from "./topics";
 import url from "./url";
 
-export default function checks(repo) {
+/*
+ * Every check must return the following format
+ * {
+ *   id: "activity",            // unique id (use "-" if needed)
+ *   href: "/repo/status",      // link to more info
+ *   title: "Activity",         // display title
+ *   status: "warning",         // success/warning/error
+ *   description: "...",        // more info about the check
+ *   extra: "...",              // suggestion on next steps
+ * }
+ */
+
+export default function checks(data) {
   const checks = [
-    description(repo),
-    url(repo),
-    topics(repo),
-    activity(repo),
-    issues(repo),
-    defaultBranch(repo),
+    description(data.repo),
+    url(data.repo),
+    topics(data.repo),
+    activity(data.repo),
+    issues(data.repo),
+    branches(data.repo),
+    defaultBranch(data.repo),
+    goodFirstIssue(data.issues),
   ];
 
   const summary = checkSummary(checks);

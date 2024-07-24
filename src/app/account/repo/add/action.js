@@ -7,6 +7,7 @@ import prisma from "@/models/db";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Repository from "@/models/Repository";
 import getRepoApi from "@/utils/github/getRepoApi";
+import getIssuesApi from "@/utils/github/getIssuesApi";
 
 export async function getRepo(prevState, formData) {
   // check authentication
@@ -62,6 +63,8 @@ export async function getRepo(prevState, formData) {
     });
   }
 
+  const issuesResponse = await getIssuesApi(url, user.accounts[0].access_token);
+
   // save github api data
   await prisma.githubResponse.create({
     data: {
@@ -71,6 +74,7 @@ export async function getRepo(prevState, formData) {
         },
       },
       repo: response.data,
+      issues: issuesResponse.data,
     },
   });
 
