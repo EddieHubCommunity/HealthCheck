@@ -1,4 +1,5 @@
 import activity from "./activity";
+import branches from "./branches";
 import defaultBranch from "./defaultBranch";
 import description from "./description";
 import goodFirstIssue from "./goodFirstIssue";
@@ -25,9 +26,9 @@ export default function checks(data) {
     topics(data.repo),
     activity(data.repo),
     issues(data.repo),
-    branches(data.repo),
     defaultBranch(data.repo),
     goodFirstIssue(data.issues),
+    branches(data.branches),
   ];
 
   const summary = checkSummary(checks);
