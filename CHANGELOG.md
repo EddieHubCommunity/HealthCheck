@@ -1,3 +1,20 @@
+# [0.14.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.3...v0.14.0) (2024-07-24)
+
+
+### Bug Fixes
+
+* default branch check ([f0618fc](https://github.com/EddieHubCommunity/HealthCheck/commit/f0618fc5debe0c9bb60fbae41ea153e3005a0a9c))
+* make sure checks have a status ([eca87cc](https://github.com/EddieHubCommunity/HealthCheck/commit/eca87ccfcd468600e7307f01d9aac37cb1f42765))
+
+
+### Features
+
+* branches check ([64c2ab9](https://github.com/EddieHubCommunity/HealthCheck/commit/64c2ab9d487ed7b6314fd95f1325a037a75e3439))
+* get repo issue data from gh ([d12e051](https://github.com/EddieHubCommunity/HealthCheck/commit/d12e051094dbdae0a187ff19ecfd8df6314b5370))
+* good first issue check ([a8906f6](https://github.com/EddieHubCommunity/HealthCheck/commit/a8906f6592f90a89a41b0ec0c400c3f43afdf402))
+
+
+
 ## [0.13.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.2...v0.13.3) (2024-07-24)
 
 
@@ -31,21 +48,6 @@
 ### Features
 
 * current nav button highlighted ([#43](https://github.com/EddieHubCommunity/HealthCheck/issues/43)) ([65bd6c6](https://github.com/EddieHubCommunity/HealthCheck/commit/65bd6c6fe6bb7f8162d948ddb53034dd30d6a67c))
-
-
-
-# [0.12.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.11.0...v0.12.0) (2024-07-21)
-
-
-### Bug Fixes
-
-* news alert has gh link ([245bcf4](https://github.com/EddieHubCommunity/HealthCheck/commit/245bcf4bb2cafbd21d704b567cc48767ff08b503))
-* removed debug code ([e846374](https://github.com/EddieHubCommunity/HealthCheck/commit/e846374b846d37a0e1590ceb5d7870b664fcd151))
-
-
-### Features
-
-* badge example code ([a4adbd5](https://github.com/EddieHubCommunity/HealthCheck/commit/a4adbd58ad03c5e26642452e7bc1b09eb6b6531b))
 
 
 
