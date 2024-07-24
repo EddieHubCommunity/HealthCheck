@@ -1,3 +1,12 @@
+## [0.13.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.2...v0.13.3) (2024-07-24)
+
+
+### Bug Fixes
+
+* username on signin ([7199955](https://github.com/EddieHubCommunity/HealthCheck/commit/7199955cd542b298d97f20cd21dfde8f9922dffb))
+
+
+
 ## [0.13.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.1...v0.13.2) (2024-07-23)
 
 
@@ -37,15 +46,6 @@
 ### Features
 
 * badge example code ([a4adbd5](https://github.com/EddieHubCommunity/HealthCheck/commit/a4adbd58ad03c5e26642452e7bc1b09eb6b6531b))
-
-
-
-# [0.11.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.10.2...v0.11.0) (2024-07-20)
-
-
-### Features
-
-* badges to put in repo's readme ([319bb5f](https://github.com/EddieHubCommunity/HealthCheck/commit/319bb5f4554be10f93cd2309f31b9a76c4ae5ced))
 
 
 
