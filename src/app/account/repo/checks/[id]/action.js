@@ -88,5 +88,5 @@ export async function performChecks(formData) {
     },
   });
 
-  redirect(`/account/repo/report/${check.id}`);
+  redirect(`/repo/report/${check.id}`);
 }

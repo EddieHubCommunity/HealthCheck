@@ -8,6 +8,15 @@ export default function branches(branches) {
     title: "Branches",
   };
 
+  if (!branches) {
+    return {
+      ...response,
+      status: "-",
+      description: "No data available",
+      extra: "-",
+    };
+  }
+
   if (branches.length <= min) {
     response.status = "success";
     response.description = "You have a small amount of branches.";
