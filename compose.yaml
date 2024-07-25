@@ -1,4 +1,21 @@
 services:
+  app:
+    build:
+      context: .
+    env_file:
+      - .env
+    environment: # To override the DB URL in the .env file
+      - DATABASE_URL=postgresql://user:password@postgres:5432/healthcheck?schema=public
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - 3000:3000
+    networks:
+      - healthcheck
+    restart: always
+    container_name: app
+
   postgres:
     image: postgres:16.3-alpine
     ports:
@@ -15,21 +32,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-
-  app:
-    build:
-      context: .
-      dockerfile: ./Dockerfile.dev
-    environment:
-      - DATABASE_URL=postgresql://user:password@postgres:5432/healthcheck?schema=public
-    depends_on:
-      postgres:
-        condition: service_healthy
-    ports:
-      - 3000:3000
-    networks:
-      - healthcheck
-    restart: always
+    container_name: postgres
 
 networks:
   healthcheck:
