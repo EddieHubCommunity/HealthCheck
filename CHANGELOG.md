@@ -1,3 +1,12 @@
+# [0.15.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.14.0...v0.15.0) (2024-07-25)
+
+
+### Features
+
+* public list ([#58](https://github.com/EddieHubCommunity/HealthCheck/issues/58)) ([ea3b645](https://github.com/EddieHubCommunity/HealthCheck/commit/ea3b645ce863dd9022396a3692bb046893e467ae))
+
+
+
 # [0.14.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.3...v0.14.0) (2024-07-24)
 
 
@@ -39,15 +48,6 @@
 ### Bug Fixes
 
 * url in description check ([#47](https://github.com/EddieHubCommunity/HealthCheck/issues/47)) ([7abf2c2](https://github.com/EddieHubCommunity/HealthCheck/commit/7abf2c2a7ec6881772c67477246ab3ab1cea7ba1))
-
-
-
-# [0.13.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.12.0...v0.13.0) (2024-07-21)
-
-
-### Features
-
-* current nav button highlighted ([#43](https://github.com/EddieHubCommunity/HealthCheck/issues/43)) ([65bd6c6](https://github.com/EddieHubCommunity/HealthCheck/commit/65bd6c6fe6bb7f8162d948ddb53034dd30d6a67c))
 
 
 
