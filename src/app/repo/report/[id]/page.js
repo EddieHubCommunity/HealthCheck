@@ -5,10 +5,8 @@ import {
   StarIcon,
   TicketIcon,
 } from "@heroicons/react/20/solid";
-import { getServerSession } from "next-auth/next";
 import { formatDistance } from "date-fns";
 
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import prisma from "@/models/db";
 import Heading from "@/components/Heading";
 import List from "@/components/List";
@@ -17,10 +15,6 @@ import { checkSummary } from "@/utils/checks";
 
 export default async function Page({ params }) {
   const id = params.id;
-  const session = await getServerSession(authOptions);
-  if (!session) {
-    redirect("/");
-  }
 
   const check = await prisma.check.findUnique({
     where: { id },
@@ -33,11 +27,6 @@ export default async function Page({ params }) {
       githubResponse: true,
     },
   });
-
-  // TODO add to above query and redirect if no result
-  if (session.user.id !== check.repository.user.id) {
-    redirect("/");
-  }
 
   const summary = checkSummary(check.data);
 
