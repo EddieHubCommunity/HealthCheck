@@ -7,9 +7,7 @@ import { differenceInHours } from "date-fns";
 import prisma from "@/models/db";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import checks from "@/utils/checks";
-import getRepoApi from "@/utils/github/getRepoApi";
-import getIssuesApi from "@/utils/github/getIssuesApi";
-import getBranchesApi from "@/utils/github/getBranchesApi";
+import getAllRepoData from "@/utils/github";
 
 export async function performChecks(formData) {
   const session = await getServerSession(authOptions);
@@ -42,18 +40,11 @@ export async function performChecks(formData) {
         accounts: true,
       },
     });
-    const response = await getRepoApi(
+    const responses = await getAllRepoData(
       repository.url,
       user.accounts[0].access_token
     );
-    const issuesResponse = await getIssuesApi(
-      repository.url,
-      user.accounts[0].access_token
-    );
-    const branchesResponse = await getBranchesApi(
-      repository.url,
-      user.accounts[0].access_token
-    );
+
     githubResponseRepo = await prisma.githubResponse.create({
       data: {
         repository: {
@@ -61,9 +52,7 @@ export async function performChecks(formData) {
             id: repository.id,
           },
         },
-        repo: response.data,
-        issues: issuesResponse.data,
-        branches: branchesResponse.data,
+        ...responses,
       },
     });
   }
