@@ -45,7 +45,7 @@ export default async function Page({ params }) {
       <List
         data={repository.checks.map((check) => ({
           id: check.id,
-          href: `/account/repo/report/${check.id}`,
+          href: `/repo/report/${check.id}`,
           title: `Error: ${check.red}, Warning: ${check.amber}, Successful: ${check.green}`,
           status: worstCheck(check),
           extra: `Added ${formatDistance(check.createdAt, new Date(), {

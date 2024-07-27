@@ -7,6 +7,15 @@ export default function goodFirstIssue(issues) {
     title: "Good First Issue",
   };
 
+  if (!issues) {
+    return {
+      ...response,
+      status: "-",
+      description: "No data available",
+      extra: "-",
+    };
+  }
+
   if (issues.length === 0) {
     response.status = "error";
     response.description = "You have no open and unassigned good first issues";

@@ -4,6 +4,7 @@ import defaultBranch from "./defaultBranch";
 import description from "./description";
 import goodFirstIssue from "./goodFirstIssue";
 import issues from "./issues";
+import release from "./release";
 import topics from "./topics";
 import url from "./url";
 
@@ -29,6 +30,7 @@ export default function checks(data) {
     defaultBranch(data.repo),
     goodFirstIssue(data.issues),
     branches(data.branches),
+    release(data.release),
   ];
 
   const summary = checkSummary(checks);
