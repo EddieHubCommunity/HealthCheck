@@ -1,3 +1,12 @@
+## [0.16.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.3...v0.16.4) (2024-07-27)
+
+
+### Bug Fixes
+
+* docker and compose dev and prod ([#57](https://github.com/EddieHubCommunity/HealthCheck/issues/57)) ([3581376](https://github.com/EddieHubCommunity/HealthCheck/commit/3581376228b4e81ee7380b561694e30da17d8212))
+
+
+
 ## [0.16.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.2...v0.16.3) (2024-07-27)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * check for recent release ([ef88abe](https://github.com/EddieHubCommunity/HealthCheck/commit/ef88abe8de0913a4d3d672ed5c47e9d25a31db79))
-
-
-
-# [0.15.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.14.0...v0.15.0) (2024-07-25)
-
-
-### Features
-
-* public list ([#58](https://github.com/EddieHubCommunity/HealthCheck/issues/58)) ([ea3b645](https://github.com/EddieHubCommunity/HealthCheck/commit/ea3b645ce863dd9022396a3692bb046893e467ae))
 
 
 
