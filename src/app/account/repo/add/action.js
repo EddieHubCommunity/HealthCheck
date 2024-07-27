@@ -7,6 +7,7 @@ import prisma from "@/models/db";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Repository from "@/models/Repository";
 import getRepoApi from "@/utils/github/getRepoApi";
+import getAllRepoData from "@/utils/github";
 
 export async function getRepo(prevState, formData) {
   // check authentication

@@ -17,6 +17,10 @@ export default async function getRepoApi(url, token) {
     });
   } catch (e) {
     console.error(e);
+    response = {
+      status: 404,
+      data: {},
+    };
   }
 
   return response;
