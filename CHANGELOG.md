@@ -1,3 +1,12 @@
+## [0.16.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.0...v0.16.1) (2024-07-27)
+
+
+### Bug Fixes
+
+* grouping of gh api calls ([2049f99](https://github.com/EddieHubCommunity/HealthCheck/commit/2049f9907e4520c47a3d12878bba40ffd1236ae8))
+
+
+
 # [0.16.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.15.0...v0.16.0) (2024-07-26)
 
 
@@ -39,15 +48,6 @@
 ### Bug Fixes
 
 * username on signin ([7199955](https://github.com/EddieHubCommunity/HealthCheck/commit/7199955cd542b298d97f20cd21dfde8f9922dffb))
-
-
-
-## [0.13.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.13.1...v0.13.2) (2024-07-23)
-
-
-### Bug Fixes
-
-* docker compose db connection ([#51](https://github.com/EddieHubCommunity/HealthCheck/issues/51)) ([983bf39](https://github.com/EddieHubCommunity/HealthCheck/commit/983bf39f48f423d884120bfdd51206f1bef99a90))
 
 
 
