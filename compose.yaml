@@ -2,6 +2,7 @@ services:
   app:
     build:
       context: .
+      dockerfile: Dockerfile.dev
     env_file:
       - .env
     environment: # To override the DB URL in the .env file
