@@ -40,7 +40,7 @@ const login = async (
       image: "https://github.com/eddiejaoude.png",
       accessToken: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
       ...user,
-      sub: testUser.id,
+      sub: testUser.userId,
     },
     secret: process.env.NEXTAUTH_SECRET,
   });
@@ -48,14 +48,14 @@ const login = async (
   try {
     await prisma.session.upsert({
       where: {
-        userId: testUser.id
+        userId: testUser.userId
       },
       update: {
         expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
         sessionToken: sessionToken,
       },
       create: {
-        userId: testUser.id,
+        userId: testUser.userId,
         expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
         sessionToken: sessionToken,
       },
@@ -67,21 +67,21 @@ const login = async (
   try {
     await prisma.account.upsert({
       where: {
-        userId: testUser.id
+        userId: testUser.userId
       },
       update: {
         type: "oauth",
         provider: "github",
-        providerAccountId: testUser.id,
+        providerAccountId: testUser.userId,
         access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
         token_type: "bearer",
         scope: "read:org,read:user,repo,user:email,test:all",
       },
       create: {
-        userId: testUser.id,
+        userId: testUser.userId,
         type: "oauth",
         provider: "github",
-        providerAccountId: testUser.id,
+        providerAccountId: testUser.userId,
         access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
         token_type: "bearer",
         scope: "read:org,read:user,repo,user:email,test:all",
