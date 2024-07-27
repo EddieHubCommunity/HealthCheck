@@ -13,6 +13,13 @@ export default function release(release) {
     title: "Release",
   };
 
+  if (!release.created_at) {
+    response.status = "error";
+    response.description = "There are no releases.";
+    response.extra =
+      "If your project is ready for people to use, it is recommended to create a release.";
+  }
+
   if (diff <= min) {
     response.status = "success";
     response.description = "Your project has a recent release.";
@@ -28,7 +35,7 @@ export default function release(release) {
 
   if (diff >= max) {
     response.status = "error";
-    response.description = `There has been no activity for ${diff} days.`;
+    response.description = `There has been no release for ${diff} days.`;
     response.extra = "Are there any features or bugs that can be implemented?";
   }
 
