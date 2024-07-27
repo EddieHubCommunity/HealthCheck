@@ -22,7 +22,7 @@ lint:
 
     # Security + IaS config
     - actionlint@1.7.1
-    - checkov@3.2.208 
+    - checkov@3.2.208
     - hadolint@2.12.0
     - trufflehog@3.80.1
     # These scan dependencies, but require network access. Enable if it fits your project.
@@ -43,7 +43,7 @@ lint:
     - svgo@3.3.2
     - oxipng@9.1.2 # Manually added in case you add PNGs later
 actions:
-  # Optional githooks that help you run check and format before commit and push.
+  # Optional githooks that help you run check and format before push.
   enabled:
     - trunk-announce
     - trunk-check-pre-push

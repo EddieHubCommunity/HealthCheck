@@ -11,6 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "trunk check",
+    "fmt": "trunk fmt",
     "lint-old": "next lint",
     "test": "npx playwright test",
     "prepare": "husky",
