@@ -65,9 +65,9 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
    
    b. Running with Docker Compose (Recommended if you don't have Postgres installed)
       1. Once you done above steps and have the `.env` file ready
-      1. Run the command `docker compose up -d`
-      2. Once the containers are ready, run the command `npm run db:migrate:dev`
-      3. Visit `http://localhost:3000` in your browser
+      2. Run the command `docker compose up -d`
+      3. Once the containers are ready, run the command `npm run db:migrate:dev`
+      4. Visit `http://localhost:3000` in your browser
 
    c. Running in Github Codespaces
       1. Start a new codespace
