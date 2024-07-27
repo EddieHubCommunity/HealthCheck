@@ -25,6 +25,9 @@ export default async function Page() {
             take: 1,
           },
         },
+        orderBy: {
+          createdAt: "desc",
+        },
       },
     },
   });
