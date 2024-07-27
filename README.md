@@ -63,7 +63,11 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    a. If you have Postgres installed, you can run the app locally `npm run dev` OR
    
-   b. If you don't have Postgres installed, you can use Docker Compose to run the database and the app `docker compose -f docker-compose.yaml up -d`, after the containers are ready, run the command `npm run db:migrate:dev`
+   b. Running with Docker Compose (Recommended if you don't have Postgres installed)
+      1. Once you done above steps and have the `.env` file ready
+      2. Run the command `docker compose up -d`
+      3. Once the containers are ready, run the command `npm run db:migrate:dev`
+      4. Visit `http://localhost:3000` in your browser
 
    c. Running in Github Codespaces
       1. Start a new codespace
