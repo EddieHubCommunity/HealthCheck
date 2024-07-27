@@ -70,9 +70,9 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
       3. Visit `http://localhost:3000` in your browser
 
    c. Running in Github Codespaces
-      4. Start a new codespace
-      5. Run `npm ci` and `npm run dev`
-      6. When the project is running in the browser visit this and copy the generated URL. You will use this URL in place of localhost in step 8 above for creating your OAuth app
-      7. Update the environment file with your client id and secret.  Make sure to also update the `NEXTAUTH_URL=` to the generated codespace URL as well.
-      8. Continue with step `9b` to run the docker container and database migration.
+      1. Start a new codespace
+      2. Run `npm ci` and `npm run dev`
+      3. When the project is running in the browser visit this and copy the generated URL. You will use this URL in place of localhost in step 8 above for creating your OAuth app
+      4. Update the environment file with your client id and secret.  Make sure to also update the `NEXTAUTH_URL=` to the generated codespace URL as well.
+      5. Continue with step `9b` to run the docker container and database migration.
 
