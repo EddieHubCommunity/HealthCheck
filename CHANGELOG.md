@@ -1,3 +1,12 @@
+# [0.17.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.4...v0.17.0) (2024-07-27)
+
+
+### Features
+
+* publish docker image ([#73](https://github.com/EddieHubCommunity/HealthCheck/issues/73)) ([ce82d10](https://github.com/EddieHubCommunity/HealthCheck/commit/ce82d1094966ba81abb7ee1b3612568b96e3b661))
+
+
+
 ## [0.16.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.3...v0.16.4) (2024-07-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * grouping of gh api calls ([2049f99](https://github.com/EddieHubCommunity/HealthCheck/commit/2049f9907e4520c47a3d12878bba40ffd1236ae8))
-
-
-
-# [0.16.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.15.0...v0.16.0) (2024-07-26)
-
-
-### Features
-
-* check for recent release ([ef88abe](https://github.com/EddieHubCommunity/HealthCheck/commit/ef88abe8de0913a4d3d672ed5c47e9d25a31db79))
 
 
 
