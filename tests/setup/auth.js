@@ -40,7 +40,7 @@ const login = async (
       image: "https://github.com/eddiejaoude.png",
       accessToken: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
       ...user,
-      sub: new ObjectId(testUser._id),
+      sub: testUser.id,
     },
     secret: process.env.NEXTAUTH_SECRET,
   });
