@@ -6,8 +6,6 @@ const login = async (
   user = {
     name: "Test User Name 6",
     email: "test-standard-user@test.com",
-    username: "_test-profile-user-6",
-    type: "free",
   },
 ) => {
 
@@ -21,14 +19,12 @@ const login = async (
         name: user.name,
         image: "https://github.com/eddiejaoude.png",
         emailVerified: null,
-        type: user.type,
       },
       create: {
         email: user.email,
         name: user.name,
         image: "https://github.com/eddiejaoude.png",
         emailVerified: null,
-        type: user.type,
       },
     });
   } catch (e) {
@@ -40,7 +36,7 @@ const login = async (
       image: "https://github.com/eddiejaoude.png",
       accessToken: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
       ...user,
-      sub: testUser.userId,
+      sub: testUser.id,
     },
     secret: process.env.NEXTAUTH_SECRET,
   });
@@ -48,14 +44,14 @@ const login = async (
   try {
     await prisma.session.upsert({
       where: {
-        userId: testUser.userId
+        sessionToken: sessionToken
       },
       update: {
         expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
         sessionToken: sessionToken,
       },
       create: {
-        userId: testUser.userId,
+        userId: testUser.id,
         expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
         sessionToken: sessionToken,
       },
@@ -67,21 +63,24 @@ const login = async (
   try {
     await prisma.account.upsert({
       where: {
-        userId: testUser.userId
+        provider_providerAccountId: {
+          provider: "github",
+          providerAccountId: testUser.id,
+        }
       },
       update: {
         type: "oauth",
         provider: "github",
-        providerAccountId: testUser.userId,
+        userId: testUser.id,
         access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
         token_type: "bearer",
         scope: "read:org,read:user,repo,user:email,test:all",
       },
       create: {
-        userId: testUser.userId,
+        userId: testUser.id,
         type: "oauth",
         provider: "github",
-        providerAccountId: testUser.userId,
+        providerAccountId: testUser.id,
         access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
         token_type: "bearer",
         scope: "read:org,read:user,repo,user:email,test:all",
