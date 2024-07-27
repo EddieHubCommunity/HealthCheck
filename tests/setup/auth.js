@@ -4,95 +4,85 @@ import prisma from "@/models/db";
 const login = async (
   browser,
   user = {
-    name: "Test User Name 6",
-    email: "test-standard-user@test.com",
-  },
+    name: "Authenticated User",
+    email: "authenticated-user@test.com",
+  }
 ) => {
-
   const date = new Date();
   let testUser;
+
+  const userData = {
+    email: user.email,
+    name: user.name,
+    image: "https://github.com/mona.png",
+    emailVerified: null,
+  };
 
   try {
     testUser = await prisma.user.upsert({
       where: { email: user.email },
-      update: {
-        name: user.name,
-        image: "https://github.com/eddiejaoude.png",
-        emailVerified: null,
-      },
-      create: {
-        email: user.email,
-        name: user.name,
-        image: "https://github.com/eddiejaoude.png",
-        emailVerified: null,
-      },
+      update: userData,
+      create: userData,
     });
 
     if (!testUser) {
-      throw new Error("Failed to create or retrieve test user");
+      throw new Error("Failed to create or retrieve test authenticated user");
     }
-    console.log("Test user created:", testUser);
   } catch (e) {
-    console.error("Test user creation failed", e);
+    console.error("Test authenticated user creation failed", e);
   }
 
   const sessionToken = await encode({
     token: {
-      image: "https://github.com/eddiejaoude.png",
+      image: "https://github.com/mona.png",
       accessToken: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
       ...user,
-      sub: testUser?.id || user.email,
+      sub: testUser.id,
     },
     secret: process.env.NEXTAUTH_SECRET,
   });
 
+  const session = {
+    sessionToken,
+    userId: testUser.id,
+    expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
+  };
+
   try {
     await prisma.session.upsert({
       where: {
-        sessionToken: sessionToken
-      },
-      update: {
-        expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
         sessionToken: sessionToken,
       },
-      create: {
-        userId: testUser.id,
-        expires: new Date(date.getFullYear(), date.getMonth() + 1, 0),
-        sessionToken: sessionToken,
-      },
+      update: session,
+      create: session,
     });
   } catch (e) {
-    console.log("Test session creation failed", e);
+    console.error("Test authenticated session creation failed", e);
   }
-  
+
+  const account = {
+    type: "oauth",
+    provider: "github",
+    providerAccountId: testUser.id,
+    userId: testUser.id,
+    access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
+    token_type: "bearer",
+    scope: "read:org,read:user,repo,user:email,test:all",
+  };
+
   try {
     await prisma.account.upsert({
       where: {
         provider_providerAccountId: {
           provider: "github",
           providerAccountId: testUser.id,
-        }
+        },
       },
-      update: {
-        type: "oauth",
-        provider: "github",
-        userId: testUser.id,
-        access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
-        token_type: "bearer",
-        scope: "read:org,read:user,repo,user:email,test:all",
-      },
-      create: {
-        userId: testUser.id,
-        type: "oauth",
-        provider: "github",
-        providerAccountId: testUser.id,
-        access_token: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
-        token_type: "bearer",
-        scope: "read:org,read:user,repo,user:email,test:all",
-      },
+      update: account,
+      create: account,
     });
   } catch (e) {
-    console.error(e, `Test Account creation failed`);
+    console.error("Test Account creation failed", e);
   }
 
   const context = await browser.newContext();
@@ -100,7 +90,7 @@ const login = async (
     {
       name: "next-auth.session-token",
       value: sessionToken,
-      domain: "localhost",
+      domain: "127.0.0.1",
       path: "/",
       httpOnly: true,
       sameSite: "Lax",
@@ -109,12 +99,18 @@ const login = async (
     },
   ]);
 
-  return context;
+  const page = await context.newPage();
+
+  return page;
 };
+
 const logout = async (browser) => {
   const context = await browser.newContext();
   await context.clearCookies();
-  return context;
+
+  const page = await context.newPage();
+
+  return page;
 };
 
 export { login, logout };
