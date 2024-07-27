@@ -27,6 +27,11 @@ const login = async (
         emailVerified: null,
       },
     });
+
+    if (!testUser) {
+      throw new Error("Failed to create or retrieve test user");
+    }
+    console.log("Test user created:", testUser);
   } catch (e) {
     console.error("Test user creation failed", e);
   }
@@ -36,7 +41,7 @@ const login = async (
       image: "https://github.com/eddiejaoude.png",
       accessToken: "ggg_zZl1pWIvKkf3UDynZ09zLvuyZsm1yC0YoRPt",
       ...user,
-      sub: testUser.id,
+      sub: testUser?.id || user.email,
     },
     secret: process.env.NEXTAUTH_SECRET,
   });
