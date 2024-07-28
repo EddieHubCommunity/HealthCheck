@@ -29,7 +29,9 @@ const login = async (
       throw new Error("Failed to create or retrieve test authenticated user");
     }
   } catch (e) {
-    console.error("Test authenticated user creation failed", e);
+    const error = "Test authenticated user creation failed";
+    console.error(error, e);
+    throw new Error(error);
   }
 
   const sessionToken = await encode({
@@ -57,7 +59,9 @@ const login = async (
       create: session,
     });
   } catch (e) {
-    console.error("Test authenticated session creation failed", e);
+    const error = "Test authenticated session creation failed";
+    console.error(error, e);
+    throw new Error(error);
   }
 
   const account = {
@@ -82,7 +86,9 @@ const login = async (
       create: account,
     });
   } catch (e) {
-    console.error("Test Account creation failed", e);
+    const error = "Test account creation failed";
+    console.error(error, e);
+    throw new Error(error);
   }
 
   const context = await browser.newContext();
