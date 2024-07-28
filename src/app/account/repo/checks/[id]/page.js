@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth/next";
 import { formatDistance } from "date-fns";
 

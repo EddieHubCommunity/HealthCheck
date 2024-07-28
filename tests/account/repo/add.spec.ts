@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+
 import { login, logout } from "../../setup/auth";
 
 test("Guest user cannot access add repo", async ({ browser }) => {
@@ -28,18 +29,16 @@ test("test url required", async ({ browser }) => {
   await expect(page.locator("#url-error")).toContainText("Invalid url");
 });
 
-test.fixme(
-  "test valid url navigates to the check list page",
-  async ({ browser }) => {
-    const page = await login(browser);
-    await page.goto("/account/repo/add");
-    await page
-      .getByLabel("url")
-      .fill("https://github.com/EddieHubCommunity/HealthCheck");
-    await page.getByRole("button", { name: "SAVE" }).click();
-    await expect(page).toHaveURL(/account\/repo\/checks/);
-    await expect(page.getByRole("main")).toContainText(
-      "EddieHubCommunity / HealthCheck"
-    );
-  }
-);
+test("test valid url navigates to the check list page", async ({ browser }) => {
+  const page = await login(browser);
+  await page.goto("/account/repo/add");
+
+  await page
+    .getByLabel("url")
+    .fill("https://github.com/EddieHubCommunity/HealthCheck");
+  await page.getByRole("button", { name: "SAVE" }).click();
+  await expect(page).toHaveURL(/account\/repo\/list/);
+  await expect(page.getByRole("main")).toContainText(
+    "EddieHubCommunity / HealthCheck"
+  );
+});
