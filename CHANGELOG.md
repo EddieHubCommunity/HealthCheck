@@ -1,3 +1,12 @@
+# [0.18.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.17.0...v0.18.0) (2024-07-29)
+
+
+### Features
+
+* deploy to caprover ([53271ff](https://github.com/EddieHubCommunity/HealthCheck/commit/53271ffd59c1bc817d812d7196f3fdaa2f782b61))
+
+
+
 # [0.17.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.4...v0.17.0) (2024-07-27)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * my repo list order desc ([81c74ec](https://github.com/EddieHubCommunity/HealthCheck/commit/81c74eccdc008ecb8c1b3924a6b043094044e1f9))
-
-
-
-## [0.16.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.0...v0.16.1) (2024-07-27)
-
-
-### Bug Fixes
-
-* grouping of gh api calls ([2049f99](https://github.com/EddieHubCommunity/HealthCheck/commit/2049f9907e4520c47a3d12878bba40ffd1236ae8))
 
 
 
