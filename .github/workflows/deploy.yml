@@ -31,4 +31,4 @@ jobs:
       - name: install dependencies
         run: npm ci
       - name: run migrations
-        run: db:migrate:prod
+        run: npm run db:migrate:prod
