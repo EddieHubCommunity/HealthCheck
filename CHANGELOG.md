@@ -1,3 +1,12 @@
+## [0.18.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.1...v0.18.2) (2024-07-29)
+
+
+### Bug Fixes
+
+* run migrations after deploy ([a48a4ae](https://github.com/EddieHubCommunity/HealthCheck/commit/a48a4aee751577ec3811964a37635b697f881a73))
+
+
+
 ## [0.18.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.0...v0.18.1) (2024-07-29)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker and compose dev and prod ([#57](https://github.com/EddieHubCommunity/HealthCheck/issues/57)) ([3581376](https://github.com/EddieHubCommunity/HealthCheck/commit/3581376228b4e81ee7380b561694e30da17d8212))
-
-
-
-## [0.16.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.2...v0.16.3) (2024-07-27)
-
-
-### Bug Fixes
-
-* included security.md ([#67](https://github.com/EddieHubCommunity/HealthCheck/issues/67)) ([ab64f01](https://github.com/EddieHubCommunity/HealthCheck/commit/ab64f01d3e0eabd4cc3b811c03913265a52fe327))
 
 
 
