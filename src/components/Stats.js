@@ -21,7 +21,7 @@ export default function Stats({ data }) {
             key={item.name}
             className={classNames(
               "overflow-hidden rounded-lg px-4 py-5 shadow sm:p-6",
-              item.status ? colours[item.status] : "border border-white"
+              item.status ? colours[item.status] : "border border-white",
             )}
           >
             <dt className="truncate text-sm font-medium">{item.name}</dt>

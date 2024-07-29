@@ -7,7 +7,7 @@ export default async function flagsmith() {
     config.map((flag) => [
       flag.name,
       { enabled: flag.default_enabled, value: flag.value },
-    ])
+    ]),
   );
 
   const flagsmith = createFlagsmithInstance();
