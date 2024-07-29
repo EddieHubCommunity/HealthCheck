@@ -14,7 +14,9 @@
     "test": "npx playwright test",
     "prepare": "husky",
     "postinstall": "shx cp -n ./.env.example ./.env",
-    "db:migrate:dev": "npx prisma migrate dev"
+    "db:migrate:dev": "npx prisma migrate dev",
+    "format:write": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",
