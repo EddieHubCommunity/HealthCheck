@@ -19,4 +19,6 @@ COPY --from=builder /usr/src/app .
 
 EXPOSE 3000
 
+RUN db:migrate:prod
+
 CMD ["npm", "run", "start"]

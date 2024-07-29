@@ -20,7 +20,3 @@ jobs:
           app: healthcheck
           token: "${{ secrets.CAPROVER_TOKEN }}"
           image: ghcr.io/eddiehubcommunity/healthcheck:latest
-      - name: database migrations
-        run: npx prisma migrate deploy
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
