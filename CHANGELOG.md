@@ -1,3 +1,12 @@
+## [0.18.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.0...v0.18.1) (2024-07-29)
+
+
+### Bug Fixes
+
+* deploy action path ([b0c49f5](https://github.com/EddieHubCommunity/HealthCheck/commit/b0c49f5c57b33cafb1755ebb2c1172b0115cdd7e))
+
+
+
 # [0.18.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.17.0...v0.18.0) (2024-07-29)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * included security.md ([#67](https://github.com/EddieHubCommunity/HealthCheck/issues/67)) ([ab64f01](https://github.com/EddieHubCommunity/HealthCheck/commit/ab64f01d3e0eabd4cc3b811c03913265a52fe327))
-
-
-
-## [0.16.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.1...v0.16.2) (2024-07-27)
-
-
-### Bug Fixes
-
-* my repo list order desc ([81c74ec](https://github.com/EddieHubCommunity/HealthCheck/commit/81c74eccdc008ecb8c1b3924a6b043094044e1f9))
 
 
 
