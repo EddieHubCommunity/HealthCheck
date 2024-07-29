@@ -1,3 +1,12 @@
+## [0.18.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.2...v0.18.3) (2024-07-29)
+
+
+### Bug Fixes
+
+* run migrations in docker container ([2fe0da9](https://github.com/EddieHubCommunity/HealthCheck/commit/2fe0da94a52cecdda6eced57e05b808d348ee73b))
+
+
+
 ## [0.18.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.1...v0.18.2) (2024-07-29)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * publish docker image ([#73](https://github.com/EddieHubCommunity/HealthCheck/issues/73)) ([ce82d10](https://github.com/EddieHubCommunity/HealthCheck/commit/ce82d1094966ba81abb7ee1b3612568b96e3b661))
-
-
-
-## [0.16.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.3...v0.16.4) (2024-07-27)
-
-
-### Bug Fixes
-
-* docker and compose dev and prod ([#57](https://github.com/EddieHubCommunity/HealthCheck/issues/57)) ([3581376](https://github.com/EddieHubCommunity/HealthCheck/commit/3581376228b4e81ee7380b561694e30da17d8212))
 
 
 
