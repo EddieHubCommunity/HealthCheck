@@ -20,3 +20,15 @@ jobs:
           app: healthcheck
           token: "${{ secrets.CAPROVER_TOKEN }}"
           image: ghcr.io/eddiehubcommunity/healthcheck:latest
+
+  migrations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.4
+      - name: install dependencies
+        run: npm ci
+      - name: run migrations
+        run: db:migrate:prod
