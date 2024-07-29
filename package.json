@@ -42,6 +42,7 @@
     "flagsmith-cli": "^0.2.0",
     "husky": "^9.0.11",
     "postcss": "^8",
+    "prettier": "3.3.3",
     "prisma": "^5.16.2",
     "shx": "^0.3.4",
     "tailwindcss": "^3.4.1"
