@@ -1,3 +1,12 @@
+## [0.18.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.3...v0.18.4) (2024-07-29)
+
+
+### Bug Fixes
+
+* run db migrations post deploy action ([03c5143](https://github.com/EddieHubCommunity/HealthCheck/commit/03c51434cd9dc12156f53a478e5b351d808a20d2))
+
+
+
 ## [0.18.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.2...v0.18.3) (2024-07-29)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * deploy to caprover ([53271ff](https://github.com/EddieHubCommunity/HealthCheck/commit/53271ffd59c1bc817d812d7196f3fdaa2f782b61))
-
-
-
-# [0.17.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.16.4...v0.17.0) (2024-07-27)
-
-
-### Features
-
-* publish docker image ([#73](https://github.com/EddieHubCommunity/HealthCheck/issues/73)) ([ce82d10](https://github.com/EddieHubCommunity/HealthCheck/commit/ce82d1094966ba81abb7ee1b3612568b96e3b661))
 
 
 
