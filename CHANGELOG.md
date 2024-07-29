@@ -1,3 +1,12 @@
+## [0.18.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.4...v0.18.5) (2024-07-29)
+
+
+### Bug Fixes
+
+* migrate command ([68a6573](https://github.com/EddieHubCommunity/HealthCheck/commit/68a6573889823dbd0a3d84593e01dd229ca40de3))
+
+
+
 ## [0.18.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.3...v0.18.4) (2024-07-29)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * deploy action path ([b0c49f5](https://github.com/EddieHubCommunity/HealthCheck/commit/b0c49f5c57b33cafb1755ebb2c1172b0115cdd7e))
-
-
-
-# [0.18.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.17.0...v0.18.0) (2024-07-29)
-
-
-### Features
-
-* deploy to caprover ([53271ff](https://github.com/EddieHubCommunity/HealthCheck/commit/53271ffd59c1bc817d812d7196f3fdaa2f782b61))
 
 
 
