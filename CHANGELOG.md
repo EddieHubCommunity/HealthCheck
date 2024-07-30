@@ -1,3 +1,12 @@
+## [0.18.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.5...v0.18.6) (2024-07-30)
+
+
+### Bug Fixes
+
+* db envar for migration action ([e904944](https://github.com/EddieHubCommunity/HealthCheck/commit/e904944e725da137e73fa6ec9408a1354338bbef))
+
+
+
 ## [0.18.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.4...v0.18.5) (2024-07-29)
 
 
@@ -31,12 +40,3 @@
 ### Bug Fixes
 
 * run migrations after deploy ([a48a4ae](https://github.com/EddieHubCommunity/HealthCheck/commit/a48a4aee751577ec3811964a37635b697f881a73))
-
-
-
-## [0.18.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.0...v0.18.1) (2024-07-29)
-
-
-### Bug Fixes
-
-* deploy action path ([b0c49f5](https://github.com/EddieHubCommunity/HealthCheck/commit/b0c49f5c57b33cafb1755ebb2c1172b0115cdd7e))

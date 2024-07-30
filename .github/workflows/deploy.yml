@@ -32,3 +32,5 @@ jobs:
         run: npm ci
       - name: run migrations
         run: npm run db:migrate:prod
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
