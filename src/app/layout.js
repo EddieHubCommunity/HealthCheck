@@ -27,7 +27,7 @@ export default async function RootLayout({ children }) {
         <body
           className={classNames(
             "bg-slate-900 text-white flex flex-col min-h-screen",
-            inter.className
+            inter.className,
           )}
         >
           <Banner />

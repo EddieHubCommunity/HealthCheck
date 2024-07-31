@@ -62,13 +62,18 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 9. Run the project with one of these
 
    a. If you have Postgres installed, you can run the app locally `npm run dev` OR
-   
-   b. If you don't have Postgres installed, you can use Docker Compose to run the database and the app `docker compose -f docker-compose.yaml up -d`, after the containers are ready, run the command `npm run db:migrate:dev`
+
+   b. Running with Docker Compose (Recommended if you don't have Postgres installed)
+
+   1. Once you done above steps and have the `.env` file ready
+   2. Run the command `docker compose up -d`
+   3. Once the containers are ready, run the command `npm run db:migrate:dev`
+   4. Visit `http://localhost:3000` in your browser
 
    c. Running in Github Codespaces
-      1. Start a new codespace
-      2. Run `npm ci` and `npm run dev`
-      3. When the project is running in the browser visit this and copy the generated URL. You will use this URL in place of localhost in step 8 above for creating your OAuth app
-      4. Update the environment file with your client id and secret.  Make sure to also update the `NEXTAUTH_URL=` to the generated codespace URL as well.
-      5. Continue with step `9b` to run the docker container and database migration.
 
+   1. Start a new codespace
+   2. Run `npm ci` and `npm run dev`
+   3. When the project is running in the browser visit this and copy the generated URL. You will use this URL in place of localhost in step 8 above for creating your OAuth app
+   4. Update the environment file with your client id and secret. Make sure to also update the `NEXTAUTH_URL=` to the generated codespace URL as well.
+   5. Continue with step `9b` to run the docker container and database migration.

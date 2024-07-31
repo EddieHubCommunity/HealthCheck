@@ -35,7 +35,7 @@ export default function Input({
           : "ring-gray-300 focus-within:ring-indigo-600",
         prepend
           ? "flex-1 bg-transparent pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0"
-          : "w-full rounded-md py-1.5 pr-10 ring-1 ring-inset focus:ring-2 focus:ring-inset"
+          : "w-full rounded-md py-1.5 pr-10 ring-1 ring-inset focus:ring-2 focus:ring-inset",
       )}
       aria-invalid="true"
       aria-describedby={`${id}-error`}

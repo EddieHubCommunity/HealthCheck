@@ -42,7 +42,7 @@ export async function performChecks(formData) {
     });
     const responses = await getAllRepoData(
       repository.url,
-      user.accounts[0].access_token
+      user.accounts[0].access_token,
     );
 
     githubResponseRepo = await prisma.githubResponse.create({

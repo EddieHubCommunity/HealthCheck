@@ -1,6 +1,6 @@
 {
   "name": "healthcheck",
-  "version": "0.16.3",
+  "version": "0.19.0",
   "private": true,
   "engines": {
     "node": ">=21"
@@ -16,7 +16,10 @@
     "test": "npx playwright test",
     "prepare": "husky",
     "postinstall": "shx cp -n ./.env.example ./.env",
-    "db:migrate:dev": "npx prisma migrate dev"
+    "db:migrate:dev": "npx prisma migrate dev",
+    "format:write": "prettier . --write",
+    "format:check": "prettier . --check",
+    "db:migrate:prod": "prisma migrate deploy"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.1",
@@ -41,9 +44,11 @@
     "@types/node": "^20.14.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "eslint-config-prettier": "^9.1.0",
     "flagsmith-cli": "^0.2.0",
     "husky": "^9.0.11",
     "postcss": "^8",
+    "prettier": "3.3.3",
     "prisma": "^5.16.2",
     "shx": "^0.3.4",
     "tailwindcss": "^3.4.1"

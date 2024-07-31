@@ -38,7 +38,7 @@ export async function GET(request, { params }) {
         check,
         `Error (${check.red})`,
         `Warning (${check.amber})`,
-        `Success (${check.green})`
+        `Success (${check.green})`,
       ),
       color: worstCheck(check, "red", "orange", "green"),
     };

@@ -1,0 +1,36 @@
+name: Deploy to Caprover
+
+on:
+  registry_package:
+    types: [published]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Deploy Image to CapRrover
+        uses: caprover/deploy-from-github@v1.1.2
+        with:
+          server: "${{ secrets.CAPROVER_SERVER }}"
+          app: healthcheck
+          token: "${{ secrets.CAPROVER_TOKEN }}"
+          image: ghcr.io/eddiehubcommunity/healthcheck:latest
+
+  migrations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.4
+      - name: install dependencies
+        run: npm ci
+      - name: run migrations
+        run: npm run db:migrate:prod
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
