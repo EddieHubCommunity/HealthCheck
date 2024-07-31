@@ -40,6 +40,3 @@
 ### Bug Fixes
 
 * run migrations after deploy ([a48a4ae](https://github.com/EddieHubCommunity/HealthCheck/commit/a48a4aee751577ec3811964a37635b697f881a73))
-
-
-

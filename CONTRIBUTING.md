@@ -60,8 +60,8 @@ We welcome everyone to review Pull Requests, it is a great way to learn, network
 ### Criteria for becoming a Maintainer
 
 1. You are a member of the EddieHub Community
-3. You are active on the EddieHub Discord in helping other members of the community, particularly in the #contributor-support channel
-4. You have a consistent track record of:
+2. You are active on the EddieHub Discord in helping other members of the community, particularly in the #contributor-support channel
+3. You have a consistent track record of:
    i. reviewing Pull Requests to the Project. This includes:
 
    - adding value in your comments
@@ -117,7 +117,7 @@ By becoming a Maintainer you will have access to:
 - Invitation to participate in Maintainers calls
 - Unofficial mentorship from other Maintainers
 - LinkedIn recommendation from Eddie (and potentially other maintainers)
-- Eddie's paid resources for free, for example digital courses 
+- Eddie's paid resources for free, for example digital courses
 
 ### Renew
 

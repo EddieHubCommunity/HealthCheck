@@ -24,7 +24,7 @@ export default function List({ data }) {
               <div
                 className={classNames(
                   statuses[item.status],
-                  "flex-none rounded-full p-1"
+                  "flex-none rounded-full p-1",
                 )}
               >
                 <div className="h-2 w-2 rounded-full bg-current" />
@@ -52,7 +52,7 @@ export default function List({ data }) {
           <div
             className={classNames(
               status[item.status],
-              "flex-none rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset"
+              "flex-none rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset",
             )}
           >
             {item.status.toUpperCase()}

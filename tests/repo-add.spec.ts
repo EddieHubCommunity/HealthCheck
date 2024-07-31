@@ -21,6 +21,6 @@ test.skip("test valid url navigates to the report page", async ({ page }) => {
     .fill("https://github.com/EddieHubCommunity/HealthCheck");
   await page.getByRole("button", { name: "SAVE" }).click();
   await expect(page.getByRole("main")).toContainText(
-    "EddieHubCommunity/BioDrop"
+    "EddieHubCommunity/BioDrop",
   );
 });
