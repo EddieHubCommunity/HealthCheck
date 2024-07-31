@@ -1,3 +1,12 @@
+# [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
+
+
+### Features
+
+* prettier integration ([#78](https://github.com/EddieHubCommunity/HealthCheck/issues/78)) ([2e89c17](https://github.com/EddieHubCommunity/HealthCheck/commit/2e89c1767330ab6d5162cab1cd20746c8625bc79))
+
+
+
 ## [0.18.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.5...v0.18.6) (2024-07-30)
 
 
@@ -34,9 +43,3 @@
 
 
 
-## [0.18.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.1...v0.18.2) (2024-07-29)
-
-
-### Bug Fixes
-
-* run migrations after deploy ([a48a4ae](https://github.com/EddieHubCommunity/HealthCheck/commit/a48a4aee751577ec3811964a37635b697f881a73))
