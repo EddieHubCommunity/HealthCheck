@@ -29,7 +29,7 @@ services:
     networks:
       - healthcheck
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "user", "-d", "healthcheck"]
+      test: [CMD, pg_isready, -U, user, -d, healthcheck]
       interval: 10s
       timeout: 5s
       retries: 5
