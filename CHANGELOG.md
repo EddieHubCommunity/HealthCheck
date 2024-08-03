@@ -1,3 +1,12 @@
+## [0.19.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.19.0...v0.19.1) (2024-08-03)
+
+
+### Bug Fixes
+
+* prettier ignore file for generated changelog ([327210d](https://github.com/EddieHubCommunity/HealthCheck/commit/327210d849071e730fff562043e840a19cc90b60))
+
+
+
 # [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * run db migrations post deploy action ([03c5143](https://github.com/EddieHubCommunity/HealthCheck/commit/03c51434cd9dc12156f53a478e5b351d808a20d2))
-
-
-
-## [0.18.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.2...v0.18.3) (2024-07-29)
-
-
-### Bug Fixes
-
-* run migrations in docker container ([2fe0da9](https://github.com/EddieHubCommunity/HealthCheck/commit/2fe0da94a52cecdda6eced57e05b808d348ee73b))
 
 
 
