@@ -51,7 +51,7 @@ export default async function Page() {
                 new Date(),
                 {
                   addSuffix: true,
-                }
+                },
               )} with ${repo.checks[0].red} error(s), ${
                 repo.checks[0].amber
               } warning(s), ${repo.checks[0].green} success(es)`

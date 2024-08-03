@@ -39,6 +39,6 @@ test("test valid url navigates to the check list page", async ({ browser }) => {
   await page.getByRole("button", { name: "SAVE" }).click();
   await expect(page).toHaveURL(/account\/repo\/list/);
   await expect(page.getByRole("main")).toContainText(
-    "EddieHubCommunity / HealthCheck"
+    "EddieHubCommunity / HealthCheck",
   );
 });

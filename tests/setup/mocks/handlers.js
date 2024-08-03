@@ -7,18 +7,18 @@ import release from "../../data/github/release.json";
 
 export const handlers = [
   http.get("https://api.github.com/repos/EddieHubCommunity/HealthCheck", () =>
-    HttpResponse.json(repo)
+    HttpResponse.json(repo),
   ),
   http.get(
     "https://api.github.com/repos/EddieHubCommunity/HealthCheck/issues",
-    () => HttpResponse.json(issues)
+    () => HttpResponse.json(issues),
   ),
   http.get(
     "https://api.github.com/repos/EddieHubCommunity/HealthCheck/branches",
-    () => HttpResponse.json(branches)
+    () => HttpResponse.json(branches),
   ),
   http.get(
     "https://api.github.com/repos/EddieHubCommunity/HealthCheck/releases/latest",
-    () => HttpResponse.json(release)
+    () => HttpResponse.json(release),
   ),
 ];

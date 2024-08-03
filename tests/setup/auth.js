@@ -6,7 +6,7 @@ const login = async (
   user = {
     name: "Authenticated User",
     email: "authenticated-user@test.com",
-  }
+  },
 ) => {
   const date = new Date();
   let testUser;

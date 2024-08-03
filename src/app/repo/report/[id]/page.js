@@ -51,7 +51,7 @@ export default async function Page({ params }) {
               new Date(),
               {
                 addSuffix: true,
-              }
+              },
             ),
           },
           { icon: TicketIcon, text: check.githubResponse.repo.open_issues },
