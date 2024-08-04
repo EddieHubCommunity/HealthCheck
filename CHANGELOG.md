@@ -1,3 +1,12 @@
+# [0.20.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.19.1...v0.20.0) (2024-08-04)
+
+
+### Features
+
+* mock auth with playwright ([#76](https://github.com/EddieHubCommunity/HealthCheck/issues/76)) ([f7b38bc](https://github.com/EddieHubCommunity/HealthCheck/commit/f7b38bca1d7ef2c3541bceb5e864299ce93b7524))
+
+
+
 ## [0.19.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.19.0...v0.19.1) (2024-08-03)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * migrate command ([68a6573](https://github.com/EddieHubCommunity/HealthCheck/commit/68a6573889823dbd0a3d84593e01dd229ca40de3))
-
-
-
-## [0.18.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.3...v0.18.4) (2024-07-29)
-
-
-### Bug Fixes
-
-* run db migrations post deploy action ([03c5143](https://github.com/EddieHubCommunity/HealthCheck/commit/03c51434cd9dc12156f53a478e5b351d808a20d2))
 
 
 
