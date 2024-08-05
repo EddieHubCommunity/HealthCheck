@@ -48,3 +48,9 @@ actions:
     - trunk-announce
     - trunk-check-pre-push
     - trunk-upgrade-available
+
+lint:
+  ignore:
+    - linters: [markdownlint]
+      paths:
+        - CHANGELOG.md
