@@ -1,6 +1,6 @@
 {
   "name": "healthcheck",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "private": true,
   "engines": {
     "node": ">=21"
@@ -47,6 +47,7 @@
     "eslint-config-prettier": "^9.1.0",
     "flagsmith-cli": "^0.2.0",
     "husky": "^9.0.11",
+    "msw": "^2.3.4",
     "postcss": "^8",
     "prettier": "3.3.3",
     "prisma": "^5.16.2",
