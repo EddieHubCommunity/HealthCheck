@@ -32,4 +32,4 @@ USER appuser
 # Added healthcheck to satisfy checkov lint, you should configure this according to your application
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD curl -f http://localhost:3000/health || exit 1
 
-CMD ["node", "dist/index.js"]
+CMD ["npm", "run", "start"]
