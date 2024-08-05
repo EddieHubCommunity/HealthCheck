@@ -1,3 +1,12 @@
+## [0.20.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.3...v0.20.4) (2024-08-05)
+
+
+### Bug Fixes
+
+* repo settings button ([92da097](https://github.com/EddieHubCommunity/HealthCheck/commit/92da097c538b2940501ed6329a2f77f068d2e4a3))
+
+
+
 ## [0.20.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.2...v0.20.3) (2024-08-05)
 
 
@@ -33,15 +42,6 @@
 ### Features
 
 * mock auth with playwright ([#76](https://github.com/EddieHubCommunity/HealthCheck/issues/76)) ([f7b38bc](https://github.com/EddieHubCommunity/HealthCheck/commit/f7b38bca1d7ef2c3541bceb5e864299ce93b7524))
-
-
-
-## [0.19.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.19.0...v0.19.1) (2024-08-03)
-
-
-### Bug Fixes
-
-* prettier ignore file for generated changelog ([327210d](https://github.com/EddieHubCommunity/HealthCheck/commit/327210d849071e730fff562043e840a19cc90b60))
 
 
 
