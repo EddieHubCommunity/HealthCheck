@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "./Button";
 
 export default function Heading({ title, actions = [], extras = [] }) {
   return (
@@ -28,16 +29,13 @@ export default function Heading({ title, actions = [], extras = [] }) {
         <div className="mt-5 flex lg:ml-4 lg:mt-0">
           {actions.map((action) => (
             <span className="sm:ml-3" key={action.icon}>
-              <Link
-                href={action.url}
-                className="inline-flex items-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
+              <Button href={action.url}>
                 <action.icon
                   aria-hidden="true"
                   className="-ml-0.5 mr-1.5 h-5 w-5"
                 />
                 {action.text}
-              </Link>
+              </Button>
             </span>
           ))}
         </div>

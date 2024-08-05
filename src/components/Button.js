@@ -1,6 +1,6 @@
 import classNames from "@/utils/classNames";
 
-export default function Button({ text, url, type = "primary" }) {
+export default function Button({ url, type = "primary", children }) {
   return (
     <a
       href={url}
@@ -12,7 +12,7 @@ export default function Button({ text, url, type = "primary" }) {
           "text-white bg-violet-600 hover:bg-violet-500 focus-visible:outline-violet-600",
       )}
     >
-      {text}
+      {children}
     </a>
   );
 }

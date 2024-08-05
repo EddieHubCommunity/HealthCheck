@@ -9,6 +9,7 @@ import Title from "@/components/Title";
 import Form, { FormBadge } from "./form";
 import { worstCheck } from "@/utils/checks";
 import ActionPanel from "@/components/ActionPanel";
+import Button from "@/components/Button";
 
 export default async function Page({ params }) {
   const { id } = params;
@@ -36,6 +37,9 @@ export default async function Page({ params }) {
       <Title
         text={`Check list for the repo: ${repository.owner} / ${repository.repo}`}
       >
+        <Button url={`/account/repo/settings`} type="secondary">
+          Settings
+        </Button>
         <Form id={id} />
       </Title>
       <ActionPanel>
