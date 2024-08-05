@@ -4,8 +4,6 @@
 
 ### Features
 
-### Features
-
 * mock auth with playwright ([#76](https://github.com/EddieHubCommunity/HealthCheck/issues/76)) ([f7b38bc](https://github.com/EddieHubCommunity/HealthCheck/commit/f7b38bca1d7ef2c3541bceb5e864299ce93b7524))
 
 
@@ -16,7 +14,7 @@
 * prettier ignore file for generated changelog ([327210d](https://github.com/EddieHubCommunity/HealthCheck/commit/327210d849071e730fff562043e840a19cc90b60))
 
 
-# [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
+## [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
 
 
 ### Features
