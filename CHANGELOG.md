@@ -1,3 +1,12 @@
+## [0.20.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.0...v0.20.1) (2024-08-05)
+
+
+### Bug Fixes
+
+* instrument refactor for readability ([72908f1](https://github.com/EddieHubCommunity/HealthCheck/commit/72908f13762af969dbba0817b65f227ba3c9c0d1))
+
+
+
 # [0.20.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.19.1...v0.20.0) (2024-08-04)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * db envar for migration action ([e904944](https://github.com/EddieHubCommunity/HealthCheck/commit/e904944e725da137e73fa6ec9408a1354338bbef))
-
-
-
-## [0.18.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.4...v0.18.5) (2024-07-29)
-
-
-### Bug Fixes
-
-* migrate command ([68a6573](https://github.com/EddieHubCommunity/HealthCheck/commit/68a6573889823dbd0a3d84593e01dd229ca40de3))
 
 
 
