@@ -1,4 +1,11 @@
 export async function register() {
+  const unmocked = [
+    "googleapis.com",
+    "gstatic.com",
+    "api.flagsmith.com",
+    "https://github.com/mona.png",
+  ];
+
   if (
     process.env.NEXT_RUNTIME === "nodejs" &&
     process.env.NODE_ENV === "development"
@@ -8,12 +15,6 @@ export async function register() {
     mockServer.listen({
       onUnhandledRequest(request, print) {
         const url = new URL(request.url);
-        const unmocked = [
-          "googleapis.com",
-          "gstatic.com",
-          "api.flagsmith.com",
-          "https://github.com/mona.png",
-        ];
         if (unmocked.some((host) => url.hostname.includes(host))) {
           return;
         }
