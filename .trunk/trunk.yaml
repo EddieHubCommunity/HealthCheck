@@ -42,15 +42,13 @@ lint:
     # Optimize SVGs and PNGs
     - svgo@3.3.2
     - oxipng@9.1.2 # Manually added in case you add PNGs later
+  ignore:
+    - linters: [markdownlint]
+      paths:
+        - CHANGELOG.md
 actions:
   # Optional githooks that help you run check and format before push.
   enabled:
     - trunk-announce
     - trunk-check-pre-push
     - trunk-upgrade-available
-
-lint:
-  ignore:
-    - linters: [markdownlint]
-      paths:
-        - CHANGELOG.md
