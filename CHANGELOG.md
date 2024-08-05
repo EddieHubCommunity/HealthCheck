@@ -1,3 +1,12 @@
+## [0.20.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.2...v0.20.3) (2024-08-05)
+
+
+### Bug Fixes
+
+* report repo url ([7f5af6c](https://github.com/EddieHubCommunity/HealthCheck/commit/7f5af6c331a9e15c2079d559ebd33b9d3be2ff87))
+
+
+
 ## [0.20.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.1...v0.20.2) (2024-08-05)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * prettier ignore file for generated changelog ([327210d](https://github.com/EddieHubCommunity/HealthCheck/commit/327210d849071e730fff562043e840a19cc90b60))
-
-
-
-# [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
-
-
-### Features
-
-* prettier integration ([#78](https://github.com/EddieHubCommunity/HealthCheck/issues/78)) ([2e89c17](https://github.com/EddieHubCommunity/HealthCheck/commit/2e89c1767330ab6d5162cab1cd20746c8625bc79))
 
 
 
