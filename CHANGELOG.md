@@ -1,6 +1,8 @@
-# [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
+# Changelog 
 
-## Features
+## [0.19.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.18.6...v0.19.0) (2024-07-31)
+
+### Features
 
 - prettier integration ([#78](https://github.com/EddieHubCommunity/HealthCheck/issues/78)) ([2e89c17](https://github.com/EddieHubCommunity/HealthCheck/commit/2e89c1767330ab6d5162cab1cd20746c8625bc79))
 
