@@ -37,9 +37,6 @@ export default async function Page({ params }) {
       <Title
         text={`Check list for the repo: ${repository.owner} / ${repository.repo}`}
       >
-        <Button url={`/account/repo/settings`} type="secondary">
-          Settings
-        </Button>
         <Form id={id} />
       </Title>
       <ActionPanel>
