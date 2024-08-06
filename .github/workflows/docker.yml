@@ -1,4 +1,5 @@
 name: Publish Docker
+permissions: read-all
 on:
   release:
     types: [published]

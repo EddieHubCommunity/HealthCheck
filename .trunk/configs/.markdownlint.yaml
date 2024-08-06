@@ -1,0 +1,5 @@
+# Prettier friendly markdownlint config (all formatting rules disabled)
+extends: markdownlint/style/prettier
+
+# Disable MD024 rule
+MD024: false
