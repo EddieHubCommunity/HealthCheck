@@ -1,3 +1,12 @@
+# [0.21.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.4...v0.21.0) (2024-08-06)
+
+
+### Features
+
+* trunkio meta-linter ([#71](https://github.com/EddieHubCommunity/HealthCheck/issues/71)) ([d9b5839](https://github.com/EddieHubCommunity/HealthCheck/commit/d9b5839a388237c3cbbb3c351d3423bb80f7922c)), closes [#2](https://github.com/EddieHubCommunity/HealthCheck/issues/2)
+
+
+
 ## [0.20.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.3...v0.20.4) (2024-08-05)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * instrument refactor for readability ([72908f1](https://github.com/EddieHubCommunity/HealthCheck/commit/72908f13762af969dbba0817b65f227ba3c9c0d1))
-
-
-
-# [0.20.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.19.1...v0.20.0) (2024-08-04)
-
-
-### Features
-
-* mock auth with playwright ([#76](https://github.com/EddieHubCommunity/HealthCheck/issues/76)) ([f7b38bc](https://github.com/EddieHubCommunity/HealthCheck/commit/f7b38bca1d7ef2c3541bceb5e864299ce93b7524))
 
 
 
