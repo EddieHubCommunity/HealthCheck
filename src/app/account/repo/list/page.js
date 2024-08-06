@@ -35,7 +35,9 @@ export default async function Page() {
 
   return (
     <>
-      <Title text="Repo list" />
+      <Title
+        text={`Repo list (${user.repositories.length}/${process.env.NEXT_PUBLIC_REPO_LIMIT})`}
+      />
       <List
         data={user.repositories.map((repo) => ({
           id: repo.id,

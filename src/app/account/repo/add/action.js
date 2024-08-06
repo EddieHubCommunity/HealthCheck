@@ -28,9 +28,14 @@ export async function getRepo(prevState, formData) {
   const user = await prisma.user.findUnique({
     where: { id: session.user.id },
     include: {
+      repositories: true,
       accounts: true,
     },
   });
+
+  if (user.repositories.length === process.env.NEXT_PUBLIC_REPO_LIMIT) {
+    throw new Error("Repo limit reached");
+  }
 
   const response = await getRepoApi(url, user.accounts[0].access_token);
 

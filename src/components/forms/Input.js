@@ -10,6 +10,7 @@ export default function Input({
   value,
   error,
   prepend,
+  disabled = false,
   type = "text",
 }) {
   const { pending } = useFormStatus();
@@ -25,11 +26,11 @@ export default function Input({
   const input = (
     <input
       type={type}
-      disabled={pending}
+      disabled={pending || disabled ? true : false}
       name={id}
       id={id}
       className={classNames(
-        "block w-full rounded-md border-0 sm:text-sm sm:leading-6 bg-gray-800 disabled:bg-gray-300",
+        "block w-full rounded-md border-0 sm:text-sm sm:leading-6 bg-gray-800 disabled:bg-gray-600",
         error
           ? "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500"
           : "ring-gray-300 focus-within:ring-indigo-600",
