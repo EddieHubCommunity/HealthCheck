@@ -13,7 +13,7 @@ const initialState = {
   errors: undefined,
 };
 
-export default function Form() {
+export default function Form({ disabled = false }) {
   const [state, formAction] = useFormState(getRepo, initialState);
 
   return (
@@ -31,6 +31,7 @@ export default function Form() {
               text="GitHub repo URL"
               error={state?.errors?.url}
               value={state?.data?.url}
+              disabled={disabled}
             />
           </div>
         </div>
