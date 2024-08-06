@@ -1,3 +1,12 @@
+# [0.22.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.21.0...v0.22.0) (2024-08-06)
+
+
+### Features
+
+* limit amount of repos [#72](https://github.com/EddieHubCommunity/HealthCheck/issues/72) ([#97](https://github.com/EddieHubCommunity/HealthCheck/issues/97)) ([cbafede](https://github.com/EddieHubCommunity/HealthCheck/commit/cbafede973130e41a7f381b7c0fc7c4b41ca5f26))
+
+
+
 # [0.21.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.4...v0.21.0) (2024-08-06)
 
 
@@ -33,15 +42,6 @@
 * button consistency in header ([698e82c](https://github.com/EddieHubCommunity/HealthCheck/commit/698e82ceafbbb6cbad0c85d41e5f83160e41b9ca))
 * button size and secondary color ([45e80ce](https://github.com/EddieHubCommunity/HealthCheck/commit/45e80ce5310ecedc72db264212dd9b5c09ab5fe5))
 * title button actions ([38f1d61](https://github.com/EddieHubCommunity/HealthCheck/commit/38f1d6143ca53a02f6c3a53cd675a6185a75641e))
-
-
-
-## [0.20.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.0...v0.20.1) (2024-08-05)
-
-
-### Bug Fixes
-
-* instrument refactor for readability ([72908f1](https://github.com/EddieHubCommunity/HealthCheck/commit/72908f13762af969dbba0817b65f227ba3c9c0d1))
 
 
 
