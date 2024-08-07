@@ -91,9 +91,9 @@ model Repository {
   repo  String
 
   githubResponses GithubResponse[]
-  checks Check[]
+  checks          Check[]
   userId          String
-  user            User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -101,13 +101,13 @@ model Repository {
 
 model GithubResponse {
   id               String @id @default(cuid())
-  repo              Json
-  issues            Json?
-  branches          Json?
-  release           Json?
-  communityMetrics  Json?
+  repo             Json
+  issues           Json?
+  branches         Json?
+  release          Json?
+  communityMetrics Json?
 
-  checks Check[]
+  checks       Check[]
   repositoryId String
   repository   Repository @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
 
@@ -116,15 +116,15 @@ model GithubResponse {
 }
 
 model Check {
-  id            String @id @default(cuid())
-  red           Int
-  amber         Int
-  green         Int
-  healthchecks  Json
-  data          Json
+  id           String @id @default(cuid())
+  red          Int
+  amber        Int
+  green        Int
+  healthchecks Json
+  data         Json
 
-  repositoryId String
-  repository   Repository @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
+  repositoryId     String
+  repository       Repository     @relation(fields: [repositoryId], references: [id], onDelete: Cascade)
   githubResponseId String
   githubResponse   GithubResponse @relation(fields: [githubResponseId], references: [id], onDelete: Cascade)
 
