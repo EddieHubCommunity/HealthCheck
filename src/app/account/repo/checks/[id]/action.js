@@ -33,7 +33,10 @@ export async function performChecks(formData) {
 
   // if github data is older than 24 hours fetch again
   let githubResponseRepo = repository.githubResponses[0];
-  if (differenceInHours(new Date(), githubResponseRepo.createdAt) > 24) {
+  if (
+    !githubResponseRepo ||
+    differenceInHours(new Date(), githubResponseRepo.createdAt) > 24
+  ) {
     const user = await prisma.user.findUnique({
       where: { id: session.user.id },
       include: {
