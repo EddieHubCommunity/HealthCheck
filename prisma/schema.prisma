@@ -100,11 +100,12 @@ model Repository {
 }
 
 model GithubResponse {
-  id        String @id @default(cuid())
-  repo      Json
-  issues    Json?
-  branches  Json?
-  release   Json?
+  id               String @id @default(cuid())
+  repo              Json
+  issues            Json?
+  branches          Json?
+  release           Json?
+  communityMetrics  Json?
 
   checks Check[]
   repositoryId String

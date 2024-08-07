@@ -1,9 +1,15 @@
 import activity from "./activity";
 import branches from "./branches";
+import codeOfConduct from "./codeOfConduct";
+import contributing from "./contributing";
 import defaultBranch from "./defaultBranch";
 import description from "./description";
 import goodFirstIssue from "./goodFirstIssue";
 import issues from "./issues";
+import issueTemplates from "./issueTemplates";
+import license from "./license";
+import pullRequestTemplate from "./pullRequestTemplate";
+import readme from "./readme";
 import release from "./release";
 import topics from "./topics";
 import url from "./url";
@@ -31,6 +37,12 @@ export default function checks(data) {
     goodFirstIssue(data.issues),
     branches(data.branches),
     release(data.release),
+    readme(data.communityMetrics),
+    license(data.communityMetrics),
+    contributing(data.communityMetrics),
+    // issueTemplates(data.communityMetrics), // TODO data from github json is always null
+    pullRequestTemplate(data.communityMetrics),
+    codeOfConduct(data.communityMetrics),
   ];
 
   const summary = checkSummary(checks);
