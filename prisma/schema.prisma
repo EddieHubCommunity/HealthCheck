@@ -106,6 +106,7 @@ model GithubResponse {
   branches         Json?
   release          Json?
   communityMetrics Json?
+  labels           Json?
 
   checks       Check[]
   repositoryId String

@@ -1,6 +1,7 @@
 import getBranchesApi from "./getBranchesApi";
 import getCommunityMetricsApi from "./getCommunityMetrics";
 import getIssuesApi from "./getIssuesApi";
+import getLabelsApi from "./getLabelsApi";
 import getReleaseApi from "./getReleaseApi";
 import getRepoApi from "./getRepoApi";
 
@@ -13,5 +14,6 @@ export default async function getAllRepoData(url, token) {
     branches: (await getBranchesApi(url, token)).data,
     release: (await getReleaseApi(url, token)).data,
     communityMetrics: (await getCommunityMetricsApi(url, token)).data,
+    labels: (await getLabelsApi(url, token)).data,
   };
 }
