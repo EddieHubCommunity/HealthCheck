@@ -2,6 +2,10 @@
 > Sponsored by the Open Source project Flagsmith https://github.com/Flagsmith/flagsmith
 
 # HealthCheck
+[![RepoRater](https://repo-rater.eddiehub.org/api/badge?owner=EddieHubCommunity&name=HealthCheck)](https://repo-rater.eddiehub.org/rate?owner=EddieHubCommunity&name=HealthCheck)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EddieHubCommunity/HealthCheck?style=plastic)
+![GitHub contributors](https://img.shields.io/github/contributors/EddieHubCommunity/HealthCheck)
+[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=plastic&logo=discord&logoColor=white)](https://discord.com/invite/jZQs6Wu)
 
 How friendly is your GitHub Open Source Repo? This project will check to make sure you are using Best Practices to attract more users, contributors and Stars, as well as suggest steps as to how you can improve the Repo to achieve this.
 
