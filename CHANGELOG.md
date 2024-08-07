@@ -1,3 +1,12 @@
+# [0.24.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.23.0...v0.24.0) (2024-08-07)
+
+
+### Features
+
+* labels check ([#104](https://github.com/EddieHubCommunity/HealthCheck/issues/104)) ([f517281](https://github.com/EddieHubCommunity/HealthCheck/commit/f5172813cb4fdf0a3024cba331c1668552df4724))
+
+
+
 # [0.23.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.22.0...v0.23.0) (2024-08-07)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * repo settings button ([92da097](https://github.com/EddieHubCommunity/HealthCheck/commit/92da097c538b2940501ed6329a2f77f068d2e4a3))
-
-
-
-## [0.20.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.2...v0.20.3) (2024-08-05)
-
-
-### Bug Fixes
-
-* report repo url ([7f5af6c](https://github.com/EddieHubCommunity/HealthCheck/commit/7f5af6c331a9e15c2079d559ebd33b9d3be2ff87))
 
 
 
