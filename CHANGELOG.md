@@ -1,3 +1,12 @@
+# [0.23.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.22.0...v0.23.0) (2024-08-07)
+
+
+### Features
+
+* community checks ([#101](https://github.com/EddieHubCommunity/HealthCheck/issues/101)) ([fa3a6b4](https://github.com/EddieHubCommunity/HealthCheck/commit/fa3a6b4afd263a21c1bef2916d8abb4d28e30013))
+
+
+
 # [0.22.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.21.0...v0.22.0) (2024-08-06)
 
 
@@ -31,17 +40,6 @@
 ### Bug Fixes
 
 * report repo url ([7f5af6c](https://github.com/EddieHubCommunity/HealthCheck/commit/7f5af6c331a9e15c2079d559ebd33b9d3be2ff87))
-
-
-
-## [0.20.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.1...v0.20.2) (2024-08-05)
-
-
-### Bug Fixes
-
-* button consistency in header ([698e82c](https://github.com/EddieHubCommunity/HealthCheck/commit/698e82ceafbbb6cbad0c85d41e5f83160e41b9ca))
-* button size and secondary color ([45e80ce](https://github.com/EddieHubCommunity/HealthCheck/commit/45e80ce5310ecedc72db264212dd9b5c09ab5fe5))
-* title button actions ([38f1d61](https://github.com/EddieHubCommunity/HealthCheck/commit/38f1d6143ca53a02f6c3a53cd675a6185a75641e))
 
 
 
