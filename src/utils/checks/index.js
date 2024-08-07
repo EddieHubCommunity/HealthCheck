@@ -7,6 +7,7 @@ import description from "./description";
 import goodFirstIssue from "./goodFirstIssue";
 import issues from "./issues";
 import issueTemplates from "./issueTemplates";
+import labels from "./labels";
 import license from "./license";
 import pullRequestTemplate from "./pullRequestTemplate";
 import readme from "./readme";
@@ -43,6 +44,7 @@ export default function checks(data) {
     // issueTemplates(data.communityMetrics), // TODO data from github json is always null
     pullRequestTemplate(data.communityMetrics),
     codeOfConduct(data.communityMetrics),
+    labels(data.labels),
   ];
 
   const summary = checkSummary(checks);
