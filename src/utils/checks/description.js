@@ -33,7 +33,7 @@ export default function description(repo) {
     response.extra = "Try reducing the length of your description.";
   }
 
-  if (repo.homepage.length > 0 && repo.description.includes(repo.homepage)) {
+  if (repo.homepage?.length > 0 && repo.description.includes(repo.homepage)) {
     response.status = "warning";
     response.description = "Your description contains a duplicate of the url.";
     response.extra = "You can remove the url from the description.";
