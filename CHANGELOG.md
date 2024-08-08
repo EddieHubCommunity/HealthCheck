@@ -1,3 +1,12 @@
+# [0.25.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.24.1...v0.25.0) (2024-08-08)
+
+
+### Features
+
+* project board checks ([#110](https://github.com/EddieHubCommunity/HealthCheck/issues/110)) ([731e2f3](https://github.com/EddieHubCommunity/HealthCheck/commit/731e2f33abe717978498138a2b79751d1b40ab00))
+
+
+
 ## [0.24.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.24.0...v0.24.1) (2024-08-08)
 
 
@@ -33,15 +42,6 @@
 ### Features
 
 * limit amount of repos [#72](https://github.com/EddieHubCommunity/HealthCheck/issues/72) ([#97](https://github.com/EddieHubCommunity/HealthCheck/issues/97)) ([cbafede](https://github.com/EddieHubCommunity/HealthCheck/commit/cbafede973130e41a7f381b7c0fc7c4b41ca5f26))
-
-
-
-# [0.21.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.4...v0.21.0) (2024-08-06)
-
-
-### Features
-
-* trunkio meta-linter ([#71](https://github.com/EddieHubCommunity/HealthCheck/issues/71)) ([d9b5839](https://github.com/EddieHubCommunity/HealthCheck/commit/d9b5839a388237c3cbbb3c351d3423bb80f7922c)), closes [#2](https://github.com/EddieHubCommunity/HealthCheck/issues/2)
 
 
 
