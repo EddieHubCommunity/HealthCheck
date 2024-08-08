@@ -11,14 +11,20 @@ export default async function flagsmith() {
   );
 
   const flagsmith = createFlagsmithInstance();
+  const initialise = {
+    environmentID: process.env.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID,
+  };
+
+  if (process.env.APP_ENV === "test") {
+    initialise.defaultFlags = defaults;
+  }
+
   try {
-    await flagsmith.init({
-      environmentID: process.env.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID,
-      defaultFlags: defaults,
-    });
-  } catch {
-    // Handle unable to connect to Flagsmith or not having valid environment
-    // Defaults will be used
+    await flagsmith.init(initialise);
+  } catch (e) {
+    if (process.env.APP_ENV !== "test") {
+      throw new Error(e);
+    }
   }
   const serverState = flagsmith.getState();
 
