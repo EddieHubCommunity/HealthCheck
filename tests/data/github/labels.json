@@ -1,0 +1,227 @@
+[
+  {
+    "id": 2981502438,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%E2%9B%94%EF%B8%8F%20status:%20discarded",
+    "name": "⛔️ status: discarded",
+    "color": "eeeeee",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDM4",
+    "description": null
+  },
+  {
+    "id": 2981502446,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%E2%AD%90%20goal:%20addition",
+    "name": "⭐ goal: addition",
+    "color": "ffffff",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQ2",
+    "description": null
+  },
+  {
+    "id": 2981502444,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%E2%9C%A8%20goal:%20improvement",
+    "name": "✨ goal: improvement",
+    "color": "ffffff",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQ0",
+    "description": null
+  },
+  {
+    "id": 2981502449,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%E2%9D%93%20talk:%20question",
+    "name": "❓ talk: question",
+    "color": "f9bbe5",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQ5",
+    "description": null
+  },
+  {
+    "id": 2981502436,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%8F%81%20status:%20ready%20for%20dev",
+    "name": "🏁 status: ready for dev",
+    "color": "cccccc",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDM2",
+    "description": null
+  },
+  {
+    "id": 2981502450,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%92%AC%20talk:%20discussion",
+    "name": "💬 talk: discussion",
+    "color": "f9bbe5",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDUw",
+    "description": null
+  },
+  {
+    "id": 2981502435,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%92%BB%20aspect:%20code",
+    "name": "💻 aspect: code",
+    "color": "04338c",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDM1",
+    "description": null
+  },
+  {
+    "id": 2981502460,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%93%84%20aspect:%20text",
+    "name": "📄 aspect: text",
+    "color": "04338c",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDYw",
+    "description": null
+  },
+  {
+    "id": 2981502447,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%92%20staff%20only",
+    "name": "🔒 staff only",
+    "color": "7f0799",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQ3",
+    "description": null
+  },
+  {
+    "id": 2981502458,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%A2%20points:%201",
+    "name": "🔢 points: 1",
+    "color": "62A1A6",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDU4",
+    "description": null
+  },
+  {
+    "id": 2981502474,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%A2%20points:%2013",
+    "name": "🔢 points: 13",
+    "color": "62A1A6",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDc0",
+    "description": null
+  },
+  {
+    "id": 2981502463,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%A2%20points:%202",
+    "name": "🔢 points: 2",
+    "color": "62A1A6",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDYz",
+    "description": null
+  },
+  {
+    "id": 2981502468,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%A2%20points:%203",
+    "name": "🔢 points: 3",
+    "color": "62A1A6",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDY4",
+    "description": null
+  },
+  {
+    "id": 2981502456,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%A2%20points:%205",
+    "name": "🔢 points: 5",
+    "color": "62A1A6",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDU2",
+    "description": null
+  },
+  {
+    "id": 2981502451,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%94%A2%20points:%208",
+    "name": "🔢 points: 8",
+    "color": "62A1A6",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDUx",
+    "description": null
+  },
+  {
+    "id": 2981502473,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%95%B9%20aspect:%20interface",
+    "name": "🕹 aspect: interface",
+    "color": "04338c",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDcz",
+    "description": null
+  },
+  {
+    "id": 2981502455,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9A%A6%20status:%20awaiting%20triage",
+    "name": "🚦 status: awaiting triage",
+    "color": "333333",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDU1",
+    "description": null
+  },
+  {
+    "id": 2981502440,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9A%A7%20status:%20blocked",
+    "name": "🚧 status: blocked",
+    "color": "999999",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQw",
+    "description": null
+  },
+  {
+    "id": 2981502453,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9B%A0%20goal:%20fix",
+    "name": "🛠 goal: fix",
+    "color": "ffffff",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDUz",
+    "description": null
+  },
+  {
+    "id": 2981502442,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9F%A5%20priority:%20critical",
+    "name": "🟥 priority: critical",
+    "color": "b60205",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQy",
+    "description": null
+  },
+  {
+    "id": 2981502462,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9F%A7%20priority:%20high",
+    "name": "🟧 priority: high",
+    "color": "ff9f1c",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDYy",
+    "description": null
+  },
+  {
+    "id": 2981502441,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9F%A8%20priority:%20medium",
+    "name": "🟨 priority: medium",
+    "color": "ffcc00",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDQx",
+    "description": null
+  },
+  {
+    "id": 2981502465,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%9F%A9%20priority:%20low",
+    "name": "🟩 priority: low",
+    "color": "cfda2c",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDY1",
+    "description": null
+  },
+  {
+    "id": 2981502457,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%A4%96%20aspect:%20dx",
+    "name": "🤖 aspect: dx",
+    "color": "04338c",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDU3",
+    "description": null
+  },
+  {
+    "id": 2981502437,
+    "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/labels/%F0%9F%A7%B9%20status:%20ticket%20work%20required",
+    "name": "🧹 status: ticket work required",
+    "color": "666666",
+    "default": false,
+    "node_id": "MDU6TGFiZWwyOTgxNTAyNDM3",
+    "description": null
+  }
+]
