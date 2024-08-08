@@ -22,6 +22,6 @@ export default async function getCommunityMetricsApi(url, token) {
       data: {},
     };
   }
-  console.log("-----", response);
+
   return response;
 }
