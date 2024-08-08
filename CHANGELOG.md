@@ -1,3 +1,14 @@
+## [0.24.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.24.0...v0.24.1) (2024-08-08)
+
+
+### Bug Fixes
+
+* if no repo homepage url ([8ecf3f0](https://github.com/EddieHubCommunity/HealthCheck/commit/8ecf3f09d670033af7c7a9d23cb89d81332c57b6))
+* move gh cache time to envar ([799ae3a](https://github.com/EddieHubCommunity/HealthCheck/commit/799ae3af82c3d0475429b0865fb82f63433dcd45))
+* remove debug code ([6eb58b9](https://github.com/EddieHubCommunity/HealthCheck/commit/6eb58b9d0c32cc7e2afe3284889d2f3bdf4dd4bb))
+
+
+
 # [0.24.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.23.0...v0.24.0) (2024-08-07)
 
 
@@ -31,15 +42,6 @@
 ### Features
 
 * trunkio meta-linter ([#71](https://github.com/EddieHubCommunity/HealthCheck/issues/71)) ([d9b5839](https://github.com/EddieHubCommunity/HealthCheck/commit/d9b5839a388237c3cbbb3c351d3423bb80f7922c)), closes [#2](https://github.com/EddieHubCommunity/HealthCheck/issues/2)
-
-
-
-## [0.20.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.20.3...v0.20.4) (2024-08-05)
-
-
-### Bug Fixes
-
-* repo settings button ([92da097](https://github.com/EddieHubCommunity/HealthCheck/commit/92da097c538b2940501ed6329a2f77f068d2e4a3))
 
 
 
