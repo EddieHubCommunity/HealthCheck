@@ -35,7 +35,8 @@ export async function performChecks(formData) {
   let githubResponseRepo = repository.githubResponses[0];
   if (
     !githubResponseRepo ||
-    differenceInHours(new Date(), githubResponseRepo.createdAt) > 24
+    differenceInHours(new Date(), githubResponseRepo.createdAt) >=
+      process.env.NEXT_PUBLIC_GITHUB_CACHE
   ) {
     const user = await prisma.user.findUnique({
       where: { id: session.user.id },
