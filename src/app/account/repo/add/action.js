@@ -8,6 +8,7 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Repository from "@/models/Repository";
 import getRepoApi from "@/utils/github/getRepoApi";
 import getAllRepoData from "@/utils/github";
+import checks from "@/utils/checks";
 
 export async function getRepo(prevState, formData) {
   // check authentication
@@ -71,7 +72,7 @@ export async function getRepo(prevState, formData) {
   const responses = await getAllRepoData(url, user.accounts[0].access_token);
 
   // save github api data
-  await prisma.githubResponse.create({
+  const githubResponseRepo = await prisma.githubResponse.create({
     data: {
       repository: {
         connect: {
@@ -82,6 +83,25 @@ export async function getRepo(prevState, formData) {
     },
   });
 
-  // redirect to Repo results list page
-  redirect("/account/repo/list");
+  // perform check
+  const results = checks(githubResponseRepo);
+
+  // save results
+  const check = await prisma.check.create({
+    data: {
+      repository: {
+        connect: { id: userRepo.id },
+      },
+      githubResponse: {
+        connect: { id: githubResponseRepo.id },
+      },
+      red: results.summary.error?.length || 0,
+      amber: results.summary.warning?.length || 0,
+      green: results.summary.success?.length || 0,
+      healthchecks: results.checks.map((check) => check.id),
+      data: results.checks,
+    },
+  });
+
+  redirect(`/repo/report/${check.id}`);
 }
