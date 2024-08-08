@@ -1,0 +1,40 @@
+{
+  "files": {
+    "readme": {
+      "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/contents/README.md",
+      "html_url": "https://github.com/EddieHubCommunity/EddieBot/blob/main/README.md"
+    },
+    "license": {
+      "key": "mit",
+      "url": "https://api.github.com/licenses/mit",
+      "name": "MIT License",
+      "node_id": "MDc6TGljZW5zZTEz",
+      "spdx_id": "MIT",
+      "html_url": "https://github.com/EddieHubCommunity/EddieBot/blob/main/LICENSE"
+    },
+    "contributing": {
+      "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/contents/CONTRIBUTING.md",
+      "html_url": "https://github.com/EddieHubCommunity/EddieBot/blob/main/CONTRIBUTING.md"
+    },
+    "issue_template": null,
+    "code_of_conduct": {
+      "key": "contributor_covenant",
+      "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/community/code_of_conduct",
+      "name": "Contributor Covenant",
+      "html_url": "https://github.com/EddieHubCommunity/EddieBot/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "code_of_conduct_file": {
+      "url": "https://api.github.com/repos/EddieHubCommunity/EddieBot/contents/CODE_OF_CONDUCT.md",
+      "html_url": "https://github.com/EddieHubCommunity/EddieBot/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "pull_request_template": {
+      "url": "https://api.github.com/repos/EddieHubCommunity/.github/contents/.github/PULL_REQUEST_TEMPLATE.md",
+      "html_url": "https://github.com/EddieHubCommunity/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md"
+    }
+  },
+  "updated_at": "2022-05-04T18:57:51Z",
+  "description": "Inclusive words Discord bot (no more \"hey guys\")",
+  "documentation": "http://discord.eddiehub.org",
+  "health_percentage": 87,
+  "content_reports_enabled": false
+}

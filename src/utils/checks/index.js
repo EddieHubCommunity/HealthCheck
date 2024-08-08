@@ -9,6 +9,7 @@ import issues from "./issues";
 import issueTemplates from "./issueTemplates";
 import labels from "./labels";
 import license from "./license";
+import projects from "./projects";
 import pullRequestTemplate from "./pullRequestTemplate";
 import readme from "./readme";
 import release from "./release";
@@ -45,6 +46,7 @@ export default function checks(data) {
     pullRequestTemplate(data.communityMetrics),
     codeOfConduct(data.communityMetrics),
     labels(data.labels),
+    projects(data.repo, data.projects),
   ];
 
   const summary = checkSummary(checks);
