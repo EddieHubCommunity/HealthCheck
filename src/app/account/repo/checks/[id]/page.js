@@ -52,12 +52,12 @@ export default async function Page({ params }) {
       repository.githubResponses[0].views.views ? (
         <div className="flex flex-col md:flex-row gap-4 mt-4">
           <Card className="basis-1/2 border rounded-lg shadow-sm border-gray-700 bg-gray-800 text-gray-200">
-            <div class="flex justify-between">
+            <div className="flex justify-between">
               <div>
-                <h5 class="leading-none text-3xl font-bold text-gray-200 pb-2">
+                <h5 className="leading-none text-3xl font-bold text-gray-200 pb-2">
                   {repository.githubResponses[0].views.count}
                 </h5>
-                <p class="text-base font-normal text-gray-400">
+                <p className="text-base font-normal text-gray-400">
                   Views this week
                 </p>
               </div>
@@ -86,15 +86,15 @@ export default async function Page({ params }) {
             />
           </Card>
           <Card className="basis-1/2 border rounded-lg shadow-sm border-gray-700 bg-gray-800 text-gray-200">
-            <div class="flex justify-between">
+            <div className="flex justify-between">
               <div>
-                <h5 class="leading-none text-3xl font-bold text-gray-200 pb-2">
+                <h5 className="leading-none text-3xl font-bold text-gray-200 pb-2">
                   {repository.githubResponses[0].referrers.reduce(
                     (n, { count }) => n + count,
                     0,
                   )}
                 </h5>
-                <p class="text-base font-normal text-gray-400">
+                <p className="text-base font-normal text-gray-400">
                   Referred this week
                 </p>
               </div>
