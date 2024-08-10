@@ -3,8 +3,10 @@ import getCommunityMetricsApi from "./getCommunityMetrics";
 import getIssuesApi from "./getIssuesApi";
 import getLabelsApi from "./getLabelsApi";
 import getProjectsApi from "./getProjectsApi";
+import getReferrersApi from "./getReferrersApi";
 import getReleaseApi from "./getReleaseApi";
 import getRepoApi from "./getRepoApi";
+import getViewsApi from "./getViewsApi";
 
 export default async function getAllRepoData(url, token) {
   const repo = (await getRepoApi(url, token)).data;
@@ -17,5 +19,7 @@ export default async function getAllRepoData(url, token) {
     communityMetrics: (await getCommunityMetricsApi(url, token)).data,
     labels: (await getLabelsApi(url, token)).data,
     projects: (await getProjectsApi(url, token)).data,
+    referrers: (await getReferrersApi(url, token)).data,
+    views: (await getViewsApi(url, token)).data,
   };
 }

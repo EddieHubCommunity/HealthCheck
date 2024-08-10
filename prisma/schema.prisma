@@ -108,6 +108,8 @@ model GithubResponse {
   communityMetrics Json?
   labels           Json?
   projects         Json?
+  referrers        Json?
+  views            Json?
 
   checks       Check[]
   repositoryId String
