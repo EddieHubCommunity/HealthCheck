@@ -77,7 +77,6 @@ export default async function Page({ params }) {
           .filter((item) => item.status)
           .map((check) => ({
             id: check.id,
-            href: `/checks/${check.id}`,
             title: check.title,
             status: check.status,
             extra: check.extra,

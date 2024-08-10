@@ -15,6 +15,19 @@ const status = {
 };
 
 export default function List({ data }) {
+  const titleOnly = (title) => (
+    <>
+      <span className="truncate whitespace-nowrap">{title}</span>
+      <span className="absolute inset-0" />
+    </>
+  );
+
+  const clickableTitle = (href, title) => (
+    <Link href={href} className="flex gap-x-2">
+      {titleOnly(title)}
+    </Link>
+  );
+
   return (
     <ul role="list" className="divide-y divide-white/5">
       {data.map((item) => (
@@ -30,12 +43,9 @@ export default function List({ data }) {
                 <div className="h-2 w-2 rounded-full bg-current" />
               </div>
               <h2 className="min-w-0 text-sm font-semibold leading-6 text-white">
-                <Link href={item.href} className="flex gap-x-2">
-                  <span className="truncate whitespace-nowrap">
-                    {item.title}
-                  </span>
-                  <span className="absolute inset-0" />
-                </Link>
+                {item.href
+                  ? clickableTitle(item.href, item.title)
+                  : titleOnly(item.title)}
               </h2>
             </div>
             <div className="mt-3 flex items-center gap-x-2.5 text-xs leading-5 text-gray-400">
