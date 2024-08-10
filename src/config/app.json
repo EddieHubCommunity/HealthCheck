@@ -1,3 +1,19 @@
 {
-  "version": "0.26.1"
+  "version": "0.26.1",
+  "checks": {
+    "optional": [
+      {
+        "id": "activity",
+        "name": "Activity"
+      },
+      {
+        "id": "branches",
+        "name": "Branches"
+      },
+      {
+        "id": "defaultBranch",
+        "name": "Default Branch"
+      }
+    ]
+  }
 }

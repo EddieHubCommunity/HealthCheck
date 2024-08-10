@@ -14,13 +14,11 @@ export default function Graph({ id = "graph", type = "line", xaxis, series }) {
   };
 
   return (
-    Chart && (
-      <Chart
-        options={data.options}
-        series={data.series}
-        type={type}
-        width="100%"
-      />
-    )
+    <Chart
+      options={data.options}
+      series={data.series}
+      type={type}
+      width="100%"
+    />
   );
 }
