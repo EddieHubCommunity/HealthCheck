@@ -64,7 +64,7 @@ export default function Header({ session }) {
             </div>
           </div>
           <div className="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
-            <div className="w-full sm:max-w-xs">
+            {/* <div className="w-full sm:max-w-xs">
               <label htmlFor="search" className="sr-only">
                 Search
               </label>
@@ -84,7 +84,7 @@ export default function Header({ session }) {
                   className="block w-full rounded-md border-0 bg-gray-700 py-1.5 pl-10 pr-3 text-gray-300 placeholder:text-gray-400 focus:bg-white focus:text-gray-900 focus:ring-0 focus:placeholder:text-gray-500 sm:text-sm sm:leading-6"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="relative z-10 flex items-center lg:hidden">
             {/* Mobile menu button */}
