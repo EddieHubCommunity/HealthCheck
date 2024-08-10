@@ -1,3 +1,12 @@
+## [0.26.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.1...v0.26.2) (2024-08-10)
+
+
+### Bug Fixes
+
+* merge conflicts ([a81585c](https://github.com/EddieHubCommunity/HealthCheck/commit/a81585cd7b3c127d6fb2310c71a847d4b03607b5))
+
+
+
 ## [0.26.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.0...v0.26.1) (2024-08-10)
 
 
@@ -38,17 +47,6 @@
 ### Features
 
 * project board checks ([#110](https://github.com/EddieHubCommunity/HealthCheck/issues/110)) ([731e2f3](https://github.com/EddieHubCommunity/HealthCheck/commit/731e2f33abe717978498138a2b79751d1b40ab00))
-
-
-
-## [0.24.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.24.0...v0.24.1) (2024-08-08)
-
-
-### Bug Fixes
-
-* if no repo homepage url ([8ecf3f0](https://github.com/EddieHubCommunity/HealthCheck/commit/8ecf3f09d670033af7c7a9d23cb89d81332c57b6))
-* move gh cache time to envar ([799ae3a](https://github.com/EddieHubCommunity/HealthCheck/commit/799ae3af82c3d0475429b0865fb82f63433dcd45))
-* remove debug code ([6eb58b9](https://github.com/EddieHubCommunity/HealthCheck/commit/6eb58b9d0c32cc7e2afe3284889d2f3bdf4dd4bb))
 
 
 
