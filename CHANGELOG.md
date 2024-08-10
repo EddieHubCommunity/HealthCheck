@@ -1,3 +1,12 @@
+## [0.25.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.25.0...v0.25.1) (2024-08-10)
+
+
+### Bug Fixes
+
+* test defaults ([#113](https://github.com/EddieHubCommunity/HealthCheck/issues/113)) ([30d41f6](https://github.com/EddieHubCommunity/HealthCheck/commit/30d41f6f019ff8b62f63444181da428c5a4bf6d3))
+
+
+
 # [0.25.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.24.1...v0.25.0) (2024-08-08)
 
 
@@ -33,15 +42,6 @@
 ### Features
 
 * community checks ([#101](https://github.com/EddieHubCommunity/HealthCheck/issues/101)) ([fa3a6b4](https://github.com/EddieHubCommunity/HealthCheck/commit/fa3a6b4afd263a21c1bef2916d8abb4d28e30013))
-
-
-
-# [0.22.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.21.0...v0.22.0) (2024-08-06)
-
-
-### Features
-
-* limit amount of repos [#72](https://github.com/EddieHubCommunity/HealthCheck/issues/72) ([#97](https://github.com/EddieHubCommunity/HealthCheck/issues/97)) ([cbafede](https://github.com/EddieHubCommunity/HealthCheck/commit/cbafede973130e41a7f381b7c0fc7c4b41ca5f26))
 
 
 
