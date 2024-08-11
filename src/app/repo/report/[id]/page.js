@@ -4,6 +4,7 @@ import {
   LanguageIcon,
   StarIcon,
   TicketIcon,
+  EyeIcon,
 } from "@heroicons/react/20/solid";
 import { formatDistance } from "date-fns";
 
@@ -12,6 +13,7 @@ import Heading from "@/components/Heading";
 import List from "@/components/List";
 import Stats from "@/components/Stats";
 import { checkSummary } from "@/utils/checks";
+import Alert from "@/components/Alert";
 
 export default async function Page({ params }) {
   const id = params.id;
@@ -55,8 +57,14 @@ export default async function Page({ params }) {
             ),
           },
           { icon: TicketIcon, text: check.githubResponse.repo.open_issues },
+          { icon: EyeIcon, text: check.repository.ignoreChecks?.length },
         ]}
       />
+      {check.repository.ignoreChecks?.length ? (
+        <Alert
+          text={`There are ${check.ignoreChecks?.length} check(s) hidden`}
+        />
+      ) : null}
       <Stats
         data={[
           {

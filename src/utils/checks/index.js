@@ -28,8 +28,8 @@ import url from "./url";
  * }
  */
 
-export default function checks(data) {
-  const checks = [
+export default function checks(data, ignoreChecks = []) {
+  const allChecks = [
     description(data.repo),
     url(data.repo),
     topics(data.repo),
@@ -49,9 +49,11 @@ export default function checks(data) {
     projects(data.repo, data.projects),
   ];
 
-  const summary = checkSummary(checks);
+  const userChecks = filterIgnoredChecks(allChecks, ignoreChecks);
 
-  return { checks, summary };
+  const summary = checkSummary(userChecks);
+
+  return { checks: userChecks, summary, allChecks, ignoreChecks };
 }
 
 export function checkSummary(checks) {
@@ -65,4 +67,8 @@ export function worstCheck(
   success = "success",
 ) {
   return check.red > 0 ? error : check.amber > 0 ? warning : success;
+}
+
+export function filterIgnoredChecks(checks, ignoredChecks) {
+  return checks.filter((check) => !ignoredChecks.includes(check.id));
 }

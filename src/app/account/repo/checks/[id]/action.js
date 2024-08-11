@@ -62,7 +62,7 @@ export async function performChecks(formData) {
   }
 
   // perform check
-  const results = checks(githubResponseRepo);
+  const results = checks(githubResponseRepo, repository.ignoreChecks);
 
   // save results
   const check = await prisma.check.create({
@@ -78,6 +78,8 @@ export async function performChecks(formData) {
       green: results.summary.success?.length || 0,
       healthchecks: results.checks.map((check) => check.id),
       data: results.checks,
+      allData: results.allChecks,
+      ignoreChecks: results.ignoreChecks,
     },
   });
 

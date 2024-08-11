@@ -12,6 +12,7 @@ import ActionPanel from "@/components/ActionPanel";
 import Graph from "@/components/Graph";
 import { Card } from "flowbite-react";
 import Alert from "@/components/Alert";
+import Button from "@/components/Button";
 
 export default async function Page({ params }) {
   const { id } = params;
@@ -45,6 +46,9 @@ export default async function Page({ params }) {
       <Title
         text={`Check list for the repo: ${repository.owner} / ${repository.repo}`}
       >
+        <Button url={`/account/repo/settings/${id}`} type="secondary">
+          Settings
+        </Button>
         <Form id={id} />
       </Title>
 
@@ -131,6 +135,7 @@ export default async function Page({ params }) {
         <FormBadge id={id} src={badgeSrc} />
         <img src={badgeSrc} className="mt-2" />
       </ActionPanel>
+
       <List
         data={repository.checks.map((check) => ({
           id: check.id,
@@ -140,7 +145,7 @@ export default async function Page({ params }) {
           extra: `Added ${formatDistance(check.createdAt, new Date(), {
             addSuffix: true,
           })}`,
-          description: `Checks performed ${check.healthchecks.length}`,
+          description: `Checks performed ${check.healthchecks.length} (${check.ignoreChecks.length} checks ignored)`,
         }))}
       />
     </>
