@@ -1,3 +1,13 @@
+## [0.26.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.2...v0.26.3) (2024-08-11)
+
+
+### Bug Fixes
+
+* allow default checked checkbox ([fa27d55](https://github.com/EddieHubCommunity/HealthCheck/commit/fa27d55581d4048d63e516dd39867922fb233146))
+* button to use nextjs link ([6ade493](https://github.com/EddieHubCommunity/HealthCheck/commit/6ade493cfc6c250c0204db70644e36e21416a8ae))
+
+
+
 ## [0.26.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.1...v0.26.2) (2024-08-10)
 
 
@@ -38,15 +48,6 @@
 ### Bug Fixes
 
 * test defaults ([#113](https://github.com/EddieHubCommunity/HealthCheck/issues/113)) ([30d41f6](https://github.com/EddieHubCommunity/HealthCheck/commit/30d41f6f019ff8b62f63444181da428c5a4bf6d3))
-
-
-
-# [0.25.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.24.1...v0.25.0) (2024-08-08)
-
-
-### Features
-
-* project board checks ([#110](https://github.com/EddieHubCommunity/HealthCheck/issues/110)) ([731e2f3](https://github.com/EddieHubCommunity/HealthCheck/commit/731e2f33abe717978498138a2b79751d1b40ab00))
 
 
 
