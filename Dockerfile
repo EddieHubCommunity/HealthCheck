@@ -4,7 +4,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm ci  --omit=dev --ignore-scripts
+# --omit=dev
+RUN npm ci --ignore-scripts
 
 COPY . .
 
