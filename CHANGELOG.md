@@ -1,3 +1,12 @@
+# [0.27.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.3...v0.27.0) (2024-08-11)
+
+
+### Features
+
+* user can hide checks ([#119](https://github.com/EddieHubCommunity/HealthCheck/issues/119)) ([0c62a4b](https://github.com/EddieHubCommunity/HealthCheck/commit/0c62a4b2f4f0ff98e7cf90e684f47ab8025c90d3))
+
+
+
 ## [0.26.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.2...v0.26.3) (2024-08-11)
 
 
@@ -39,15 +48,6 @@
 
 * repo list summary ([e242a6f](https://github.com/EddieHubCommunity/HealthCheck/commit/e242a6f38d3f8c3c534bfd684e34bf5190446c5d))
 * repo stats ([cbd2667](https://github.com/EddieHubCommunity/HealthCheck/commit/cbd2667678f831a3641bf62b5745aed189a63942))
-
-
-
-## [0.25.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.25.0...v0.25.1) (2024-08-10)
-
-
-### Bug Fixes
-
-* test defaults ([#113](https://github.com/EddieHubCommunity/HealthCheck/issues/113)) ([30d41f6](https://github.com/EddieHubCommunity/HealthCheck/commit/30d41f6f019ff8b62f63444181da428c5a4bf6d3))
 
 
 
