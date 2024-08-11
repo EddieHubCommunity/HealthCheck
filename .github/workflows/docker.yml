@@ -12,8 +12,8 @@ jobs:
       - name: npm install and build
         run: |
           npm ci
-          npm run build
           echo "NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID=${{ secrets.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID }}" >> .env
+          npm run build
       - uses: actions/upload-artifact@main
         with:
           name: artifacts
