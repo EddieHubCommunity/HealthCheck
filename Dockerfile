@@ -1,3 +1,4 @@
+ARG NODE_ENV=production
 ARG NODE_VERSION=22
 FROM node:${NODE_VERSION} AS builder
 WORKDIR /usr/src/app
@@ -5,12 +6,13 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # --omit=dev
-RUN npm ci --ignore-scripts
+RUN npm ci --ignore-scripts --production
 
 COPY . .
 
-RUN npx prisma generate && \
-    npm run build
+RUN --mount=type=secret,id=POSTGRES,target=./.env npm run build
+
+RUN npx prisma generate && npm run build
 
 # Production image
 FROM node:${NODE_VERSION} AS production
@@ -33,4 +35,4 @@ USER appuser
 # Added healthcheck to satisfy checkov lint, you should configure this according to your application
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD curl -f http://localhost:3000/health || exit 1
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]
