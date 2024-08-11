@@ -1,3 +1,12 @@
+## [0.27.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.2...v0.27.3) (2024-08-11)
+
+
+### Bug Fixes
+
+* docker dev deps ([2573976](https://github.com/EddieHubCommunity/HealthCheck/commit/2573976d0548c4fd482ce430a4e326414f9e8769))
+
+
+
 ## [0.27.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.1...v0.27.2) (2024-08-11)
 
 
@@ -32,15 +41,6 @@
 
 * allow default checked checkbox ([fa27d55](https://github.com/EddieHubCommunity/HealthCheck/commit/fa27d55581d4048d63e516dd39867922fb233146))
 * button to use nextjs link ([6ade493](https://github.com/EddieHubCommunity/HealthCheck/commit/6ade493cfc6c250c0204db70644e36e21416a8ae))
-
-
-
-## [0.26.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.1...v0.26.2) (2024-08-10)
-
-
-### Bug Fixes
-
-* merge conflicts ([a81585c](https://github.com/EddieHubCommunity/HealthCheck/commit/a81585cd7b3c127d6fb2310c71a847d4b03607b5))
 
 
 
