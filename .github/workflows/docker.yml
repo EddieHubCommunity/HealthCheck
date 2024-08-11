@@ -13,6 +13,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          echo "NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID=${{ secrets.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID }}" >> .env
       - uses: actions/upload-artifact@main
         with:
           name: artifacts
