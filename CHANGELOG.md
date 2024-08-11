@@ -1,3 +1,12 @@
+## [0.27.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.1...v0.27.2) (2024-08-11)
+
+
+### Bug Fixes
+
+* gh docker action envar ([6a7951c](https://github.com/EddieHubCommunity/HealthCheck/commit/6a7951ca182f2c2dd7a551b6eca6a0447bb51bdd))
+
+
+
 ## [0.27.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.0...v0.27.1) (2024-08-11)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * merge conflicts ([a81585c](https://github.com/EddieHubCommunity/HealthCheck/commit/a81585cd7b3c127d6fb2310c71a847d4b03607b5))
-
-
-
-## [0.26.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.0...v0.26.1) (2024-08-10)
-
-
-### Bug Fixes
-
-* react class ([bc4fd9f](https://github.com/EddieHubCommunity/HealthCheck/commit/bc4fd9f764d8d49c6595b13cb9a42fb90afc0738))
 
 
 
