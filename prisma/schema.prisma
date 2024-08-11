@@ -85,10 +85,11 @@ model Authenticator {
 }
 
 model Repository {
-  id    String @id @default(cuid())
-  url   String
-  owner String
-  repo  String
+  id            String @id @default(cuid())
+  url           String
+  owner         String
+  repo          String
+  ignoreChecks  String[]
 
   githubResponses GithubResponse[]
   checks          Check[]
@@ -120,12 +121,14 @@ model GithubResponse {
 }
 
 model Check {
-  id           String @id @default(cuid())
-  red          Int
-  amber        Int
-  green        Int
-  healthchecks Json
-  data         Json
+  id              String @id @default(cuid())
+  red             Int
+  amber           Int
+  green           Int
+  healthchecks    Json
+  data            Json
+  allData         Json
+  ignoreChecks    String[]
 
   repositoryId     String
   repository       Repository     @relation(fields: [repositoryId], references: [id], onDelete: Cascade)

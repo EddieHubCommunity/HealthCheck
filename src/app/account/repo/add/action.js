@@ -100,6 +100,8 @@ export async function getRepo(prevState, formData) {
       green: results.summary.success?.length || 0,
       healthchecks: results.checks.map((check) => check.id),
       data: results.checks,
+      allData: results.allChecks,
+      ignoreChecks: results.ignoreChecks,
     },
   });
 

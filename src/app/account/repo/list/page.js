@@ -76,7 +76,7 @@ export default async function Page() {
                 },
               )} with ${repo.checks[0].red} error(s), ${
                 repo.checks[0].amber
-              } warning(s), ${repo.checks[0].green} success(es)`
+              } warning(s), ${repo.checks[0].green} success(es) (${repo.ignoreChecks.length} checks ignored)`
             : "No checks performed yet",
         }))}
       />
