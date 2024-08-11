@@ -1,3 +1,12 @@
+## [0.27.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.3...v0.27.4) (2024-08-11)
+
+
+### Bug Fixes
+
+* docker envars ([b273147](https://github.com/EddieHubCommunity/HealthCheck/commit/b273147ab2b740eaf53537cfcb3c16df29de8edb))
+
+
+
 ## [0.27.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.2...v0.27.3) (2024-08-11)
 
 
@@ -31,16 +40,6 @@
 ### Features
 
 * user can hide checks ([#119](https://github.com/EddieHubCommunity/HealthCheck/issues/119)) ([0c62a4b](https://github.com/EddieHubCommunity/HealthCheck/commit/0c62a4b2f4f0ff98e7cf90e684f47ab8025c90d3))
-
-
-
-## [0.26.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.2...v0.26.3) (2024-08-11)
-
-
-### Bug Fixes
-
-* allow default checked checkbox ([fa27d55](https://github.com/EddieHubCommunity/HealthCheck/commit/fa27d55581d4048d63e516dd39867922fb233146))
-* button to use nextjs link ([6ade493](https://github.com/EddieHubCommunity/HealthCheck/commit/6ade493cfc6c250c0204db70644e36e21416a8ae))
 
 
 
