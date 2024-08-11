@@ -7,6 +7,7 @@ export default function Checkbox({
   description,
   value,
   disabled,
+  defaultChecked,
 }) {
   const { pending } = useFormStatus();
 
@@ -28,6 +29,7 @@ export default function Checkbox({
           value={value}
           className="h-4 w-4 rounded border-gray-700 text-indigo-600 focus:ring-indigo-600 disabled:bg-gray-400"
           disabled={disabled || pending}
+          defaultChecked={defaultChecked}
         />
       </div>
       <div className="text-sm leading-6">
