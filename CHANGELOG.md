@@ -1,3 +1,12 @@
+## [0.27.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.4...v0.27.5) (2024-08-11)
+
+
+### Bug Fixes
+
+* docker npm deps ([64ef226](https://github.com/EddieHubCommunity/HealthCheck/commit/64ef226eb375468a458531faaa2a4669b7e77fd0))
+
+
+
 ## [0.27.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.3...v0.27.4) (2024-08-11)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * gh docker action ([5da503c](https://github.com/EddieHubCommunity/HealthCheck/commit/5da503c5c5f18b4cc97070078043f78f6faf9dad))
-
-
-
-# [0.27.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.26.3...v0.27.0) (2024-08-11)
-
-
-### Features
-
-* user can hide checks ([#119](https://github.com/EddieHubCommunity/HealthCheck/issues/119)) ([0c62a4b](https://github.com/EddieHubCommunity/HealthCheck/commit/0c62a4b2f4f0ff98e7cf90e684f47ab8025c90d3))
 
 
 
