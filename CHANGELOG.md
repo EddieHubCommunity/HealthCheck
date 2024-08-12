@@ -1,3 +1,12 @@
+## [0.28.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.0...v0.28.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* docker health api path ([84518f1](https://github.com/EddieHubCommunity/HealthCheck/commit/84518f1520d85c195122579b0becd3d1af13d36b))
+
+
+
 # [0.28.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.18...v0.28.0) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * trigger workflow ([53a9db2](https://github.com/EddieHubCommunity/HealthCheck/commit/53a9db21e1357111ce36a82bb2ad365d1e0821bd))
-
-
-
-## [0.27.15](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.14...v0.27.15) (2024-08-12)
-
-
-### Bug Fixes
-
-* docker debug code ([d5895a7](https://github.com/EddieHubCommunity/HealthCheck/commit/d5895a7b6141b3c81940f2c5c86490c8a0dc63f0))
 
 
 
