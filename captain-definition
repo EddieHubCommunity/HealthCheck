@@ -1,4 +1,4 @@
 {
   "schemaVersion": 2,
-  "templateId": "node/22"
+  "imageName": "ghcr.io/eddiehubcommunity/healthcheck:latest"
 }
