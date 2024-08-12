@@ -1,3 +1,12 @@
+## [0.27.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.7...v0.27.8) (2024-08-12)
+
+
+### Bug Fixes
+
+* docker npm ci cmd ([0196b43](https://github.com/EddieHubCommunity/HealthCheck/commit/0196b4358db9cf25e48e1b83f6d511d4291fc665))
+
+
+
 ## [0.27.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.6...v0.27.7) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker envars ([b273147](https://github.com/EddieHubCommunity/HealthCheck/commit/b273147ab2b740eaf53537cfcb3c16df29de8edb))
-
-
-
-## [0.27.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.2...v0.27.3) (2024-08-11)
-
-
-### Bug Fixes
-
-* docker dev deps ([2573976](https://github.com/EddieHubCommunity/HealthCheck/commit/2573976d0548c4fd482ce430a4e326414f9e8769))
 
 
 
