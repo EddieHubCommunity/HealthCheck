@@ -1,7 +1,9 @@
 name: Deploy to Caprover
 permissions: read-all
 on:
-  registry_package:
+  # registry_package:
+  #   types: [published]
+  release:
     types: [published]
 
 jobs:
@@ -19,7 +21,7 @@ jobs:
           server: "${{ secrets.CAPROVER_SERVER }}"
           app: healthcheck
           token: "${{ secrets.CAPROVER_TOKEN }}"
-          image: ghcr.io/eddiehubcommunity/healthcheck:latest
+          # image: ghcr.io/eddiehubcommunity/healthcheck:latest
 
   migrations:
     runs-on: ubuntu-latest
