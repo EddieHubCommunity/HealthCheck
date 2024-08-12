@@ -9,6 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Create .env.example file
+        run: |
+          echo "NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID=" > .env.example
+          echo "NEXTAUTH_URL=http://localhost:3000" >> .env.example
+          echo "NEXTAUTH_SECRET=abcdefg" >> .env.example
+          echo "GITHUB_ID=" >> .env.example
+          echo "GITHUB_SECRET=" >> .env.example
+          echo "DATABASE_URL=\"postgresql://user:password@localhost:5432/healthcheck?schema=public\"" >> .env
+          echo "NEXT_PUBLIC_REPO_LIMIT=10" >> .env.example
+          echo "NEXT_PUBLIC_GITHUB_CACHE=24" >> .env.example
       - name: npm install and build
         run: |
           npm ci
