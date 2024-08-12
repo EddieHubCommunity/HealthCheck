@@ -1,3 +1,12 @@
+## [0.27.13](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.12...v0.27.13) (2024-08-12)
+
+
+### Bug Fixes
+
+* gh deploy action ([0431fd4](https://github.com/EddieHubCommunity/HealthCheck/commit/0431fd4acde8d39e1348bd1bb1f2d13e2f4a2ef0))
+
+
+
 ## [0.27.12](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.11...v0.27.12) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker no script for npm ([a52cc5b](https://github.com/EddieHubCommunity/HealthCheck/commit/a52cc5bfa7e043ed703c101fee7a8ad784363151))
-
-
-
-## [0.27.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.7...v0.27.8) (2024-08-12)
-
-
-### Bug Fixes
-
-* docker npm ci cmd ([0196b43](https://github.com/EddieHubCommunity/HealthCheck/commit/0196b4358db9cf25e48e1b83f6d511d4291fc665))
 
 
 
