@@ -1,3 +1,12 @@
+## [0.27.17](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.16...v0.27.17) (2024-08-12)
+
+
+### Bug Fixes
+
+* remove a secret copying step in Dockerfile ([7ab64d2](https://github.com/EddieHubCommunity/HealthCheck/commit/7ab64d249c775f0125251850c5052add8998bc98))
+
+
+
 ## [0.27.16](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.15...v0.27.16) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * gh deploy action ([0431fd4](https://github.com/EddieHubCommunity/HealthCheck/commit/0431fd4acde8d39e1348bd1bb1f2d13e2f4a2ef0))
-
-
-
-## [0.27.12](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.11...v0.27.12) (2024-08-12)
-
-
-### Bug Fixes
-
-* caprover config file ([0ba8010](https://github.com/EddieHubCommunity/HealthCheck/commit/0ba8010485962ad625136c7e841c1ff71d771681))
 
 
 
