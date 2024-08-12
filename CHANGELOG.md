@@ -1,3 +1,12 @@
+## [0.27.18](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.17...v0.27.18) (2024-08-12)
+
+
+### Bug Fixes
+
+* expose docker port 3000 ([5efa27f](https://github.com/EddieHubCommunity/HealthCheck/commit/5efa27f0516087cb058817dfc11fcb6df97d3879))
+
+
+
 ## [0.27.17](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.16...v0.27.17) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * build docker image for caprover ([02ac109](https://github.com/EddieHubCommunity/HealthCheck/commit/02ac109c92f350a81a42f1969fa007bb3989d31c))
-
-
-
-## [0.27.13](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.12...v0.27.13) (2024-08-12)
-
-
-### Bug Fixes
-
-* gh deploy action ([0431fd4](https://github.com/EddieHubCommunity/HealthCheck/commit/0431fd4acde8d39e1348bd1bb1f2d13e2f4a2ef0))
 
 
 
