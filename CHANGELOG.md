@@ -1,3 +1,12 @@
+## [0.27.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.6...v0.27.7) (2024-08-12)
+
+
+### Bug Fixes
+
+* docker ignore file ([1d3f85f](https://github.com/EddieHubCommunity/HealthCheck/commit/1d3f85fc9a0873b73e44e7f11b9b3f467aedc2f3))
+
+
+
 ## [0.27.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.5...v0.27.6) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker dev deps ([2573976](https://github.com/EddieHubCommunity/HealthCheck/commit/2573976d0548c4fd482ce430a4e326414f9e8769))
-
-
-
-## [0.27.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.1...v0.27.2) (2024-08-11)
-
-
-### Bug Fixes
-
-* gh docker action envar ([6a7951c](https://github.com/EddieHubCommunity/HealthCheck/commit/6a7951ca182f2c2dd7a551b6eca6a0447bb51bdd))
 
 
 
