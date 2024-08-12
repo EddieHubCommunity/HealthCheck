@@ -1,3 +1,12 @@
+## [0.27.14](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.13...v0.27.14) (2024-08-12)
+
+
+### Bug Fixes
+
+* build docker image for caprover ([02ac109](https://github.com/EddieHubCommunity/HealthCheck/commit/02ac109c92f350a81a42f1969fa007bb3989d31c))
+
+
+
 ## [0.27.13](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.12...v0.27.13) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * deploy without docker ([5ab9c53](https://github.com/EddieHubCommunity/HealthCheck/commit/5ab9c53953463fbeb2021247cd5e503b16133e15))
-
-
-
-## [0.27.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.8...v0.27.9) (2024-08-12)
-
-
-### Bug Fixes
-
-* docker no script for npm ([a52cc5b](https://github.com/EddieHubCommunity/HealthCheck/commit/a52cc5bfa7e043ed703c101fee7a8ad784363151))
 
 
 
