@@ -1,3 +1,12 @@
+## [0.27.12](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.11...v0.27.12) (2024-08-12)
+
+
+### Bug Fixes
+
+* caprover config file ([0ba8010](https://github.com/EddieHubCommunity/HealthCheck/commit/0ba8010485962ad625136c7e841c1ff71d771681))
+
+
+
 ## [0.27.11](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.10...v0.27.11) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker npm ci cmd ([0196b43](https://github.com/EddieHubCommunity/HealthCheck/commit/0196b4358db9cf25e48e1b83f6d511d4291fc665))
-
-
-
-## [0.27.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.6...v0.27.7) (2024-08-12)
-
-
-### Bug Fixes
-
-* docker ignore file ([1d3f85f](https://github.com/EddieHubCommunity/HealthCheck/commit/1d3f85fc9a0873b73e44e7f11b9b3f467aedc2f3))
 
 
 
