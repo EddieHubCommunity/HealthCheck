@@ -1,3 +1,12 @@
+## [0.27.10](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.9...v0.27.10) (2024-08-12)
+
+
+### Bug Fixes
+
+* deploy without docker ([5ab9c53](https://github.com/EddieHubCommunity/HealthCheck/commit/5ab9c53953463fbeb2021247cd5e503b16133e15))
+
+
+
 ## [0.27.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.8...v0.27.9) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker ignore ([726a6ff](https://github.com/EddieHubCommunity/HealthCheck/commit/726a6ff0ab02ea4495d11d73c13b543df67c088c))
-
-
-
-## [0.27.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.4...v0.27.5) (2024-08-11)
-
-
-### Bug Fixes
-
-* docker npm deps ([64ef226](https://github.com/EddieHubCommunity/HealthCheck/commit/64ef226eb375468a458531faaa2a4669b7e77fd0))
 
 
 
