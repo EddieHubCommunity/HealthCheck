@@ -1,3 +1,12 @@
+## [0.27.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.8...v0.27.9) (2024-08-12)
+
+
+### Bug Fixes
+
+* docker no script for npm ([a52cc5b](https://github.com/EddieHubCommunity/HealthCheck/commit/a52cc5bfa7e043ed703c101fee7a8ad784363151))
+
+
+
 ## [0.27.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.7...v0.27.8) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker npm deps ([64ef226](https://github.com/EddieHubCommunity/HealthCheck/commit/64ef226eb375468a458531faaa2a4669b7e77fd0))
-
-
-
-## [0.27.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.3...v0.27.4) (2024-08-11)
-
-
-### Bug Fixes
-
-* docker envars ([b273147](https://github.com/EddieHubCommunity/HealthCheck/commit/b273147ab2b740eaf53537cfcb3c16df29de8edb))
 
 
 
