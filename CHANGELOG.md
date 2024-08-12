@@ -1,3 +1,12 @@
+## [0.28.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.1...v0.28.2) (2024-08-12)
+
+
+### Bug Fixes
+
+* public repo list to have total ([6ee3938](https://github.com/EddieHubCommunity/HealthCheck/commit/6ee39389649fb320bbd1a30b1bb1042cd1c49a5a))
+
+
+
 ## [0.28.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.0...v0.28.1) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * remove a secret copying step in Dockerfile ([7ab64d2](https://github.com/EddieHubCommunity/HealthCheck/commit/7ab64d249c775f0125251850c5052add8998bc98))
-
-
-
-## [0.27.16](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.15...v0.27.16) (2024-08-12)
-
-
-### Bug Fixes
-
-* trigger workflow ([53a9db2](https://github.com/EddieHubCommunity/HealthCheck/commit/53a9db21e1357111ce36a82bb2ad365d1e0821bd))
 
 
 
