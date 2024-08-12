@@ -1,3 +1,12 @@
+## [0.27.15](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.14...v0.27.15) (2024-08-12)
+
+
+### Bug Fixes
+
+* docker debug code ([d5895a7](https://github.com/EddieHubCommunity/HealthCheck/commit/d5895a7b6141b3c81940f2c5c86490c8a0dc63f0))
+
+
+
 ## [0.27.14](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.13...v0.27.14) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * deploy directly to caprover ([592b916](https://github.com/EddieHubCommunity/HealthCheck/commit/592b916d0de92432fa41e1a49c353204435b2d9c))
-
-
-
-## [0.27.10](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.9...v0.27.10) (2024-08-12)
-
-
-### Bug Fixes
-
-* deploy without docker ([5ab9c53](https://github.com/EddieHubCommunity/HealthCheck/commit/5ab9c53953463fbeb2021247cd5e503b16133e15))
 
 
 
