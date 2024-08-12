@@ -15,7 +15,7 @@
     "lint-old": "next lint",
     "test": "npx playwright test",
     "prepare": "husky",
-    "postinstall": "shx cp -n ./.env.example ./.env",
+    "postinstall": "shx cp -n /.env.example /.env",
     "format:write": "prettier . --write",
     "format:check": "prettier . --check",
     "db:migrate:dev": "npx prisma migrate dev",
