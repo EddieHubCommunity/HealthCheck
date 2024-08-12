@@ -1,3 +1,12 @@
+# [0.28.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.18...v0.28.0) (2024-08-12)
+
+
+### Features
+
+* docker health api endpoint ([6bb9e2e](https://github.com/EddieHubCommunity/HealthCheck/commit/6bb9e2eff271544fc05a1967a08f746a4f8ba083))
+
+
+
 ## [0.27.18](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.17...v0.27.18) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker debug code ([d5895a7](https://github.com/EddieHubCommunity/HealthCheck/commit/d5895a7b6141b3c81940f2c5c86490c8a0dc63f0))
-
-
-
-## [0.27.14](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.13...v0.27.14) (2024-08-12)
-
-
-### Bug Fixes
-
-* build docker image for caprover ([02ac109](https://github.com/EddieHubCommunity/HealthCheck/commit/02ac109c92f350a81a42f1969fa007bb3989d31c))
 
 
 
