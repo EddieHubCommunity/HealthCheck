@@ -20,32 +20,32 @@ export default async function Page() {
     },
   });
 
+  const repos = repositories.filter((repo) => repo.checks.length > 0);
+
   return (
     <>
-      <Title text="Repo list" />
+      <Title text={`Repo list (${repos.length})`} />
       <List
-        data={repositories
-          .filter((repo) => repo.checks.length > 0)
-          .map((repo) => ({
-            id: repo.id,
-            href: `/repo/report/${repo.checks[0].id}`,
-            title: `${repo.owner} / ${repo.repo}`,
-            status: repo.checks[0] ? worstCheck(repo.checks[0]) : "-",
-            description: `Added ${formatDistance(repo.createdAt, new Date(), {
-              addSuffix: true,
-            })}`,
-            extra: repo.checks[0]
-              ? `Last check performed ${formatDistance(
-                  repo.checks[0].createdAt,
-                  new Date(),
-                  {
-                    addSuffix: true,
-                  },
-                )} with ${repo.checks[0].red} error(s), ${
-                  repo.checks[0].amber
-                } warning(s), ${repo.checks[0].green} success(es)`
-              : "No checks performed yet",
-          }))}
+        data={repos.map((repo) => ({
+          id: repo.id,
+          href: `/repo/report/${repo.checks[0].id}`,
+          title: `${repo.owner} / ${repo.repo}`,
+          status: repo.checks[0] ? worstCheck(repo.checks[0]) : "-",
+          description: `Added ${formatDistance(repo.createdAt, new Date(), {
+            addSuffix: true,
+          })}`,
+          extra: repo.checks[0]
+            ? `Last check performed ${formatDistance(
+                repo.checks[0].createdAt,
+                new Date(),
+                {
+                  addSuffix: true,
+                },
+              )} with ${repo.checks[0].red} error(s), ${
+                repo.checks[0].amber
+              } warning(s), ${repo.checks[0].green} success(es)`
+            : "No checks performed yet",
+        }))}
       />
     </>
   );
