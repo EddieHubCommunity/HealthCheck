@@ -12,7 +12,6 @@ COPY . .
 
 RUN npx prisma generate
 RUN --mount=type=secret,id=POSTGRES,target=./.env npm run build
-RUN npm run build
 
 # Production image
 FROM node:${NODE_VERSION} AS production

@@ -1,4 +1,3 @@
-tests
 Dockerfile
 .dockerignore
 node_modules
