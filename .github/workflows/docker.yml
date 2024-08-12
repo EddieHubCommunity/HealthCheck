@@ -15,11 +15,6 @@ jobs:
           echo "NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID=${{ secrets.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID }}" >> .env
           echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
           npm run build
-      - name: Save .env as artifact 
-        uses: actions/upload-artifact@v4
-        with:
-          name: env-file
-          path: .env
       - uses: actions/upload-artifact@main
         with:
           name: artifacts
@@ -32,11 +27,6 @@ jobs:
     steps:
       - name: check out the repo
         uses: actions/checkout@v4
-      - name: Download .env artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: env-file
-          path: .
       - name: get-npm-version
         id: package-version
         uses: martinbeentjes/npm-get-version-action@master
@@ -51,6 +41,9 @@ jobs:
       - name: push to Github Container Registry
         uses: docker/build-push-action@v6
         with:
+          secrets: |
+            NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID=${{ secrets.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID }}
+            DATABASE_URL=${{ secrets.DATABASE_URL }}
           context: .
           push: true
           tags: |
