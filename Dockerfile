@@ -10,7 +10,7 @@ RUN npm ci --ignore-scripts
 
 COPY . .
 
-RUN npx prisma generate
+RUN npx prisma generate && ls -la
 RUN --mount=type=secret,id=POSTGRES,target=./.env npm run build
 
 # Production image
