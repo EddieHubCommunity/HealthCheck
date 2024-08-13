@@ -1,3 +1,12 @@
+## [0.28.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.3...v0.28.4) (2024-08-13)
+
+
+### Bug Fixes
+
+* banner text ([8377276](https://github.com/EddieHubCommunity/HealthCheck/commit/8377276bc2f855a1fdeb952d76fdff8a032d3ba3))
+
+
+
 ## [0.28.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.2...v0.28.3) (2024-08-12)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * docker health api endpoint ([6bb9e2e](https://github.com/EddieHubCommunity/HealthCheck/commit/6bb9e2eff271544fc05a1967a08f746a4f8ba083))
-
-
-
-## [0.27.18](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.27.17...v0.27.18) (2024-08-12)
-
-
-### Bug Fixes
-
-* expose docker port 3000 ([5efa27f](https://github.com/EddieHubCommunity/HealthCheck/commit/5efa27f0516087cb058817dfc11fcb6df97d3879))
 
 
 
