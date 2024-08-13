@@ -128,7 +128,9 @@ export default async function Page({ params }) {
           </Card>
         </div>
       ) : (
-        <Alert text="You do not have permission to see the analytics for this repo" />
+        <Alert>
+          You do not have permission to see the analytics for this repo
+        </Alert>
       )}
 
       <ActionPanel>

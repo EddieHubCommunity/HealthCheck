@@ -1,0 +1,52 @@
+[
+  {
+    "count": 194,
+    "uniques": 36,
+    "referrer": "github.com"
+  },
+  {
+    "count": 44,
+    "uniques": 5,
+    "referrer": "youtube.com"
+  },
+  {
+    "count": 30,
+    "uniques": 9,
+    "referrer": "t.co"
+  },
+  {
+    "count": 10,
+    "uniques": 3,
+    "referrer": "Google"
+  },
+  {
+    "count": 5,
+    "uniques": 1,
+    "referrer": "freecodecamp.org"
+  },
+  {
+    "count": 4,
+    "uniques": 1,
+    "referrer": "search.brave.com"
+  },
+  {
+    "count": 4,
+    "uniques": 1,
+    "referrer": "m.youtube.com"
+  },
+  {
+    "count": 4,
+    "uniques": 1,
+    "referrer": "eddiejaoude.substack.com"
+  },
+  {
+    "count": 3,
+    "uniques": 1,
+    "referrer": "repo-rater.eddiehub.org"
+  },
+  {
+    "count": 2,
+    "uniques": 2,
+    "referrer": "eddiehub.org"
+  }
+]

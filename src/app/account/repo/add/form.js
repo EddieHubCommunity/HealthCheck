@@ -13,8 +13,9 @@ const initialState = {
   errors: undefined,
 };
 
-export default function Form({ disabled = false }) {
+export default function Form({ usage }) {
   const [state, formAction] = useFormState(getRepo, initialState);
+  const disabled = usage >= process.env.NEXT_PUBLIC_REPO_LIMIT ? true : false;
 
   return (
     <form action={formAction}>
@@ -74,7 +75,7 @@ export default function Form({ disabled = false }) {
       </fieldset>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <SubmitButton text="SAVE" />
+        <SubmitButton text="SAVE" disabled={disabled} />
       </div>
     </form>
   );

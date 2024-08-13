@@ -40,9 +40,7 @@ export default async function Page() {
 
   return (
     <>
-      <Title
-        text={`Repo list (${user.repositories.length}/${process.env.NEXT_PUBLIC_REPO_LIMIT})`}
-      />
+      <Title text="Repo list" />
       <Stats
         data={[
           {
