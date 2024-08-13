@@ -1,4 +1,5 @@
 import { createFlagsmithInstance } from "flagsmith/isomorphic";
+import prisma from "@/models/db";
 
 import config from "./flagsmith.json";
 
@@ -16,15 +17,16 @@ export default async function flagsmith(session) {
   };
 
   // identity + traits
-  // if (session) {
-  //   initialise.identity = session.user.id;
-  //   initialise.traits = {
-  //     email: session.user.email,
-  //     username: "eddiejaoude", // identity overrides
-  //     isAdmin: false, // traits overrides
-  //     isMaintainer: false, // traits overrides
-  //   };
-  // }
+  if (session) {
+    const user = await prisma.user.findUnique({
+      where: { id: session.user.id },
+    });
+
+    initialise.identity = session.user.id;
+    initialise.traits = {
+      isMaintainer: user.isMaintainer,
+    };
+  }
 
   if (process.env.APP_ENV === "test") {
     initialise.defaultFlags = defaults;

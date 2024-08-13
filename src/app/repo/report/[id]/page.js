@@ -61,9 +61,7 @@ export default async function Page({ params }) {
         ]}
       />
       {check.repository.ignoreChecks?.length ? (
-        <Alert
-          text={`There are ${check.ignoreChecks?.length} check(s) hidden`}
-        />
+        <Alert>There are {check.ignoreChecks?.length} check(s) hidden</Alert>
       ) : null}
       <Stats
         data={[

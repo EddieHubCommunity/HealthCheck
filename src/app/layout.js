@@ -19,7 +19,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   const session = await getServerSession(authOptions);
-  const { serverState } = await flagsmith();
+  const { serverState } = await flagsmith(session);
 
   return (
     <html lang="en">

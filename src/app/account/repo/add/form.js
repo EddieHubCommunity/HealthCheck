@@ -1,6 +1,7 @@
 "use client";
 
 import { useFormState } from "react-dom";
+import { useFlags } from "flagsmith/react";
 
 import { getRepo } from "./action";
 import { SubmitButton } from "@/components/forms/SubmitButton";
@@ -13,8 +14,10 @@ const initialState = {
   errors: undefined,
 };
 
-export default function Form({ disabled = false }) {
+export default function Form({ usage }) {
+  const { repolimit } = useFlags(["repolimit"]);
   const [state, formAction] = useFormState(getRepo, initialState);
+  const disabled = usage >= repolimit.value ? true : false;
 
   return (
     <form action={formAction}>
@@ -74,7 +77,7 @@ export default function Form({ disabled = false }) {
       </fieldset>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <SubmitButton text="SAVE" />
+        <SubmitButton text="SAVE" disabled={disabled} />
       </div>
     </form>
   );
