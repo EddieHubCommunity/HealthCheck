@@ -67,10 +67,12 @@ export default function List({ data }) {
           >
             {item.status.toUpperCase()}
           </div>
-          <ChevronRightIcon
-            aria-hidden="true"
-            className="h-5 w-5 flex-none text-gray-400"
-          />
+          {item.href && (
+            <ChevronRightIcon
+              aria-hidden="true"
+              className="h-5 w-5 flex-none text-gray-400"
+            />
+          )}
         </li>
       ))}
     </ul>
