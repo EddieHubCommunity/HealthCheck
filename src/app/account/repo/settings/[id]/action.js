@@ -15,8 +15,8 @@ export async function saveSettings(prevState, formData) {
   }
 
   const id = formData.get("id");
-  const ignoreChecks = config.checks.optional
-    .map((option) => (formData.get(option.id) ? option.id : null))
+  const ignoreChecks = config.checks
+    .map((option) => (formData.get(option) ? option : null))
     .filter((item) => item);
 
   // they are owner of the repo
