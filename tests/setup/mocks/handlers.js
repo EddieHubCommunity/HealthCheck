@@ -7,6 +7,8 @@ import release from "../../data/github/release.json";
 import community from "../../data/github/community.json";
 import labels from "../../data/github/labels.json";
 import projects from "../../data/github/projects.json";
+import referrers from "../../data/github/referrers.json";
+import views from "../../data/github/views.json";
 
 export const handlers = [
   http.get("https://api.github.com/repos/EddieHubCommunity/HealthCheck", () =>
@@ -35,5 +37,13 @@ export const handlers = [
   http.get(
     "https://api.github.com/repos/EddieHubCommunity/HealthCheck/projects",
     () => HttpResponse.json(projects),
+  ),
+  http.get(
+    "https://api.github.com/repos/EddieHubCommunity/HealthCheck/traffic/popular/referrers",
+    () => HttpResponse.json(referrers),
+  ),
+  http.get(
+    "https://api.github.com/repos/EddieHubCommunity/HealthCheck/traffic/views",
+    () => HttpResponse.json(views),
   ),
 ];
