@@ -18,12 +18,12 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const flagsmithServerState = await flagsmith();
   const session = await getServerSession(authOptions);
+  const { serverState } = await flagsmith();
 
   return (
     <html lang="en">
-      <Providers serverState={flagsmithServerState}>
+      <Providers serverState={serverState}>
         <body
           className={classNames(
             "bg-slate-900 text-white flex flex-col min-h-screen",
