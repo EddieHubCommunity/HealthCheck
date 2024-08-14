@@ -6,6 +6,7 @@ import { getRepo } from "./action";
 import { SubmitButton } from "@/components/forms/SubmitButton";
 import Input from "@/components/forms/Input";
 import Checkbox from "@/components/forms/Checkbox";
+import Alert from "@/components/Alert";
 
 const initialState = {
   data: undefined,
@@ -19,6 +20,9 @@ export default function Form({ usage }) {
 
   return (
     <form action={formAction}>
+      <Alert>
+        You have ({usage}/{process.env.NEXT_PUBLIC_REPO_LIMIT}) repos remaining
+      </Alert>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <p className="mt-1 text-sm leading-6 text-gray-300">
