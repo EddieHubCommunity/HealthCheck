@@ -1,3 +1,12 @@
+## [0.28.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.6...v0.28.7) (2024-08-16)
+
+
+### Bug Fixes
+
+* debugging code for adding repo ([9d41384](https://github.com/EddieHubCommunity/HealthCheck/commit/9d4138408e471569ba99944acfa84c8b563d9d15))
+
+
+
 ## [0.28.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.5...v0.28.6) (2024-08-16)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * update dokcer ignore ([67f50c6](https://github.com/EddieHubCommunity/HealthCheck/commit/67f50c6367bc752eea9c7b1d6d3b40c6c3714eff))
-
-
-
-## [0.28.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.1...v0.28.2) (2024-08-12)
-
-
-### Bug Fixes
-
-* public repo list to have total ([6ee3938](https://github.com/EddieHubCommunity/HealthCheck/commit/6ee39389649fb320bbd1a30b1bb1042cd1c49a5a))
 
 
 
