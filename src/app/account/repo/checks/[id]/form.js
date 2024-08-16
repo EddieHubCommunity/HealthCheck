@@ -24,15 +24,9 @@ export function FormBadge({ src }) {
   const [copy, setCoppy] = useState(false);
   const copyHandle = async () => {
     const url = `![HealthCheck](${src})`;
-  
-    try {
-      // Use the Clipboard API to copy the URL
-      await navigator.clipboard.writeText(url);
-      console.log("Copied to clipboard:", url);
-      setCoppy(true);
-    } catch (err) {
-      console.error("Failed to copy: ", err);
-    }
+    await navigator.clipboard.writeText(url);
+    setCoppy(true);
+    
   };  
   return (
     <div>
