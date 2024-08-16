@@ -1,3 +1,12 @@
+## [0.28.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.7...v0.28.8) (2024-08-16)
+
+
+### Bug Fixes
+
+* docker compose synced local files to container ([#168](https://github.com/EddieHubCommunity/HealthCheck/issues/168)) ([25e3853](https://github.com/EddieHubCommunity/HealthCheck/commit/25e38534bcd19746bccb54d7d4dff062e0a12a98))
+
+
+
 ## [0.28.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.6...v0.28.7) (2024-08-16)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * banner text ([8377276](https://github.com/EddieHubCommunity/HealthCheck/commit/8377276bc2f855a1fdeb952d76fdff8a032d3ba3))
-
-
-
-## [0.28.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.2...v0.28.3) (2024-08-12)
-
-
-### Bug Fixes
-
-* update dokcer ignore ([67f50c6](https://github.com/EddieHubCommunity/HealthCheck/commit/67f50c6367bc752eea9c7b1d6d3b40c6c3714eff))
 
 
 
