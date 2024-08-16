@@ -5,7 +5,6 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Title from "@/components/Title";
 import Form from "./form";
-import Alert from "@/components/Alert";
 
 export default async function Page() {
   // check authentication
@@ -24,16 +23,7 @@ export default async function Page() {
   return (
     <div>
       <Title text="Add your GitHub repo" />
-      <Alert
-        text={`You have (${user.repositories.length}/${process.env.NEXT_PUBLIC_REPO_LIMIT}) repos remaining`}
-      />
-      <Form
-        disabled={
-          user.repositories.length >= process.env.NEXT_PUBLIC_REPO_LIMIT
-            ? true
-            : false
-        }
-      />
+      <Form usage={user.repositories.length} />
     </div>
   );
 }

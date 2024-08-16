@@ -6,6 +6,7 @@ import { getRepo } from "./action";
 import { SubmitButton } from "@/components/forms/SubmitButton";
 import Input from "@/components/forms/Input";
 import Checkbox from "@/components/forms/Checkbox";
+import Alert from "@/components/Alert";
 
 const initialState = {
   data: undefined,
@@ -13,11 +14,15 @@ const initialState = {
   errors: undefined,
 };
 
-export default function Form({ disabled = false }) {
+export default function Form({ usage }) {
   const [state, formAction] = useFormState(getRepo, initialState);
+  const disabled = usage >= process.env.NEXT_PUBLIC_REPO_LIMIT ? true : false;
 
   return (
     <form action={formAction}>
+      <Alert>
+        You have ({usage}/{process.env.NEXT_PUBLIC_REPO_LIMIT}) repos remaining
+      </Alert>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <p className="mt-1 text-sm leading-6 text-gray-300">
@@ -74,7 +79,7 @@ export default function Form({ disabled = false }) {
       </fieldset>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <SubmitButton text="SAVE" />
+        <SubmitButton text="SAVE" disabled={disabled} />
       </div>
     </form>
   );
