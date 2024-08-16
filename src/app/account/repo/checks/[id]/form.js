@@ -22,20 +22,18 @@ export default function Form({ id }) {
 
 export function FormBadge({ src }) {
   const [copy, setCoppy] = useState(false);
-  const copyHandle = () => {
+  const copyHandle = async () => {
     const url = `![HealthCheck](${src})`;
-
-    // Use the Clipboard API to copy the URL
-    navigator.clipboard
-      .writeText(url)
-      .then(() => {
-        console.log("Copied to clipboard:", url);
-        setCoppy(true);
-      })
-      .catch((err) => {
-        console.error("Failed to copy: ", err);
-      });
-  };
+  
+    try {
+      // Use the Clipboard API to copy the URL
+      await navigator.clipboard.writeText(url);
+      console.log("Copied to clipboard:", url);
+      setCoppy(true);
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };  
   return (
     <div>
       <label
