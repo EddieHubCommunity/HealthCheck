@@ -11,6 +11,7 @@ export default function Input({
   error,
   prepend,
   disabled = false,
+  onChange,
   type = "text",
 }) {
   const { pending } = useFormStatus();
@@ -28,6 +29,7 @@ export default function Input({
       type={type}
       disabled={pending || disabled ? true : false}
       name={id}
+      onChange={onChange}
       id={id}
       className={classNames(
         "block w-full rounded-md border-0 sm:text-sm sm:leading-6 bg-gray-800 disabled:bg-gray-600",

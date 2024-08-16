@@ -7,6 +7,7 @@ import { SubmitButton } from "@/components/forms/SubmitButton";
 import Input from "@/components/forms/Input";
 import Checkbox from "@/components/forms/Checkbox";
 import Alert from "@/components/Alert";
+import {useState,useEffect} from "react"
 
 const initialState = {
   data: undefined,
@@ -16,8 +17,22 @@ const initialState = {
 
 export default function Form({ usage }) {
   const [state, formAction] = useFormState(getRepo, initialState);
-  const disabled = usage >= process.env.NEXT_PUBLIC_REPO_LIMIT ? true : false;
+  const [usageLimitReached,setUsageLimitReached] = useState(false)
+  const [githubUrl , setGithubUrl] = useState(state?.data?.url || '')
+  const [isGithubUrlValid,setIsGithubUrlValid] = useState(false)
+  const [isDisabled,setIsDisabled] = useState(true)
 
+  const githubRegex = /^https:\/\/github\.com\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_-]+$/;
+
+  useEffect(()=>{
+
+    setUsageLimitReached(usage >= process.env.NEXT_PUBLIC_REPO_LIMIT);
+    setIsGithubUrlValid(githubRegex.test(githubUrl))
+    
+    setIsDisabled(usageLimitReached || !isGithubUrlValid)
+    
+  },[usage,githubUrl])
+  
   return (
     <form action={formAction}>
       <Alert>
@@ -30,13 +45,15 @@ export default function Form({ usage }) {
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            
             <Input
               id="url"
               name="url"
               text="GitHub repo URL"
               error={state?.errors?.url}
-              value={state?.data?.url}
-              disabled={disabled}
+              value={githubUrl}
+              onChange={(e)=>setGithubUrl(e.target.value)}
+              disabled={usageLimitReached}
             />
           </div>
         </div>
@@ -79,7 +96,8 @@ export default function Form({ usage }) {
       </fieldset>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <SubmitButton text="SAVE" disabled={disabled} />
+        <SubmitButton text="SAVE" disabled={isDisabled} />
+        
       </div>
     </form>
   );
