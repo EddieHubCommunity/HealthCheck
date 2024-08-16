@@ -26,8 +26,7 @@ export function FormBadge({ src }) {
     const url = `![HealthCheck](${src})`;
     await navigator.clipboard.writeText(url);
     setCoppy(true);
-    
-  };  
+  };
   return (
     <div>
       <label
