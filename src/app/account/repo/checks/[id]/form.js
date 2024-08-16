@@ -29,10 +29,7 @@ export function FormBadge({ src }) {
   };
   return (
     <div>
-      <label
-        htmlFor="email"
-        className="block text-sm font-medium leading-6 text-white"
-      >
+      <label>
         Add badge to your Repo&lsquo;s README to show the latest check status
       </label>
       <div className="mt-2  rounded-md shadow-sm">
@@ -44,13 +41,15 @@ export function FormBadge({ src }) {
               onClick={copyHandle}
             />
           </div>
-          <input
+          <Input
             readOnly={true}
             id="badge"
             name="badge"
             type="text"
             value={`![HealthCheck](${src})`}
-            className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  sm:text-sm sm:leading-6"
+            className="w-full -z-30"
+            inputClassName="pl-10 py-1.5"
+            labelClassName="hidden"
           />
         </div>
         {copy && <p className=" text-green-400 mt-2">Copied!</p>}
