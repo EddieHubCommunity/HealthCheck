@@ -41,12 +41,18 @@ export async function getRepo(prevState, formData) {
   const response = await getRepoApi(url, user.accounts[0].access_token);
 
   // if repo not found show error
-  if (!response || response.status !== 200)
+  if (!response || response.status !== 200) {
+    console.log(
+      "repo not found ------------>>>>",
+      url,
+      `...by user ${session.user.name}`,
+    );
     return {
       data: { url },
       succcess: false,
       errors: { url: ["GitHub repository not found"] },
     };
+  }
 
   // check if user has repo url already
   let userRepo = await prisma.repository.findFirst({
