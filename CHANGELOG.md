@@ -1,3 +1,12 @@
+## [0.28.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.8...v0.28.9) (2024-08-16)
+
+
+### Bug Fixes
+
+* click list item displays when clickable ([#160](https://github.com/EddieHubCommunity/HealthCheck/issues/160)) ([7643af1](https://github.com/EddieHubCommunity/HealthCheck/commit/7643af12430dbb0c5f008ab81dd64dd95c00c188))
+
+
+
 ## [0.28.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.7...v0.28.8) (2024-08-16)
 
 
@@ -32,15 +41,6 @@
 
 * moved alert to from page to form ([f950931](https://github.com/EddieHubCommunity/HealthCheck/commit/f950931b4e70c391569d473977d8c6c144e5ab37))
 * repo with no description ([51bbd27](https://github.com/EddieHubCommunity/HealthCheck/commit/51bbd276470627777f2d4d8c4e71009852e2f08a))
-
-
-
-## [0.28.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.3...v0.28.4) (2024-08-13)
-
-
-### Bug Fixes
-
-* banner text ([8377276](https://github.com/EddieHubCommunity/HealthCheck/commit/8377276bc2f855a1fdeb952d76fdff8a032d3ba3))
 
 
 
