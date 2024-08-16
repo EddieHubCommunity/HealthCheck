@@ -63,7 +63,13 @@ export default function Input({
 
   return (
     <div className={"col-span-full " + className}>
-      <label htmlFor={id} className={classNames("block text-sm font-medium leading-6", labelClassName)}>
+      <label
+        htmlFor={id}
+        className={classNames(
+          "block text-sm font-medium leading-6",
+          labelClassName,
+        )}
+      >
         {text}
       </label>
       <div className="relative mt-2 rounded-md shadow-sm">
