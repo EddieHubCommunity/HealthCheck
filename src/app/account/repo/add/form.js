@@ -1,6 +1,7 @@
 "use client";
 
 import { useFormState } from "react-dom";
+import { useFlags } from "flagsmith/react";
 
 import { getRepo } from "./action";
 import { SubmitButton } from "@/components/forms/SubmitButton";
@@ -15,13 +16,14 @@ const initialState = {
 };
 
 export default function Form({ usage }) {
+  const { repolimit } = useFlags(["repolimit"]);
   const [state, formAction] = useFormState(getRepo, initialState);
-  const disabled = usage >= process.env.NEXT_PUBLIC_REPO_LIMIT ? true : false;
+  const disabled = usage >= repolimit.value ? true : false;
 
   return (
     <form action={formAction}>
       <Alert>
-        You have ({usage}/{process.env.NEXT_PUBLIC_REPO_LIMIT}) repos remaining
+        You have ({usage}/{repolimit.value}) repos remaining
       </Alert>
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
