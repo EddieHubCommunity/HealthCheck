@@ -1,6 +1,7 @@
 "use client";
 
 import { useFormState } from "react-dom";
+import { useFlags } from "flagsmith/react";
 
 import config from "@/config/app.json";
 import { saveSettings } from "./action";
@@ -15,6 +16,8 @@ const initialState = {
 };
 
 export default function Form({ id, data, disabled = false }) {
+  let { optionalchecks } = useFlags(["optionalchecks"]);
+  optionalchecks = JSON.parse(optionalchecks.value);
   const [state, formAction] = useFormState(saveSettings, initialState);
 
   return (
@@ -30,7 +33,7 @@ export default function Form({ id, data, disabled = false }) {
 
       <fieldset>
         <legend className="text-sm font-semibold leading-6">Checks</legend>
-        {config.checks.optional.map((option) => (
+        {optionalchecks.map((option) => (
           <div className="mt-6 space-y-6" key={option.id}>
             <Checkbox
               id={option.id}
