@@ -1,3 +1,12 @@
+## [0.29.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.29.0...v0.29.1) (2024-08-18)
+
+
+### Bug Fixes
+
+* repo stats documentation ([0126cb3](https://github.com/EddieHubCommunity/HealthCheck/commit/0126cb3ba177bfd2af6c147379450999043a84c6))
+
+
+
 # [0.29.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.9...v0.29.0) (2024-08-18)
 
 
@@ -41,15 +50,6 @@
 ### Bug Fixes
 
 * debugging code for adding repo ([9d41384](https://github.com/EddieHubCommunity/HealthCheck/commit/9d4138408e471569ba99944acfa84c8b563d9d15))
-
-
-
-## [0.28.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.5...v0.28.6) (2024-08-16)
-
-
-### Bug Fixes
-
-* footer margin-top [#159](https://github.com/EddieHubCommunity/HealthCheck/issues/159) ([#169](https://github.com/EddieHubCommunity/HealthCheck/issues/169)) ([5001e08](https://github.com/EddieHubCommunity/HealthCheck/commit/5001e08275bccd96026a081f05abacf2cb948772))
 
 
 
