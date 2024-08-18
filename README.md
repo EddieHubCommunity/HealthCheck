@@ -25,7 +25,7 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
 1. Login with your GitHub _(only public info required)_
 2. Add GitHub repo URL
-3. Run HealthCheck against repo and view the report
+3. Run HealthCheck against repo and view the report (if you have permissions on the repo, you will see more statistics)
 4. Add a HealthCheck badge to your project
 
 ## Quickstart guide for local development
