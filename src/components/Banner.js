@@ -1,7 +1,12 @@
+"use client";
+
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import { useFlags } from "flagsmith/react";
 
 export default function Banner() {
+  const { banner } = useFlags(["banner"]);
+
   return (
     <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <div
@@ -38,7 +43,7 @@ export default function Banner() {
           >
             <circle r={1} cx={1} cy={1} />
           </svg>
-          A big thank you to Flagsmith for sponsoring this project
+          {banner.value}
         </p>
         <Link
           href="https://www.flagsmith.com"
