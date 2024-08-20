@@ -34,6 +34,7 @@
     "badge-maker": "^4.0.0",
     "date-fns": "^3.6.0",
     "flagsmith": "^4.0.3",
+    "flagsmith-nodejs": "^3.3.3",
     "flowbite-react": "^0.10.1",
     "next": "14.2.4",
     "next-auth": "^4.24.7",

@@ -52,9 +52,13 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    ![Import flags on Flagsmith](https://github.com/user-attachments/assets/825525e2-11ec-48a5-9c89-a45353142c29)
 
-7. Get your environment key from Flagsmith and add to `.env` file
+7. Flagsmith keys
 
-![How to get environment key](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/0fb56934-2d27-486a-9859-365672771407)
+   a. Get your environment client-side key from Flagsmith and add to `.env` file
+
+   ![How to get environment key](https://github.com/EddieHubCommunity/HealthCheck/assets/624760/0fb56934-2d27-486a-9859-365672771407)
+
+   b. Also create your environment server-side key from Flagsmith and add to `.env` file
 
 8. To be able to log in using GitHub OAuth
 
