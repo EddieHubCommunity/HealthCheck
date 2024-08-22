@@ -3,11 +3,17 @@
 import { redirect } from "next/navigation";
 import { getServerSession } from "next-auth/next";
 import { differenceInHours } from "date-fns";
+import Flagsmith from "flagsmith-nodejs";
 
 import prisma from "@/models/db";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import checks from "@/utils/checks";
 import getAllRepoData from "@/utils/github";
+
+// TODO: move to a reusable location (server-side only)
+const flagsmith = new Flagsmith({
+  environmentKey: process.env.FLAGSMITH_ENVIRONMENT_API_KEY,
+});
 
 export async function performChecks(formData) {
   const session = await getServerSession(authOptions);
@@ -15,6 +21,9 @@ export async function performChecks(formData) {
   if (!session) {
     throw new Error("Not authenticated");
   }
+
+  const flags = await flagsmith.getEnvironmentFlags();
+  const githbCacheDuration = flags.getFeatureValue("github_cache");
 
   const id = formData.get("id");
 
@@ -36,7 +45,7 @@ export async function performChecks(formData) {
   if (
     !githubResponseRepo ||
     differenceInHours(new Date(), githubResponseRepo.createdAt) >=
-      process.env.NEXT_PUBLIC_GITHUB_CACHE
+      githbCacheDuration
   ) {
     const user = await prisma.user.findUnique({
       where: { id: session.user.id },
