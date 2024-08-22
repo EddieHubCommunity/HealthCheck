@@ -1,3 +1,12 @@
+# [0.30.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.29.1...v0.30.0) (2024-08-22)
+
+
+### Features
+
+* github cache duration with flagsmith ([#181](https://github.com/EddieHubCommunity/HealthCheck/issues/181)) ([d1c2b4f](https://github.com/EddieHubCommunity/HealthCheck/commit/d1c2b4f74e5f63cdb3e0a95502ddc27d2d6a99aa))
+
+
+
 ## [0.29.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.29.0...v0.29.1) (2024-08-18)
 
 
@@ -41,15 +50,6 @@
 ### Bug Fixes
 
 * docker compose synced local files to container ([#168](https://github.com/EddieHubCommunity/HealthCheck/issues/168)) ([25e3853](https://github.com/EddieHubCommunity/HealthCheck/commit/25e38534bcd19746bccb54d7d4dff062e0a12a98))
-
-
-
-## [0.28.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.6...v0.28.7) (2024-08-16)
-
-
-### Bug Fixes
-
-* debugging code for adding repo ([9d41384](https://github.com/EddieHubCommunity/HealthCheck/commit/9d4138408e471569ba99944acfa84c8b563d9d15))
 
 
 
