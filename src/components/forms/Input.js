@@ -62,7 +62,7 @@ export default function Input({
   }
 
   return (
-    <div className={classNames("col-span-full ", className)}>
+    <div className={classNames("col-span-full", className)}>
       <label
         htmlFor={id}
         className={classNames(
