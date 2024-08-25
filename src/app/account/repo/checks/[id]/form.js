@@ -52,7 +52,7 @@ export function FormBadge({ src }) {
             labelClassName="hidden"
           />
         </div>
-        {copy && <p className=" text-green-400 mt-2">Copied!</p>}
+        {copy && <p className="text-green-400 mt-2">Copied!</p>}
         {/* <button
           type="button"
           className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
