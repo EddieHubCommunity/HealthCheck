@@ -68,6 +68,8 @@ How friendly is your GitHub Open Source Repo? This project will check to make su
 
    b. In your GitHub OAuth app, GitHub will generate the `client id` and `client secret`, add these to your the `.env` file
 
+   You can change the environment variable `APP_ENV` to the value of `test`, and this will mock out the OAuth.
+
 9. Run the project with one of these
 
    a. If you have Postgres installed, you can run the app locally `npm run dev` OR
