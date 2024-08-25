@@ -1,6 +1,6 @@
 export async function register() {
   const unmocked = [
-    "localhost:3000",
+    "nextjs.org",
     "googleapis.com",
     "gstatic.com",
     "api.flagsmith.com",

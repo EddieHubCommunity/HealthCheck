@@ -9,8 +9,17 @@ import labels from "../../data/github/labels.json";
 import projects from "../../data/github/projects.json";
 import referrers from "../../data/github/referrers.json";
 import views from "../../data/github/views.json";
+import user from "../../data/github/user.json";
+import accessToken from "../../data/github/access_token.json";
 
 export const handlers = [
+  // authentication
+  http.post("https://github.com/login/oauth/access_token", () =>
+    HttpResponse.json(accessToken),
+  ),
+  http.get("https://api.github.com/user", () => HttpResponse.json(user)),
+
+  // github data
   http.get("https://api.github.com/repos/EddieHubCommunity/HealthCheck", () =>
     HttpResponse.json(repo),
   ),
