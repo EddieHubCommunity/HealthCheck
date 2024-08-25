@@ -71,7 +71,8 @@ export default defineConfig({
 
   /* Run your local dev server before starting the tests */
   webServer: {
-    command: "cross-env APP_ENV=test npm run dev",
+    command:
+      "cross-env APP_ENV=test GITHUB_ID=aaa GITHUB_SECRET=bbb npm run dev",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
   },
