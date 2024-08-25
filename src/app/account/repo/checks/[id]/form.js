@@ -10,6 +10,7 @@ import { useState } from "react";
 import { performChecks } from "./action";
 import Input from "@/components/forms/Input";
 import { SubmitButton } from "@/components/forms/SubmitButton";
+import classNames from "@/utils/classNames";
 
 export default function Form({ id }) {
   return (
@@ -37,7 +38,7 @@ export function FormBadge({ src }) {
           <div className=" absolute inset-y-0 left-0 flex items-center pl-3 cursor-pointer">
             <ClipboardDocumentCheckIcon
               aria-hidden="true"
-              className={`h-5 w-5 ${copy ? "text-green-400 " : "text-gray-500 "}  `}
+              className={classNames("h-5 w-5", copy ? "text-green-400 " : "text-gray-500 ")}
               onClick={copyHandle}
             />
           </div>
