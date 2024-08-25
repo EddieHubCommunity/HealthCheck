@@ -38,7 +38,10 @@ export function FormBadge({ src }) {
           <div className=" absolute inset-y-0 left-0 flex items-center pl-3 cursor-pointer">
             <ClipboardDocumentCheckIcon
               aria-hidden="true"
-              className={classNames("h-5 w-5", copy ? "text-green-400 " : "text-gray-500 ")}
+              className={classNames(
+                "h-5 w-5",
+                copy ? "text-green-400 " : "text-gray-500 ",
+              )}
               onClick={copyHandle}
             />
           </div>
