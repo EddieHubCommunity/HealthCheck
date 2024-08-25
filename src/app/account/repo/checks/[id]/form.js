@@ -21,7 +21,7 @@ export default function Form({ id }) {
 }
 
 export function FormBadge({ src }) {
-  const [copy, setCoppy] = useState(false);
+  const [copy, setCopy] = useState(false);
   const copyHandle = async () => {
     const url = `![HealthCheck](${src})`;
     await navigator.clipboard.writeText(url);
