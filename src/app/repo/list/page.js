@@ -4,6 +4,7 @@ import prisma from "@/models/db";
 import List from "@/components/List";
 import Title from "@/components/Title";
 import { worstCheck } from "@/utils/checks";
+import Platform from "@/components/stats/Platform";
 
 export default async function Page() {
   const repositories = await prisma.repository.findMany({
@@ -13,6 +14,9 @@ export default async function Page() {
           createdAt: "desc",
         },
         take: 1,
+      },
+      _count: {
+        select: { checks: true },
       },
     },
     orderBy: {
@@ -25,6 +29,7 @@ export default async function Page() {
   return (
     <>
       <Title text={`Repo list (${repos.length})`} />
+      <Platform repositories={repositories} />
       <List
         data={repos.map((repo) => ({
           id: repo.id,

@@ -34,10 +34,6 @@ export async function getRepo(prevState, formData) {
     },
   });
 
-  if (user.repositories.length === process.env.NEXT_PUBLIC_REPO_LIMIT) {
-    throw new Error("Repo limit reached");
-  }
-
   const response = await getRepoApi(url, user.accounts[0].access_token);
 
   // if repo not found show error

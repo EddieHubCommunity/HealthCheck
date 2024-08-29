@@ -3,18 +3,8 @@
     "name": "tagline",
     "default_enabled": true,
     "is_server_key_only": false,
-    "initial_value": "LOCAL: How friendly is your Open Source project?",
-    "value": "LOCAL: How friendly is your Open Source Repo?",
-    "type": "unicode",
-    "enabled": true,
-    "multivariate": []
-  },
-  {
-    "name": "checks",
-    "default_enabled": true,
-    "is_server_key_only": false,
-    "initial_value": "[\"topics\",\"description\",\"url\"]",
-    "value": "[\"topics\",\"description\",\"url\"]",
+    "initial_value": "How friendly is your Open Source project?",
+    "value": "How friendly is your Open Source Repo?",
     "type": "unicode",
     "enabled": true,
     "multivariate": []
@@ -23,10 +13,98 @@
     "name": "news",
     "default_enabled": true,
     "is_server_key_only": false,
-    "initial_value": "LOCAL: Have you seen our latest feature XYZ?",
-    "value": "LOCAL: Have you seen our latest feature XYZ?",
+    "initial_value": "Have you seen our latest feature XYZ?",
+    "value": "Give our GitHub repo a Star",
     "type": "unicode",
     "enabled": true,
+    "multivariate": []
+  },
+  {
+    "name": "sponsoredby",
+    "default_enabled": false,
+    "is_server_key_only": false,
+    "initial_value": "Text 0",
+    "value": "Text 0",
+    "type": "unicode",
+    "enabled": false,
+    "multivariate": [
+      {
+        "percentage_allocation": 25,
+        "default_percentage_allocation": 25,
+        "value": "Text 1",
+        "type": "unicode"
+      },
+      {
+        "percentage_allocation": 25,
+        "default_percentage_allocation": 25,
+        "value": "Text 3",
+        "type": "unicode"
+      },
+      {
+        "percentage_allocation": 25,
+        "default_percentage_allocation": 25,
+        "value": "Text 4",
+        "type": "unicode"
+      },
+      {
+        "percentage_allocation": 25,
+        "default_percentage_allocation": 25,
+        "value": "Text 2",
+        "type": "unicode"
+      }
+    ]
+  },
+  {
+    "name": "banner",
+    "default_enabled": false,
+    "is_server_key_only": false,
+    "initial_value": "A big thank you to Flagsmith for sponsoring this project",
+    "value": "A big thank you to Flagsmith for sponsoring this Open Source project",
+    "type": "unicode",
+    "enabled": false,
+    "multivariate": [
+      {
+        "percentage_allocation": 50,
+        "default_percentage_allocation": 0,
+        "value": "Thank you to Flagsmith for supporting this Open Source project",
+        "type": "unicode"
+      },
+      {
+        "percentage_allocation": 50,
+        "default_percentage_allocation": 0,
+        "value": "Flagsmith is the sponsor for this Open Source project, thank you",
+        "type": "unicode"
+      }
+    ]
+  },
+  {
+    "name": "repolimit",
+    "default_enabled": false,
+    "is_server_key_only": false,
+    "initial_value": "8",
+    "value": 5,
+    "type": "int",
+    "enabled": false,
+    "multivariate": []
+  },
+  {
+    "name": "platform_stats",
+    "default_enabled": false,
+    "is_server_key_only": false,
+    "initial_value": null,
+    "value": null,
+    "type": "unicode",
+    "enabled": false,
+    "multivariate": []
+  },
+  {
+    "name": "optionalchecks",
+    "default_enabled": false,
+    "is_server_key_only": false,
+    "initial_value": "[\n   {\n      \"id\":\"activity\",\n      \"name\":\"Activity\"\n   },\n   {\n      \"id\":\"branches\",\n      \"name\":\"Branches\"\n   },\n   {\n      \"id\":\"defaultBranch\",\n      \"name\":\"Default Branch\"\n   }\n]",
+    "value": "[\n   {\n      \"id\":\"activity\",\n      \"name\":\"Activity\"\n   },\n   {\n      \"id\":\"defaultBranch\",\n      \"name\":\"Default Branch\"\n   }\n]",
+    "type": "unicode",
+    "enabled": false,
     "multivariate": []
   }
 ]

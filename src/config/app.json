@@ -1,19 +1,21 @@
 {
-  "version": "0.28.9",
-  "checks": {
-    "optional": [
-      {
-        "id": "activity",
-        "name": "Activity"
-      },
-      {
-        "id": "branches",
-        "name": "Branches"
-      },
-      {
-        "id": "defaultBranch",
-        "name": "Default Branch"
-      }
-    ]
-  }
+  "version": "0.30.0",
+  "checks": [
+    "description",
+    "url",
+    "topics",
+    "activity",
+    "issues",
+    "defaultBranch",
+    "good-first-issue",
+    "branches",
+    "releases",
+    "readme",
+    "license",
+    "contributing",
+    "pull-request-template",
+    "code-of-conduct",
+    "labels",
+    "projects"
+  ]
 }
