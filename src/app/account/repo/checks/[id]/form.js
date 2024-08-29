@@ -35,7 +35,7 @@ export function FormBadge({ src }) {
       </label>
       <div className="mt-2  rounded-md shadow-sm">
         <div className="relative flex flex-grow items-stretch focus-within:z-10">
-          <div className=" absolute inset-y-0 left-0 flex items-center pl-3 cursor-pointer">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3 cursor-pointer">
             <ClipboardDocumentCheckIcon
               aria-hidden="true"
               className={classNames(
