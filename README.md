@@ -3,6 +3,7 @@
 
 # HealthCheck
 
+![HealthCheck](https://healthcheck.eddiehubcommunity.org/api/badges/report/clzr3h1ti0000daor5pydhz8y)
 [![RepoRater](https://repo-rater.eddiehub.org/api/badge?owner=EddieHubCommunity&name=HealthCheck)](https://repo-rater.eddiehub.org/rate?owner=EddieHubCommunity&name=HealthCheck)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EddieHubCommunity/HealthCheck?style=plastic)
 ![GitHub contributors](https://img.shields.io/github/contributors/EddieHubCommunity/HealthCheck)
