@@ -1,3 +1,12 @@
+# [0.31.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.30.0...v0.31.0) (2024-08-30)
+
+
+### Features
+
+* OSSF integration ([#192](https://github.com/EddieHubCommunity/HealthCheck/issues/192)) ([62b6e35](https://github.com/EddieHubCommunity/HealthCheck/commit/62b6e3581ab66d6aaa33e4f34d0044db6b58b2c1))
+
+
+
 # [0.30.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.29.1...v0.30.0) (2024-08-22)
 
 
@@ -41,15 +50,6 @@
 ### Bug Fixes
 
 * click list item displays when clickable ([#160](https://github.com/EddieHubCommunity/HealthCheck/issues/160)) ([7643af1](https://github.com/EddieHubCommunity/HealthCheck/commit/7643af12430dbb0c5f008ab81dd64dd95c00c188))
-
-
-
-## [0.28.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.7...v0.28.8) (2024-08-16)
-
-
-### Bug Fixes
-
-* docker compose synced local files to container ([#168](https://github.com/EddieHubCommunity/HealthCheck/issues/168)) ([25e3853](https://github.com/EddieHubCommunity/HealthCheck/commit/25e38534bcd19746bccb54d7d4dff062e0a12a98))
 
 
 
