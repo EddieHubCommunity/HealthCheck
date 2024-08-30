@@ -1,3 +1,12 @@
+## [0.31.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.0...v0.31.1) (2024-08-30)
+
+
+### Bug Fixes
+
+* ossf score badge ([#196](https://github.com/EddieHubCommunity/HealthCheck/issues/196)) ([8ab0133](https://github.com/EddieHubCommunity/HealthCheck/commit/8ab0133c3c8585a135b52e7e0258638052133071))
+
+
+
 # [0.31.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.30.0...v0.31.0) (2024-08-30)
 
 
@@ -41,15 +50,6 @@
 * ignore checks config with flagsmith ([e01fca5](https://github.com/EddieHubCommunity/HealthCheck/commit/e01fca52b1b6add484fc852303385585e4797b93))
 * platform stats for maintainers with flagsmith ([f9f851e](https://github.com/EddieHubCommunity/HealthCheck/commit/f9f851ed69201283ddc6fcc7fc1383d7fb3ac0b5))
 * repo limited managed by flagsmith ([59c09ce](https://github.com/EddieHubCommunity/HealthCheck/commit/59c09ce9960ebbb0412c892c87b26172074a629c))
-
-
-
-## [0.28.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.28.8...v0.28.9) (2024-08-16)
-
-
-### Bug Fixes
-
-* click list item displays when clickable ([#160](https://github.com/EddieHubCommunity/HealthCheck/issues/160)) ([7643af1](https://github.com/EddieHubCommunity/HealthCheck/commit/7643af12430dbb0c5f008ab81dd64dd95c00c188))
 
 
 
