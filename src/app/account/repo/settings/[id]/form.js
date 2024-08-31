@@ -33,7 +33,7 @@ export default function Form({ id, data, disabled = false }) {
 
       <fieldset>
         <legend className="text-sm font-semibold leading-6">Checks</legend>
-        {optionalchecks.map((option) => (
+        {optionalchecks?.map((option) => (
           <div className="mt-6 space-y-6" key={option.id}>
             <Checkbox
               id={option.id}

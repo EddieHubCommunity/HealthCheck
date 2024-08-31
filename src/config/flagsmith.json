@@ -13,7 +13,7 @@
     "name": "news",
     "default_enabled": true,
     "is_server_key_only": false,
-    "initial_value": "Have you seen our latest feature XYZ?",
+    "initial_value": "Give our GitHub repo a Star",
     "value": "Give our GitHub repo a Star",
     "type": "unicode",
     "enabled": true,

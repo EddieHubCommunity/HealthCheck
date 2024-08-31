@@ -22,8 +22,15 @@ export async function performChecks(formData) {
     throw new Error("Not authenticated");
   }
 
-  const flags = await flagsmith.getEnvironmentFlags();
-  const githbCacheDuration = flags.getFeatureValue("github_cache");
+  let flags;
+  let githbCacheDuration;
+  try {
+    flags = await flagsmith.getEnvironmentFlags();
+    githbCacheDuration = flags.getFeatureValue("github_cache");
+  } catch (e) {
+    console.log(e);
+    githbCacheDuration = process.env.NEXT_PUBLIC_GITHUB_CACHE;
+  }
 
   const id = formData.get("id");
 

@@ -11,6 +11,8 @@ import referrers from "../../data/github/referrers.json";
 import views from "../../data/github/views.json";
 import user from "../../data/github/user.json";
 import accessToken from "../../data/github/access_token.json";
+import identities from "../../data/flagsmith/identities.json";
+import flags from "../../data/flagsmith/flags.json";
 
 export const handlers = [
   // authentication
@@ -19,7 +21,15 @@ export const handlers = [
   ),
   http.get("https://api.github.com/user", () => HttpResponse.json(user)),
 
-  // github data
+  // flagsmith
+  http.post("https://edge.api.flagsmith.com/api/v1/identities/", () =>
+    HttpResponse.json(identities),
+  ),
+  http.get("https://edge.api.flagsmith.com/api/v1/flags/", () =>
+    HttpResponse.json(flags),
+  ),
+  
+  // github
   http.get("https://api.github.com/repos/EddieHubCommunity/HealthCheck", () =>
     HttpResponse.json(repo),
   ),

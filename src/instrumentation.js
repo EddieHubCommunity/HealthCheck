@@ -3,7 +3,6 @@ export async function register() {
     "nextjs.org",
     "googleapis.com",
     "gstatic.com",
-    "api.flagsmith.com",
     "github.com/mona.png",
   ];
 
