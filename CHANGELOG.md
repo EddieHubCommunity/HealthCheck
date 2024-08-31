@@ -1,3 +1,13 @@
+## [0.31.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.3...v0.31.4) (2024-08-31)
+
+
+### Bug Fixes
+
+* mswjs mocks for flagsmith ([5b1e5d0](https://github.com/EddieHubCommunity/HealthCheck/commit/5b1e5d09a1177ae5101f0f7b33c4b5386f6ceb73))
+* when optional checks are unavailable ([ddf3d56](https://github.com/EddieHubCommunity/HealthCheck/commit/ddf3d5614f7319c372d18181277dc47f5d5dfab8))
+
+
+
 ## [0.31.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.2...v0.31.3) (2024-08-31)
 
 
@@ -32,15 +42,6 @@
 ### Features
 
 * OSSF integration ([#192](https://github.com/EddieHubCommunity/HealthCheck/issues/192)) ([62b6e35](https://github.com/EddieHubCommunity/HealthCheck/commit/62b6e3581ab66d6aaa33e4f34d0044db6b58b2c1))
-
-
-
-# [0.30.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.29.1...v0.30.0) (2024-08-22)
-
-
-### Features
-
-* github cache duration with flagsmith ([#181](https://github.com/EddieHubCommunity/HealthCheck/issues/181)) ([d1c2b4f](https://github.com/EddieHubCommunity/HealthCheck/commit/d1c2b4f74e5f63cdb3e0a95502ddc27d2d6a99aa))
 
 
 
