@@ -9,8 +9,19 @@ import labels from "../../data/github/labels.json";
 import projects from "../../data/github/projects.json";
 import referrers from "../../data/github/referrers.json";
 import views from "../../data/github/views.json";
+import identities from "../../data/flagsmith/identities.json";
+import flags from "../../data/flagsmith/flags.json";
 
 export const handlers = [
+  // flagsmith
+  http.post("https://edge.api.flagsmith.com/api/v1/identities/", () =>
+    HttpResponse.json(identities),
+  ),
+  http.get("https://edge.api.flagsmith.com/api/v1/flags/", () =>
+    HttpResponse.json(flags),
+  ),
+
+  // github
   http.get("https://api.github.com/repos/EddieHubCommunity/HealthCheck", () =>
     HttpResponse.json(repo),
   ),

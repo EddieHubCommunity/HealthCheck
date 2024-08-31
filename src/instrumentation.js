@@ -3,7 +3,6 @@ export async function register() {
     "localhost:3000",
     "googleapis.com",
     "gstatic.com",
-    "api.flagsmith.com",
     "github.com/mona.png",
   ];
 
