@@ -18,7 +18,7 @@ const initialState = {
 export default function Form({ usage }) {
   const { repolimit } = useFlags(["repolimit"]);
   const [state, formAction] = useFormState(getRepo, initialState);
-  const disabled = usage >= repolimit.value ? true : false;
+  const disabled = usage >= repolimit.value;
 
   return (
     <form action={formAction}>
