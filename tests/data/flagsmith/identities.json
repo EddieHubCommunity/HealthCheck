@@ -1,4 +1,73 @@
 {
   "traits": [],
-  "flags": []
+  "flags": [
+    {
+      "id": 1,
+      "feature": {
+        "id": 1,
+        "name": "tagline",
+        "created_date": "2023-05-14T06:11:08.178802Z",
+        "description": null,
+        "initial_value": "How friendly is your Open Source Repo?",
+        "default_enabled": true,
+        "type": "STANDARD"
+      },
+      "feature_state_value": "How friendly is your Open Source Repo?",
+      "environment": 5242,
+      "identity": null,
+      "feature_segment": null,
+      "enabled": true
+    },
+    {
+      "id": 2,
+      "feature": {
+        "id": 2,
+        "name": "news",
+        "created_date": "2023-05-14T06:11:08.178802Z",
+        "description": null,
+        "initial_value": "Give our GitHub repo a Star",
+        "default_enabled": true,
+        "type": "STANDARD"
+      },
+      "feature_state_value": "Give our GitHub repo a Star",
+      "environment": 5242,
+      "identity": null,
+      "feature_segment": null,
+      "enabled": true
+    },
+    {
+      "id": 3,
+      "feature": {
+        "id": 3,
+        "name": "banner",
+        "created_date": "2023-05-14T06:11:08.178802Z",
+        "description": null,
+        "initial_value": "A big thank you to Flagsmith for sponsoring this Open Source project",
+        "default_enabled": true,
+        "type": "STANDARD"
+      },
+      "feature_state_value": "A big thank you to Flagsmith for sponsoring this Open Source project",
+      "environment": 5242,
+      "identity": null,
+      "feature_segment": null,
+      "enabled": true
+    },
+    {
+      "id": 4,
+      "feature": {
+        "id": 5,
+        "name": "repolimit",
+        "created_date": "2023-05-14T06:11:08.178802Z",
+        "description": null,
+        "initial_value": "8",
+        "default_enabled": true,
+        "type": "STANDARD"
+      },
+      "feature_state_value": 5,
+      "environment": 5242,
+      "identity": null,
+      "feature_segment": null,
+      "enabled": true
+    }
+  ]
 }
