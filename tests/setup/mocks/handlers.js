@@ -28,7 +28,7 @@ export const handlers = [
   http.get("https://edge.api.flagsmith.com/api/v1/flags/", () =>
     HttpResponse.json(flags),
   ),
-  
+
   // github
   http.get("https://api.github.com/repos/EddieHubCommunity/HealthCheck", () =>
     HttpResponse.json(repo),
