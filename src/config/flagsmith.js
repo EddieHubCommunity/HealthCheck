@@ -16,9 +16,9 @@ export default async function flagsmith(session) {
     environmentID: process.env.NEXT_PUBLIC_FLAGSMITH_ENVIRONMENT_ID,
   };
 
-  if (process.env.APP_ENV === "test") {
-    initialise.defaultFlags = defaults;
-  }
+  // if (process.env.APP_ENV === "test") {
+  initialise.defaultFlags = defaults;
+  // }
 
   if (session) {
     initialise.identity = session.user.id;
@@ -34,7 +34,7 @@ export default async function flagsmith(session) {
     await flagsmith.init(initialise);
   } catch (e) {
     if (process.env.APP_ENV !== "test") {
-      throw new Error(e);
+      // throw new Error(e);
     }
   }
   const serverState = flagsmith.getState();
