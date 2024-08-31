@@ -1,3 +1,12 @@
+## [0.31.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.2...v0.31.3) (2024-08-31)
+
+
+### Bug Fixes
+
+* default flags if error ([425bf87](https://github.com/EddieHubCommunity/HealthCheck/commit/425bf87f32543d499e141bab6ee3e97ead78c11c))
+
+
+
 ## [0.31.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.1...v0.31.2) (2024-08-31)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * github cache duration with flagsmith ([#181](https://github.com/EddieHubCommunity/HealthCheck/issues/181)) ([d1c2b4f](https://github.com/EddieHubCommunity/HealthCheck/commit/d1c2b4f74e5f63cdb3e0a95502ddc27d2d6a99aa))
-
-
-
-## [0.29.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.29.0...v0.29.1) (2024-08-18)
-
-
-### Bug Fixes
-
-* repo stats documentation ([0126cb3](https://github.com/EddieHubCommunity/HealthCheck/commit/0126cb3ba177bfd2af6c147379450999043a84c6))
 
 
 
