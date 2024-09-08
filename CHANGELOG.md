@@ -1,3 +1,12 @@
+## [0.31.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.6...v0.31.7) (2024-09-08)
+
+
+### Bug Fixes
+
+* readme formatting ([a4d49c2](https://github.com/EddieHubCommunity/HealthCheck/commit/a4d49c2169a2545fe5b7b254f1af19cfb69f54bf))
+
+
+
 ## [0.31.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.5...v0.31.6) (2024-09-08)
 
 
@@ -32,16 +41,6 @@
 ### Bug Fixes
 
 * default flags if error ([425bf87](https://github.com/EddieHubCommunity/HealthCheck/commit/425bf87f32543d499e141bab6ee3e97ead78c11c))
-
-
-
-## [0.31.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.1...v0.31.2) (2024-08-31)
-
-
-### Bug Fixes
-
-* flagsmith defaults ([e38c6c8](https://github.com/EddieHubCommunity/HealthCheck/commit/e38c6c8a2e4b4c66efe04c4e86c83a33dce57cb4))
-* ternanry not required ([3b08276](https://github.com/EddieHubCommunity/HealthCheck/commit/3b0827620cd6408adf7a6d45916a7c72c2bf9bd9))
 
 
 
