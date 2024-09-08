@@ -1,5 +1,6 @@
 > [!NOTE]
 > This project is sponsored by the Open Source project Flagsmith https://github.com/Flagsmith/flagsmith
+> 
 > Feature flags have so many benefits, remote config, testing in production and so much more!
 
 # HealthCheck
