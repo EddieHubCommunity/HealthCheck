@@ -1,3 +1,12 @@
+## [0.31.10](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.9...v0.31.10) (2024-09-08)
+
+
+### Bug Fixes
+
+* removed repo graphs after permission change ([d09f984](https://github.com/EddieHubCommunity/HealthCheck/commit/d09f984c6e4628e530439e7490bd1ae7d3b07f35))
+
+
+
 ## [0.31.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.8...v0.31.9) (2024-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * note in readme ([863cfa4](https://github.com/EddieHubCommunity/HealthCheck/commit/863cfa45f88f4b779e32219a50204b9cf1e97dce))
-
-
-
-## [0.31.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.4...v0.31.5) (2024-09-08)
-
-
-### Bug Fixes
-
-* removed write access as not required ([#214](https://github.com/EddieHubCommunity/HealthCheck/issues/214)) ([27693c9](https://github.com/EddieHubCommunity/HealthCheck/commit/27693c912e014b19e19dc215a7d3f08356ba475e))
 
 
 
