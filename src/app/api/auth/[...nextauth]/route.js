@@ -13,7 +13,7 @@ const authOptions = {
       clientSecret: process.env.GITHUB_SECRET,
       authorization: {
         params: {
-          scope: "read:user user:email public_repo read:project",
+          scope: "read:user user:email read:project",
         },
       },
     }),
