@@ -1,3 +1,12 @@
+## [0.31.11](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.10...v0.31.11) (2024-09-08)
+
+
+### Bug Fixes
+
+* remove getting repo private stats ([b1bb147](https://github.com/EddieHubCommunity/HealthCheck/commit/b1bb147cb8461dd80f788ba3c5976e5939083d59))
+
+
+
 ## [0.31.10](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.9...v0.31.10) (2024-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * readme formatting ([a4d49c2](https://github.com/EddieHubCommunity/HealthCheck/commit/a4d49c2169a2545fe5b7b254f1af19cfb69f54bf))
-
-
-
-## [0.31.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.5...v0.31.6) (2024-09-08)
-
-
-### Bug Fixes
-
-* note in readme ([863cfa4](https://github.com/EddieHubCommunity/HealthCheck/commit/863cfa45f88f4b779e32219a50204b9cf1e97dce))
 
 
 
