@@ -52,7 +52,7 @@ export default async function Page({ params }) {
         <Form id={id} />
       </Title>
 
-      {repository.githubResponses[0].referrers?.length &&
+      {/* {repository.githubResponses[0].referrers?.length &&
       repository.githubResponses[0].views.views ? (
         <div className="flex flex-col md:flex-row gap-4 mt-4">
           <Card className="basis-1/2 border rounded-lg shadow-sm border-gray-700 bg-gray-800 text-gray-200">
@@ -131,7 +131,7 @@ export default async function Page({ params }) {
         <Alert>
           You do not have permission to see the analytics for this repo
         </Alert>
-      )}
+      )} */}
 
       <ActionPanel>
         <FormBadge id={id} src={badgeSrc} />
