@@ -1,3 +1,12 @@
+## [0.31.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.4...v0.31.5) (2024-09-08)
+
+
+### Bug Fixes
+
+* removed write access as not required ([#214](https://github.com/EddieHubCommunity/HealthCheck/issues/214)) ([27693c9](https://github.com/EddieHubCommunity/HealthCheck/commit/27693c912e014b19e19dc215a7d3f08356ba475e))
+
+
+
 ## [0.31.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.3...v0.31.4) (2024-08-31)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * ossf score badge ([#196](https://github.com/EddieHubCommunity/HealthCheck/issues/196)) ([8ab0133](https://github.com/EddieHubCommunity/HealthCheck/commit/8ab0133c3c8585a135b52e7e0258638052133071))
-
-
-
-# [0.31.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.30.0...v0.31.0) (2024-08-30)
-
-
-### Features
-
-* OSSF integration ([#192](https://github.com/EddieHubCommunity/HealthCheck/issues/192)) ([62b6e35](https://github.com/EddieHubCommunity/HealthCheck/commit/62b6e3581ab66d6aaa33e4f34d0044db6b58b2c1))
 
 
 
