@@ -1,3 +1,12 @@
+## [0.31.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.5...v0.31.6) (2024-09-08)
+
+
+### Bug Fixes
+
+* note in readme ([863cfa4](https://github.com/EddieHubCommunity/HealthCheck/commit/863cfa45f88f4b779e32219a50204b9cf1e97dce))
+
+
+
 ## [0.31.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.4...v0.31.5) (2024-09-08)
 
 
@@ -33,15 +42,6 @@
 
 * flagsmith defaults ([e38c6c8](https://github.com/EddieHubCommunity/HealthCheck/commit/e38c6c8a2e4b4c66efe04c4e86c83a33dce57cb4))
 * ternanry not required ([3b08276](https://github.com/EddieHubCommunity/HealthCheck/commit/3b0827620cd6408adf7a6d45916a7c72c2bf9bd9))
-
-
-
-## [0.31.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.0...v0.31.1) (2024-08-30)
-
-
-### Bug Fixes
-
-* ossf score badge ([#196](https://github.com/EddieHubCommunity/HealthCheck/issues/196)) ([8ab0133](https://github.com/EddieHubCommunity/HealthCheck/commit/8ab0133c3c8585a135b52e7e0258638052133071))
 
 
 
