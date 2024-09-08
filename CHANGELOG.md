@@ -1,3 +1,12 @@
+## [0.31.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.8...v0.31.9) (2024-09-08)
+
+
+### Bug Fixes
+
+* duplicate env steps for gh action docker ([09e61f3](https://github.com/EddieHubCommunity/HealthCheck/commit/09e61f303501f8172abc58cc592637f8c3976078))
+
+
+
 ## [0.31.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.7...v0.31.8) (2024-09-08)
 
 
@@ -31,16 +40,6 @@
 ### Bug Fixes
 
 * removed write access as not required ([#214](https://github.com/EddieHubCommunity/HealthCheck/issues/214)) ([27693c9](https://github.com/EddieHubCommunity/HealthCheck/commit/27693c912e014b19e19dc215a7d3f08356ba475e))
-
-
-
-## [0.31.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.3...v0.31.4) (2024-08-31)
-
-
-### Bug Fixes
-
-* mswjs mocks for flagsmith ([5b1e5d0](https://github.com/EddieHubCommunity/HealthCheck/commit/5b1e5d09a1177ae5101f0f7b33c4b5386f6ceb73))
-* when optional checks are unavailable ([ddf3d56](https://github.com/EddieHubCommunity/HealthCheck/commit/ddf3d5614f7319c372d18181277dc47f5d5dfab8))
 
 
 
