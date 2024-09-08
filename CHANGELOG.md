@@ -1,3 +1,12 @@
+## [0.31.12](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.11...v0.31.12) (2024-09-08)
+
+
+### Bug Fixes
+
+* revert back get repo stats ([6c6c3fe](https://github.com/EddieHubCommunity/HealthCheck/commit/6c6c3fe4752a71df81acff56f2c7ff689ea8370b))
+
+
+
 ## [0.31.11](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.10...v0.31.11) (2024-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * docker gh action artifact use v4 ([ed310ec](https://github.com/EddieHubCommunity/HealthCheck/commit/ed310ecd706be7731f9e63cbf3bbaa3762e43d80))
-
-
-
-## [0.31.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.6...v0.31.7) (2024-09-08)
-
-
-### Bug Fixes
-
-* readme formatting ([a4d49c2](https://github.com/EddieHubCommunity/HealthCheck/commit/a4d49c2169a2545fe5b7b254f1af19cfb69f54bf))
 
 
 
