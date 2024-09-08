@@ -19,7 +19,7 @@ export default async function getAllRepoData(url, token) {
     communityMetrics: (await getCommunityMetricsApi(url, token)).data,
     labels: (await getLabelsApi(url, token)).data,
     projects: (await getProjectsApi(url, token)).data,
-    // referrers: (await getReferrersApi(url, token)).data,
-    // views: (await getViewsApi(url, token)).data,
+    referrers: (await getReferrersApi(url, token)).data,
+    views: (await getViewsApi(url, token)).data,
   };
 }
