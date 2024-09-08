@@ -1,3 +1,12 @@
+## [0.31.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.7...v0.31.8) (2024-09-08)
+
+
+### Bug Fixes
+
+* docker gh action artifact use v4 ([ed310ec](https://github.com/EddieHubCommunity/HealthCheck/commit/ed310ecd706be7731f9e63cbf3bbaa3762e43d80))
+
+
+
 ## [0.31.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.6...v0.31.7) (2024-09-08)
 
 
@@ -32,15 +41,6 @@
 
 * mswjs mocks for flagsmith ([5b1e5d0](https://github.com/EddieHubCommunity/HealthCheck/commit/5b1e5d09a1177ae5101f0f7b33c4b5386f6ceb73))
 * when optional checks are unavailable ([ddf3d56](https://github.com/EddieHubCommunity/HealthCheck/commit/ddf3d5614f7319c372d18181277dc47f5d5dfab8))
-
-
-
-## [0.31.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.2...v0.31.3) (2024-08-31)
-
-
-### Bug Fixes
-
-* default flags if error ([425bf87](https://github.com/EddieHubCommunity/HealthCheck/commit/425bf87f32543d499e141bab6ee3e97ead78c11c))
 
 
 
