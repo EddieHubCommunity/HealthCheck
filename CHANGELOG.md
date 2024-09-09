@@ -1,3 +1,12 @@
+# [0.32.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.13...v0.32.0) (2024-09-09)
+
+
+### Features
+
+* copy badge feature ([#175](https://github.com/EddieHubCommunity/HealthCheck/issues/175)) ([#224](https://github.com/EddieHubCommunity/HealthCheck/issues/224)) ([259fdf2](https://github.com/EddieHubCommunity/HealthCheck/commit/259fdf2109b0e92d6c27c4505c21c7262b3078e2))
+
+
+
 ## [0.31.13](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.12...v0.31.13) (2024-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * removed repo graphs after permission change ([d09f984](https://github.com/EddieHubCommunity/HealthCheck/commit/d09f984c6e4628e530439e7490bd1ae7d3b07f35))
-
-
-
-## [0.31.9](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.8...v0.31.9) (2024-09-08)
-
-
-### Bug Fixes
-
-* duplicate env steps for gh action docker ([09e61f3](https://github.com/EddieHubCommunity/HealthCheck/commit/09e61f303501f8172abc58cc592637f8c3976078))
 
 
 

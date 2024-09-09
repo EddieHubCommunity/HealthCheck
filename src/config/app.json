@@ -1,5 +1,5 @@
 {
-  "version": "0.31.13",
+  "version": "0.32.0",
   "checks": [
     "description",
     "url",
