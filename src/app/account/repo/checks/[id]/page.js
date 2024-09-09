@@ -39,8 +39,6 @@ export default async function Page({ params }) {
     },
   });
 
-  const badgeSrc = `${process.env.NEXTAUTH_URL}/api/badges/report/${id}`;
-
   return (
     <>
       <Title
@@ -134,8 +132,7 @@ export default async function Page({ params }) {
       )}
 
       <ActionPanel>
-        <FormBadge id={id} src={badgeSrc} />
-        <img src={badgeSrc} className="mt-2" />
+        <FormBadge id={id} baseUrl={process.env.NEXTAUTH_URL} />
       </ActionPanel>
 
       <List
