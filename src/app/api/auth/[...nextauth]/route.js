@@ -24,6 +24,19 @@ const authOptions = {
 
       return session;
     },
+    async signIn({ user, account, profile, email, credentials }) {
+      await prisma.account.update({
+        where: {
+          provider_providerAccountId: {
+            provider: "github",
+            providerAccountId: account.providerAccountId,
+          },
+        },
+        data: { access_token: account.access_token },
+      });
+
+      return true;
+    },
   },
 };
 
