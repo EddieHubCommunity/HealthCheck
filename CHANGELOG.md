@@ -1,3 +1,12 @@
+## [0.33.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.1...v0.33.2) (2024-09-09)
+
+
+### Bug Fixes
+
+* deployed config domain for images ([740151c](https://github.com/EddieHubCommunity/HealthCheck/commit/740151c5fafee69161710a2a7e78bc2a1fea7c34))
+
+
+
 ## [0.33.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.0...v0.33.1) (2024-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * save new github oauth token ([78eb82c](https://github.com/EddieHubCommunity/HealthCheck/commit/78eb82cbbc7ae9ee2af1a38688c288fd5391b971))
-
-
-
-## [0.31.12](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.11...v0.31.12) (2024-09-08)
-
-
-### Bug Fixes
-
-* revert back get repo stats ([6c6c3fe](https://github.com/EddieHubCommunity/HealthCheck/commit/6c6c3fe4752a71df81acff56f2c7ff689ea8370b))
 
 
 
