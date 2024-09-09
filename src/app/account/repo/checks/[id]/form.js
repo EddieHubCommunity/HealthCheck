@@ -4,10 +4,12 @@ import {
   DocumentDuplicateIcon,
   CheckBadgeIcon,
 } from "@heroicons/react/20/solid";
+import { useState } from "react";
 
 import { performChecks } from "./action";
 import Input from "@/components/forms/Input";
 import { SubmitButton } from "@/components/forms/SubmitButton";
+import classNames from "@/utils/classNames";
 
 export default function Form({ id }) {
   return (
@@ -19,10 +21,16 @@ export default function Form({ id }) {
 }
 
 export function FormBadge({ src }) {
+  const [copy, setCopy] = useState(false);
+  const copyHandle = async () => {
+    const url = `![HealthCheck](${src})`;
+    await navigator.clipboard.writeText(url);
+    setCopy(true);
+  };
   return (
     <div>
       <label
-        htmlFor="email"
+        htmlFor="badge"
         className="block text-sm font-medium leading-6 text-white"
       >
         Add badge to your Repo&lsquo;s README to show the latest check status
@@ -44,16 +52,24 @@ export function FormBadge({ src }) {
             className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
         </div>
-        {/* <button
+        <button
           type="button"
           className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+          onClick={copyHandle}
         >
           <DocumentDuplicateIcon
             aria-hidden="true"
-            className="-ml-0.5 h-5 w-5 text-gray-400"
+            className={classNames(
+              "-ml-0.5 h-5 w-5 text-gray-400",
+              copy && "text-green-400",
+            )}
           />
-          Copy
-        </button> */}
+          {copy === true ? (
+            <span className="text-green-400">Copied!</span>
+          ) : (
+            <span className="text-gray-400">Copy</span>
+          )}
+        </button>
       </div>
     </div>
   );
