@@ -134,7 +134,7 @@ export default async function Page({ params }) {
       )}
 
       <ActionPanel>
-        <FormBadge id={id} src={badgeSrc} />
+        <FormBadge id={id} src={badgeSrc} baseUrl={process.env.NEXTAUTH_URL} />
         <img src={badgeSrc} className="mt-2" />
       </ActionPanel>
 

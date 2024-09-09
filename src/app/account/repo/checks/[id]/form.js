@@ -20,13 +20,15 @@ export default function Form({ id }) {
   );
 }
 
-export function FormBadge({ src }) {
+export function FormBadge({ id, src, baseUrl }) {
+  const url = `![HealthCheck](${src})`;
+  const clickUrl = `[${url}](${baseUrl}/api/report/latest/${id})`;
   const [copy, setCopy] = useState(false);
   const copyHandle = async () => {
-    const url = `![HealthCheck](${src})`;
-    await navigator.clipboard.writeText(url);
+    await navigator.clipboard.writeText(clickUrl);
     setCopy(true);
   };
+
   return (
     <div>
       <label
@@ -48,7 +50,7 @@ export function FormBadge({ src }) {
             id="badge"
             name="badge"
             type="text"
-            value={`![HealthCheck](${src})`}
+            value={clickUrl}
             className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
         </div>
