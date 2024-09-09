@@ -1,3 +1,12 @@
+## [0.31.13](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.12...v0.31.13) (2024-09-09)
+
+
+### Bug Fixes
+
+* save new github oauth token ([78eb82c](https://github.com/EddieHubCommunity/HealthCheck/commit/78eb82cbbc7ae9ee2af1a38688c288fd5391b971))
+
+
+
 ## [0.31.12](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.11...v0.31.12) (2024-09-08)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * duplicate env steps for gh action docker ([09e61f3](https://github.com/EddieHubCommunity/HealthCheck/commit/09e61f303501f8172abc58cc592637f8c3976078))
-
-
-
-## [0.31.8](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.7...v0.31.8) (2024-09-08)
-
-
-### Bug Fixes
-
-* docker gh action artifact use v4 ([ed310ec](https://github.com/EddieHubCommunity/HealthCheck/commit/ed310ecd706be7731f9e63cbf3bbaa3762e43d80))
 
 
 
