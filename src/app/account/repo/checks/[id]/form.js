@@ -29,7 +29,10 @@ export function FormBadge({ src }) {
   };
   return (
     <div>
-      <label>
+      <label
+        htmlFor="badge"
+        className="block text-sm font-medium leading-6 text-white"
+      >
         Add badge to your Repo&lsquo;s README to show the latest check status
       </label>
       <div className="mt-2 flex rounded-md shadow-sm">
