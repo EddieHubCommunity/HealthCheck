@@ -10,6 +10,7 @@ import { performChecks } from "./action";
 import Input from "@/components/forms/Input";
 import { SubmitButton } from "@/components/forms/SubmitButton";
 import classNames from "@/utils/classNames";
+import Image from "next/image";
 
 export default function Form({ id }) {
   return (
@@ -76,7 +77,13 @@ export function FormBadge({ id, baseUrl }) {
           </button>
         </div>
       </div>
-      <img src={src} className="mt-2" />
+      <Image
+        src={src}
+        className="mt-2"
+        alt="HealthCheck latest status badge"
+        width={200}
+        height={40}
+      />
     </>
   );
 }
