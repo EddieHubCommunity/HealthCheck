@@ -1,3 +1,12 @@
+# [0.33.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.32.0...v0.33.0) (2024-09-09)
+
+
+### Features
+
+* badge click to latest report ([#226](https://github.com/EddieHubCommunity/HealthCheck/issues/226)) ([b19b02e](https://github.com/EddieHubCommunity/HealthCheck/commit/b19b02e09752617a4a241750e3000d78eeee79b4))
+
+
+
 # [0.32.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.13...v0.32.0) (2024-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * remove getting repo private stats ([b1bb147](https://github.com/EddieHubCommunity/HealthCheck/commit/b1bb147cb8461dd80f788ba3c5976e5939083d59))
-
-
-
-## [0.31.10](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.9...v0.31.10) (2024-09-08)
-
-
-### Bug Fixes
-
-* removed repo graphs after permission change ([d09f984](https://github.com/EddieHubCommunity/HealthCheck/commit/d09f984c6e4628e530439e7490bd1ae7d3b07f35))
 
 
 
