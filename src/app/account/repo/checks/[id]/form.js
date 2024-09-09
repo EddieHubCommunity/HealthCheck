@@ -3,7 +3,6 @@
 import {
   DocumentDuplicateIcon,
   CheckBadgeIcon,
-  ClipboardDocumentCheckIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
 
@@ -33,40 +32,41 @@ export function FormBadge({ src }) {
       <label>
         Add badge to your Repo&lsquo;s README to show the latest check status
       </label>
-      <div className="mt-2  rounded-md shadow-sm">
+      <div className="mt-2 flex rounded-md shadow-sm">
         <div className="relative flex flex-grow items-stretch focus-within:z-10">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-3 cursor-pointer">
-            <ClipboardDocumentCheckIcon
+          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+            <CheckBadgeIcon
               aria-hidden="true"
-              className={classNames(
-                "h-5 w-5",
-                copy ? "text-green-400 " : "text-gray-500 ",
-              )}
-              onClick={copyHandle}
+              className="h-5 w-5 text-gray-400"
             />
           </div>
-          <Input
+          <input
             readOnly={true}
             id="badge"
             name="badge"
             type="text"
             value={`![HealthCheck](${src})`}
-            className="w-full -z-30"
-            inputClassName="pl-10 py-1.5"
-            labelClassName="hidden"
+            className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
         </div>
-        {copy && <p className="text-green-400 mt-2">Copied!</p>}
-        {/* <button
+        <button
           type="button"
           className="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+          onClick={copyHandle}
         >
           <DocumentDuplicateIcon
             aria-hidden="true"
-            className="-ml-0.5 h-5 w-5 text-gray-400"
+            className={classNames(
+              "-ml-0.5 h-5 w-5 text-gray-400",
+              copy && "text-green-400",
+            )}
           />
-          Copy
-        </button> */}
+          {copy === true ? (
+            <span className="text-green-400">Copied!</span>
+          ) : (
+            <span className="text-gray-400">Copy</span>
+          )}
+        </button>
       </div>
     </div>
   );
