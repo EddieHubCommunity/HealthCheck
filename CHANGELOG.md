@@ -1,3 +1,12 @@
+## [0.33.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.0...v0.33.1) (2024-09-09)
+
+
+### Bug Fixes
+
+* healthcheck badge links to latest report ([b49f480](https://github.com/EddieHubCommunity/HealthCheck/commit/b49f48018585e506fb257583de2371ec3f0835a3))
+
+
+
 # [0.33.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.32.0...v0.33.0) (2024-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * revert back get repo stats ([6c6c3fe](https://github.com/EddieHubCommunity/HealthCheck/commit/6c6c3fe4752a71df81acff56f2c7ff689ea8370b))
-
-
-
-## [0.31.11](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.10...v0.31.11) (2024-09-08)
-
-
-### Bug Fixes
-
-* remove getting repo private stats ([b1bb147](https://github.com/EddieHubCommunity/HealthCheck/commit/b1bb147cb8461dd80f788ba3c5976e5939083d59))
 
 
 
