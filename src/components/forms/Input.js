@@ -12,6 +12,9 @@ export default function Input({
   prepend,
   disabled = false,
   type = "text",
+  className,
+  inputClassName,
+  labelClassName,
 }) {
   const { pending } = useFormStatus();
 
@@ -37,6 +40,7 @@ export default function Input({
         prepend
           ? "flex-1 bg-transparent pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0"
           : "w-full rounded-md py-1.5 pr-10 ring-1 ring-inset focus:ring-2 focus:ring-inset",
+        inputClassName,
       )}
       aria-invalid="true"
       aria-describedby={`${id}-error`}
@@ -58,8 +62,14 @@ export default function Input({
   }
 
   return (
-    <div className="col-span-full">
-      <label htmlFor={id} className="block text-sm font-medium leading-6">
+    <div className={classNames("col-span-full", className)}>
+      <label
+        htmlFor={id}
+        className={classNames(
+          "block text-sm font-medium leading-6",
+          labelClassName,
+        )}
+      >
         {text}
       </label>
       <div className="relative mt-2 rounded-md shadow-sm">
