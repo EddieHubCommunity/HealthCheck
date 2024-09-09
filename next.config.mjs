@@ -9,6 +9,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "healthcheck.eddiehubcommunity.org",
+      },
+      {
+        protocol: "https",
         hostname: "github.com",
       },
       {
