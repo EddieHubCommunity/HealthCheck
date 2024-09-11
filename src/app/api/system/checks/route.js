@@ -64,7 +64,7 @@ export async function GET(request, { params }) {
 
   // perform checks on these repositories
   // use the owners github token (repository->user->account.access_token)
-  let runs = { attempted: [], sucessful: [] };
+  let runs = { attempted: [], successful: [] };
   repoStatus.run.map(async (repo) => {
     try {
       const responses = await getAllRepoData(repo.url, repo.token);
@@ -103,7 +103,7 @@ export async function GET(request, { params }) {
         },
       });
 
-      runs.sucessful.push({ url: repo.url });
+      runs.successful.push({ url: repo.url });
     } catch (e) {
       console.error(e);
       runs.attempted.push({ url: repo.url });
@@ -113,7 +113,8 @@ export async function GET(request, { params }) {
   console.log("CHECKS PERFORMED", runs);
 
   return Response.json({
-    runs: runs.length,
+    runs: runs.successful.length,
+    failed: runs.attempted.length,
     ignores: repoStatus.ignore.length,
     errors: repoStatus.error.length,
   });
