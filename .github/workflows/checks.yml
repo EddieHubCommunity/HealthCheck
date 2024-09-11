@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: hit api
-        uses: fjogeleit/http-request-action@v1
+        uses: tyrrrz/action-http-request@master
         with:
           url: "https://healthcheck.eddiehubcommunity.org/api/system/checks?token=${{ secrets.API_TOKEN }}"
