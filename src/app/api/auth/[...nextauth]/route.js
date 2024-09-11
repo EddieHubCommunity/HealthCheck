@@ -25,6 +25,19 @@ const authOptions = {
       return session;
     },
     async signIn({ user, account, profile, email, credentials }) {
+      const lookup = await prisma.account.findUnique({
+        where: {
+          provider_providerAccountId: {
+            provider: "github",
+            providerAccountId: account.providerAccountId,
+          },
+        },
+      });
+
+      if (!lookup) {
+        return true;
+      }
+
       await prisma.account.update({
         where: {
           provider_providerAccountId: {
