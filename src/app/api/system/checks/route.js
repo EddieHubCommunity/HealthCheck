@@ -64,45 +64,50 @@ export async function GET(request, { params }) {
 
   // perform checks on these repositories
   // use the owners github token (repository->user->account.access_token)
-  let runs = [];
+  let runs = { attempted: [], sucessful: [] };
   repoStatus.run.map(async (repo) => {
-    const responses = await getAllRepoData(repo.url, repo.token);
+    try {
+      const responses = await getAllRepoData(repo.url, repo.token);
 
-    // save github api data
-    const githubResponseRepo = await prisma.githubResponse.create({
-      data: {
-        repository: {
-          connect: {
-            id: repo.id,
+      // save github api data
+      const githubResponseRepo = await prisma.githubResponse.create({
+        data: {
+          repository: {
+            connect: {
+              id: repo.id,
+            },
           },
+          ...responses,
         },
-        ...responses,
-      },
-    });
+      });
 
-    // perform check
-    const results = checks(githubResponseRepo);
+      // perform check
+      const results = checks(githubResponseRepo);
 
-    // save results
-    await prisma.check.create({
-      data: {
-        repository: {
-          connect: { id: repo.id },
+      // save results
+      await prisma.check.create({
+        data: {
+          repository: {
+            connect: { id: repo.id },
+          },
+          githubResponse: {
+            connect: { id: githubResponseRepo.id },
+          },
+          red: results.summary.error?.length || 0,
+          amber: results.summary.warning?.length || 0,
+          green: results.summary.success?.length || 0,
+          healthchecks: results.checks.map((check) => check.id),
+          data: results.checks,
+          allData: results.allChecks,
+          ignoreChecks: results.ignoreChecks,
         },
-        githubResponse: {
-          connect: { id: githubResponseRepo.id },
-        },
-        red: results.summary.error?.length || 0,
-        amber: results.summary.warning?.length || 0,
-        green: results.summary.success?.length || 0,
-        healthchecks: results.checks.map((check) => check.id),
-        data: results.checks,
-        allData: results.allChecks,
-        ignoreChecks: results.ignoreChecks,
-      },
-    });
+      });
 
-    runs.push({ url: repo.url });
+      runs.sucessful.push({ url: repo.url });
+    } catch (e) {
+      console.error(e);
+      runs.attempted.push({ url: repo.url });
+    }
   });
 
   console.log("CHECKS PERFORMED", runs);
