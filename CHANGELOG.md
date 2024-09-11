@@ -1,3 +1,13 @@
+## [0.34.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.5...v0.34.6) (2024-09-11)
+
+
+### Bug Fixes
+
+* gh action schedule output ([5efc804](https://github.com/EddieHubCommunity/HealthCheck/commit/5efc804eee7a995500641bbbd349484693f849d4))
+* new users no existing token ([6a1b82d](https://github.com/EddieHubCommunity/HealthCheck/commit/6a1b82d93d95c85cc73ec2defe3eae09328c6aff))
+
+
+
 ## [0.34.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.4...v0.34.5) (2024-09-11)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * response for automated checks ([adb7158](https://github.com/EddieHubCommunity/HealthCheck/commit/adb7158738656c79e865e33dc373d0162c8f96ed))
-
-
-
-## [0.34.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.0...v0.34.1) (2024-09-11)
-
-
-### Bug Fixes
-
-* logging for automated checks ([4954da8](https://github.com/EddieHubCommunity/HealthCheck/commit/4954da8c8a5736392171c9cf8baa765e82fe7c23))
 
 
 
