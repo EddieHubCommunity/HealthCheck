@@ -1,3 +1,12 @@
+## [0.34.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.2...v0.34.3) (2024-09-11)
+
+
+### Bug Fixes
+
+* split runs into successful and attempted ([4dbafe4](https://github.com/EddieHubCommunity/HealthCheck/commit/4dbafe40f7cda65a0ba69668e7fcb1c1e7c6b97c))
+
+
+
 ## [0.34.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.1...v0.34.2) (2024-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * deployed config domain for images ([740151c](https://github.com/EddieHubCommunity/HealthCheck/commit/740151c5fafee69161710a2a7e78bc2a1fea7c34))
-
-
-
-## [0.33.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.0...v0.33.1) (2024-09-09)
-
-
-### Bug Fixes
-
-* healthcheck badge links to latest report ([b49f480](https://github.com/EddieHubCommunity/HealthCheck/commit/b49f48018585e506fb257583de2371ec3f0835a3))
 
 
 
