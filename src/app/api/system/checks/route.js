@@ -30,26 +30,37 @@ export async function GET(request, { params }) {
   });
 
   // filter out repositories that had checks in the last X hours
-  let repoStatus = { ignore: [], run: [] };
+  let repoStatus = { ignore: [], run: [], error: [] };
   repos.forEach((repo) => {
-    if (
-      !repo.checks[0] ||
-      differenceInHours(new Date(), repo.checks[0].createdAt) >= 24 * 7 // TODO: move to Flagsmith
-    ) {
-      repoStatus.run.push({
+    try {
+      if (
+        !repo.checks[0] ||
+        differenceInHours(new Date(), repo.checks[0].createdAt) >= 24 * 7 // TODO: move to Flagsmith
+      ) {
+        repoStatus.run.push({
+          id: repo.id,
+          url: repo.url,
+          token: repo.user.accounts[0].access_token,
+          lastChecked: repo.checks[0].createdAt,
+        });
+      } else {
+        repoStatus.ignore.push({
+          id: repo.id,
+          url: repo.url,
+          lastChecked: repo.checks[0].createdAt,
+        });
+      }
+    } catch (e) {
+      console.error(e);
+      repoStatus.error.push({
         id: repo.id,
         url: repo.url,
-        token: repo.user.accounts[0].access_token,
-        lastChecked: repo.checks[0].createdAt,
-      });
-    } else {
-      repoStatus.ignore.push({
-        id: repo.id,
-        url: repo.url,
-        lastChecked: repo.checks[0].createdAt,
       });
     }
   });
+
+  console.log("CHECKS IGNORED", repoStatus.ignore);
+  console.log("CHECKS ERRORED", repoStatus.error);
 
   // perform checks on these repositories
   // use the owners github token (repository->user->account.access_token)
@@ -94,7 +105,7 @@ export async function GET(request, { params }) {
     runs.push({ url: repo.url });
   });
 
-  console.log(runs);
+  console.log("CHECKS PERFORMED", runs);
 
   return Response.json(runs);
 }
