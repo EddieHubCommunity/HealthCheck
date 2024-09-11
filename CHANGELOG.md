@@ -1,3 +1,12 @@
+# [0.34.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.2...v0.34.0) (2024-09-11)
+
+
+### Features
+
+* run checks regularly on a schedule ([#235](https://github.com/EddieHubCommunity/HealthCheck/issues/235)) ([228d387](https://github.com/EddieHubCommunity/HealthCheck/commit/228d38729b2596e2c1d57c871bacce6e34ff1c54))
+
+
+
 ## [0.33.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.1...v0.33.2) (2024-09-09)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * copy badge feature ([#175](https://github.com/EddieHubCommunity/HealthCheck/issues/175)) ([#224](https://github.com/EddieHubCommunity/HealthCheck/issues/224)) ([259fdf2](https://github.com/EddieHubCommunity/HealthCheck/commit/259fdf2109b0e92d6c27c4505c21c7262b3078e2))
-
-
-
-## [0.31.13](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.12...v0.31.13) (2024-09-09)
-
-
-### Bug Fixes
-
-* save new github oauth token ([78eb82c](https://github.com/EddieHubCommunity/HealthCheck/commit/78eb82cbbc7ae9ee2af1a38688c288fd5391b971))
 
 
 
