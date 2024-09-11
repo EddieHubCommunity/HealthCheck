@@ -1,3 +1,12 @@
+## [0.34.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.4...v0.34.5) (2024-09-11)
+
+
+### Bug Fixes
+
+* only show lengths on gh action ([14cd521](https://github.com/EddieHubCommunity/HealthCheck/commit/14cd52188a9ed4e7d5ccc0d28d260a30beed206e))
+
+
+
 ## [0.34.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.3...v0.34.4) (2024-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * logging for automated checks ([4954da8](https://github.com/EddieHubCommunity/HealthCheck/commit/4954da8c8a5736392171c9cf8baa765e82fe7c23))
-
-
-
-# [0.34.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.2...v0.34.0) (2024-09-11)
-
-
-### Features
-
-* run checks regularly on a schedule ([#235](https://github.com/EddieHubCommunity/HealthCheck/issues/235)) ([228d387](https://github.com/EddieHubCommunity/HealthCheck/commit/228d38729b2596e2c1d57c871bacce6e34ff1c54))
 
 
 
