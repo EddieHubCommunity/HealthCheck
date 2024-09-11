@@ -107,5 +107,9 @@ export async function GET(request, { params }) {
 
   console.log("CHECKS PERFORMED", runs);
 
-  return Response.json(runs);
+  return Response.json({
+    runs,
+    ignores: repoStatus.ignore,
+    errors: repoStatus.error,
+  });
 }
