@@ -1,3 +1,12 @@
+## [0.34.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.0...v0.34.1) (2024-09-11)
+
+
+### Bug Fixes
+
+* logging for automated checks ([4954da8](https://github.com/EddieHubCommunity/HealthCheck/commit/4954da8c8a5736392171c9cf8baa765e82fe7c23))
+
+
+
 # [0.34.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.2...v0.34.0) (2024-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * badge click to latest report ([#226](https://github.com/EddieHubCommunity/HealthCheck/issues/226)) ([b19b02e](https://github.com/EddieHubCommunity/HealthCheck/commit/b19b02e09752617a4a241750e3000d78eeee79b4))
-
-
-
-# [0.32.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.31.13...v0.32.0) (2024-09-09)
-
-
-### Features
-
-* copy badge feature ([#175](https://github.com/EddieHubCommunity/HealthCheck/issues/175)) ([#224](https://github.com/EddieHubCommunity/HealthCheck/issues/224)) ([259fdf2](https://github.com/EddieHubCommunity/HealthCheck/commit/259fdf2109b0e92d6c27c4505c21c7262b3078e2))
 
 
 
