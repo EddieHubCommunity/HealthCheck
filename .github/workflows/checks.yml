@@ -1,0 +1,14 @@
+name: Run checks
+permissions: read-all
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 3 * * *
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hit api
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: "https://healthcheck.eddiehubcommunity.org/api/system/checks?token=${{ secrets.API_TOKEN }}"
