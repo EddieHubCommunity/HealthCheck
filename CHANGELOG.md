@@ -1,3 +1,12 @@
+## [0.34.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.3...v0.34.4) (2024-09-11)
+
+
+### Bug Fixes
+
+* http request via gh action ([8227c5d](https://github.com/EddieHubCommunity/HealthCheck/commit/8227c5dd0cea0c587be08227946d30bed6df5002))
+
+
+
 ## [0.34.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.2...v0.34.3) (2024-09-11)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * run checks regularly on a schedule ([#235](https://github.com/EddieHubCommunity/HealthCheck/issues/235)) ([228d387](https://github.com/EddieHubCommunity/HealthCheck/commit/228d38729b2596e2c1d57c871bacce6e34ff1c54))
-
-
-
-## [0.33.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.33.1...v0.33.2) (2024-09-09)
-
-
-### Bug Fixes
-
-* deployed config domain for images ([740151c](https://github.com/EddieHubCommunity/HealthCheck/commit/740151c5fafee69161710a2a7e78bc2a1fea7c34))
 
 
 
