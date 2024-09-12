@@ -144,7 +144,7 @@ export default async function Page({ params }) {
           extra: `Added ${formatDistance(check.createdAt, new Date(), {
             addSuffix: true,
           })}`,
-          description: `Checks performed ${check.healthchecks.length} (${check.ignoreChecks.length} checks ignored)`,
+          description: `Checks performed ${check.healthchecks?.length} (${check.ignoreChecks?.length} checks ignored)`,
         }))}
       />
     </>
