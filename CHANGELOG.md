@@ -1,3 +1,12 @@
+## [0.34.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.6...v0.34.7) (2024-09-12)
+
+
+### Bug Fixes
+
+* length on undefined values ([7789426](https://github.com/EddieHubCommunity/HealthCheck/commit/77894267410e649edbe67fb287f6fac258a9f6ce))
+
+
+
 ## [0.34.6](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.5...v0.34.6) (2024-09-11)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * split runs into successful and attempted ([4dbafe4](https://github.com/EddieHubCommunity/HealthCheck/commit/4dbafe40f7cda65a0ba69668e7fcb1c1e7c6b97c))
-
-
-
-## [0.34.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.1...v0.34.2) (2024-09-11)
-
-
-### Bug Fixes
-
-* response for automated checks ([adb7158](https://github.com/EddieHubCommunity/HealthCheck/commit/adb7158738656c79e865e33dc373d0162c8f96ed))
 
 
 
