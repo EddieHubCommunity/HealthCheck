@@ -1,3 +1,12 @@
+# [0.35.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.7...v0.35.0) (2024-09-12)
+
+
+### Features
+
+* logo to favicon ([dce96fb](https://github.com/EddieHubCommunity/HealthCheck/commit/dce96fb1c954624a034c73f301d6a3dbfde591ce))
+
+
+
 ## [0.34.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.6...v0.34.7) (2024-09-12)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * http request via gh action ([8227c5d](https://github.com/EddieHubCommunity/HealthCheck/commit/8227c5dd0cea0c587be08227946d30bed6df5002))
-
-
-
-## [0.34.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.2...v0.34.3) (2024-09-11)
-
-
-### Bug Fixes
-
-* split runs into successful and attempted ([4dbafe4](https://github.com/EddieHubCommunity/HealthCheck/commit/4dbafe40f7cda65a0ba69668e7fcb1c1e7c6b97c))
 
 
 
