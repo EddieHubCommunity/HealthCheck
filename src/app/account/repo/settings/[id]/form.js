@@ -3,19 +3,19 @@
 import { useFormState } from "react-dom";
 import { useFlags } from "flagsmith/react";
 
-import config from "@/config/app.json";
 import { saveSettings } from "./action";
 import { SubmitButton } from "@/components/forms/SubmitButton";
 import Input from "@/components/forms/Input";
 import Checkbox from "@/components/forms/Checkbox";
+import Select from "@/components/forms/Select";
 
 const initialState = {
-  data: undefined,
+  ignore: undefined,
   success: undefined,
   errors: undefined,
 };
 
-export default function Form({ id, data, disabled = false }) {
+export default function Form({ id, ignore, schedule, disabled = false }) {
   let { optionalchecks } = useFlags(["optionalchecks"]);
   optionalchecks = JSON.parse(optionalchecks.value);
   const [state, formAction] = useFormState(saveSettings, initialState);
@@ -23,29 +23,67 @@ export default function Form({ id, data, disabled = false }) {
   return (
     <form action={formAction}>
       <Input type="hidden" id="id" name="id" value={id} />
-      <div className="space-y-12">
-        <div className="border-b border-gray-900/10 pb-12">
+
+      <div className="border-b border-gray-700 pb-12 pt-4">
+        <div className="border-b border-gray-900/10">
           <p className="mt-1 text-sm leading-6 text-gray-300">
-            Hide any checks you wish to ignore.
+            What checks do you wish to ignore from your report?
           </p>
         </div>
+
+        <fieldset>
+          <legend className="text-sm font-semibold leading-6">
+            Hide these checks
+          </legend>
+          {optionalchecks?.map((option) => (
+            <div className="mt-2" key={option.id}>
+              <Checkbox
+                id={option.id}
+                name={option.id}
+                text={option.name}
+                value={true}
+                disabled={disabled}
+                defaultChecked={ignore.includes(option.id)}
+              />
+            </div>
+          ))}
+        </fieldset>
       </div>
 
-      <fieldset>
-        <legend className="text-sm font-semibold leading-6">Checks</legend>
-        {optionalchecks?.map((option) => (
-          <div className="mt-6 space-y-6" key={option.id}>
+      <div className="border-b border-gray-700 pb-12 pt-4">
+        <fieldset className="mb-6">
+          <legend className="text-sm font-semibold leading-6">Automate</legend>
+          <div className="mt-2">
             <Checkbox
-              id={option.id}
-              name={option.id}
-              text={option.name}
+              id="schedule"
+              name="schedule"
+              text="Schedule"
               value={true}
-              disabled={disabled}
-              defaultChecked={data.includes(option.id)}
+              disabled={true}
+              defaultChecked={true}
             />
           </div>
-        ))}
-      </fieldset>
+        </fieldset>
+        <fieldset>
+          <legend className="text-sm font-semibold leading-6">Frequency</legend>
+          <div className="mt-2">
+            <Select
+              id="schedule"
+              name="schedule"
+              text="How often to perform these checks? (days)"
+              options={[
+                { text: "1 day", value: 1 },
+                { text: "7 days", value: 7 },
+                { text: "30 days", value: 30 },
+              ]}
+              value={7}
+              disabled={true}
+              // defaultChecked={schedule}
+              classNameSelect="max-w-32"
+            />
+          </div>
+        </fieldset>
+      </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
         <SubmitButton text="SAVE" />

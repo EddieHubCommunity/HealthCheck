@@ -30,7 +30,7 @@ export default async function Page({ params }) {
           Repo Check List
         </Button>
       </Title>
-      <Form id={id} data={repository.ignoreChecks} />
+      <Form id={id} ignore={repository.ignoreChecks} />
     </>
   );
 }
