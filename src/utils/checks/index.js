@@ -46,7 +46,7 @@ export default function checks(data, ignoreChecks = []) {
     pullRequestTemplate(data.communityMetrics),
     codeOfConduct(data.communityMetrics),
     labels(data.labels),
-    projects(data.repo, data.projects),
+    // projects(data.repo, data.projects),
   ];
 
   const userChecks = filterIgnoredChecks(allChecks, ignoreChecks);
