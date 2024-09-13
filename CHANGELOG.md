@@ -1,3 +1,12 @@
+## [0.35.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.35.0...v0.35.1) (2024-09-13)
+
+
+### Bug Fixes
+
+* disabled project check in report ([2bd924a](https://github.com/EddieHubCommunity/HealthCheck/commit/2bd924a0fe7df061dd7affbb3fa441b27ab141a0))
+
+
+
 # [0.35.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.7...v0.35.0) (2024-09-12)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * only show lengths on gh action ([14cd521](https://github.com/EddieHubCommunity/HealthCheck/commit/14cd52188a9ed4e7d5ccc0d28d260a30beed206e))
-
-
-
-## [0.34.4](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.3...v0.34.4) (2024-09-11)
-
-
-### Bug Fixes
-
-* http request via gh action ([8227c5d](https://github.com/EddieHubCommunity/HealthCheck/commit/8227c5dd0cea0c587be08227946d30bed6df5002))
 
 
 
