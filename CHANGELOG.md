@@ -1,3 +1,12 @@
+# [0.36.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.35.1...v0.36.0) (2024-09-13)
+
+
+### Features
+
+* repo settings for schedule and frequency ([8db475a](https://github.com/EddieHubCommunity/HealthCheck/commit/8db475af2d1ae796df87606c541cd64e6bc94c9b))
+
+
+
 ## [0.35.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.35.0...v0.35.1) (2024-09-13)
 
 
@@ -32,15 +41,6 @@
 
 * gh action schedule output ([5efc804](https://github.com/EddieHubCommunity/HealthCheck/commit/5efc804eee7a995500641bbbd349484693f849d4))
 * new users no existing token ([6a1b82d](https://github.com/EddieHubCommunity/HealthCheck/commit/6a1b82d93d95c85cc73ec2defe3eae09328c6aff))
-
-
-
-## [0.34.5](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.4...v0.34.5) (2024-09-11)
-
-
-### Bug Fixes
-
-* only show lengths on gh action ([14cd521](https://github.com/EddieHubCommunity/HealthCheck/commit/14cd52188a9ed4e7d5ccc0d28d260a30beed206e))
 
 
 
