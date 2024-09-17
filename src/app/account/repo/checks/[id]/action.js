@@ -9,6 +9,7 @@ import prisma from "@/models/db";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import checks from "@/utils/checks";
 import getAllRepoData from "@/utils/github";
+import getOSSCardApi from "@/utils/osscard/getScore";
 
 // TODO: move to a reusable location (server-side only)
 const flagsmith = new Flagsmith({
@@ -77,8 +78,15 @@ export async function performChecks(formData) {
     });
   }
 
+  // check for OSSCard
+  const osscard = await getOSSCardApi(repository.url);
+
   // perform check
-  const results = checks(githubResponseRepo, repository.ignoreChecks);
+  const results = checks({
+    github: githubResponseRepo,
+    osscard,
+    ignoreChecks: repository.ignoreChecks,
+  });
 
   // save results
   const check = await prisma.check.create({
@@ -96,6 +104,7 @@ export async function performChecks(formData) {
       data: results.checks,
       allData: results.allChecks,
       ignoreChecks: results.ignoreChecks,
+      osscard,
     },
   });
 

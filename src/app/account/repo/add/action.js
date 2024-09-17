@@ -9,6 +9,7 @@ import Repository from "@/models/Repository";
 import getRepoApi from "@/utils/github/getRepoApi";
 import getAllRepoData from "@/utils/github";
 import checks from "@/utils/checks";
+import getOSSCardApi from "@/utils/osscard/getScore";
 
 export async function getRepo(prevState, formData) {
   // check authentication
@@ -85,8 +86,11 @@ export async function getRepo(prevState, formData) {
     },
   });
 
+  // check for OSSCard
+  const osscard = await getOSSCardApi(url);
+
   // perform check
-  const results = checks(githubResponseRepo);
+  const results = checks({ github: githubResponseRepo, osscard });
 
   // save results
   const check = await prisma.check.create({
@@ -104,6 +108,7 @@ export async function getRepo(prevState, formData) {
       data: results.checks,
       allData: results.allChecks,
       ignoreChecks: results.ignoreChecks,
+      osscard,
     },
   });
 

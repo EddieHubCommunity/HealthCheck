@@ -129,6 +129,7 @@ model Check {
   healthchecks Json
   data         Json
   allData      Json
+  osscard      Json?
   ignoreChecks String[]
 
   repositoryId     String

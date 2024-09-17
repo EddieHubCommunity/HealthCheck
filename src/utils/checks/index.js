@@ -1,20 +1,21 @@
-import activity from "./activity";
-import branches from "./branches";
-import codeOfConduct from "./codeOfConduct";
-import contributing from "./contributing";
-import defaultBranch from "./defaultBranch";
-import description from "./description";
-import goodFirstIssue from "./goodFirstIssue";
-import issues from "./issues";
-import issueTemplates from "./issueTemplates";
-import labels from "./labels";
-import license from "./license";
-import projects from "./projects";
-import pullRequestTemplate from "./pullRequestTemplate";
-import readme from "./readme";
-import release from "./release";
-import topics from "./topics";
-import url from "./url";
+import activity from "./github/activity";
+import branches from "./github/branches";
+import codeOfConduct from "./github/codeOfConduct";
+import contributing from "./github/contributing";
+import defaultBranch from "./github/defaultBranch";
+import description from "./github/description";
+import goodFirstIssue from "./github/goodFirstIssue";
+import issues from "./github/issues";
+import issueTemplates from "./github/issueTemplates";
+import labels from "./github/labels";
+import license from "./github/license";
+import projects from "./github/projects";
+import pullRequestTemplate from "./github/pullRequestTemplate";
+import readme from "./github/readme";
+import release from "./github/release";
+import topics from "./github/topics";
+import url from "./github/url";
+import overview from "./osscard/overview";
 
 /*
  * Every check must return the following format
@@ -28,26 +29,32 @@ import url from "./url";
  * }
  */
 
-export default function checks(data, ignoreChecks = []) {
+export default function checks({ github, osscard, ignoreChecks = [] }) {
   const allChecks = [
-    description(data.repo),
-    url(data.repo),
-    topics(data.repo),
-    activity(data.repo),
-    issues(data.repo),
-    defaultBranch(data.repo),
-    goodFirstIssue(data.issues),
-    branches(data.branches),
-    release(data.release),
-    readme(data.communityMetrics),
-    license(data.communityMetrics),
-    contributing(data.communityMetrics),
-    // issueTemplates(data.communityMetrics), // TODO data from github json is always null
-    pullRequestTemplate(data.communityMetrics),
-    codeOfConduct(data.communityMetrics),
-    labels(data.labels),
-    // projects(data.repo, data.projects),
+    // github checks
+    description(github.repo),
+    url(github.repo),
+    topics(github.repo),
+    activity(github.repo),
+    issues(github.repo),
+    defaultBranch(github.repo),
+    goodFirstIssue(github.issues),
+    branches(github.branches),
+    release(github.release),
+    readme(github.communityMetrics),
+    license(github.communityMetrics),
+    contributing(github.communityMetrics),
+    // issueTemplates(github.communityMetrics), // TODO data from github json is always null
+    pullRequestTemplate(github.communityMetrics),
+    codeOfConduct(github.communityMetrics),
+    labels(github.labels),
+    // projects(github.repo, github.projects),
   ];
+
+  // osscard checks
+  if (osscard) {
+    allChecks.push(overview(osscard));
+  }
 
   const userChecks = filterIgnoredChecks(allChecks, ignoreChecks);
 
@@ -66,7 +73,7 @@ export function worstCheck(
   warning = "warning",
   success = "success",
 ) {
-  return check.red > 0 ? error : check.amber > 0 ? warning : success;
+  return check?.red > 0 ? error : check?.amber > 0 ? warning : success;
 }
 
 export function filterIgnoredChecks(checks, ignoredChecks) {
