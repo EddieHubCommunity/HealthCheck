@@ -1,4 +1,5 @@
 import { differenceInHours } from "date-fns";
+import Flagsmith from "flagsmith-nodejs";
 
 import prisma from "@/models/db";
 import getAllRepoData from "@/utils/github";
@@ -6,12 +7,27 @@ import checks from "@/utils/checks";
 
 export const dynamic = "force-dynamic";
 
+// TODO: move to a reusable location (server-side only)
+const flagsmith = new Flagsmith({
+  environmentKey: process.env.FLAGSMITH_ENVIRONMENT_API_KEY,
+});
+
 export async function GET(request, { params }) {
   // protect for system calls only with valid token
   if (request.nextUrl.searchParams.get("token") !== process.env.API_TOKEN) {
     return Response.json({ error: "permission denied" }, { status: 401 });
   }
 
+  let flags;
+  let refresh;
+  try {
+    flags = await flagsmith.getEnvironmentFlags();
+    refresh = flags.getFeatureValue("refresh");
+  } catch (e) {
+    console.log(e);
+    refresh = 24 * 7;
+  }
+  console.log("------", refresh);
   // get all repositories
   const repos = await prisma.repository.findMany({
     include: {
@@ -35,7 +51,7 @@ export async function GET(request, { params }) {
     try {
       if (
         !repo.checks[0] ||
-        differenceInHours(new Date(), repo.checks[0].createdAt) >= 24 * 7 // TODO: move to Flagsmith
+        differenceInHours(new Date(), repo.checks[0].createdAt) >= refresh
       ) {
         repoStatus.run.push({
           id: repo.id,
