@@ -15,9 +15,10 @@ const initialState = {
   errors: undefined,
 };
 
-export default function Form({ id, ignore, schedule, disabled = false }) {
-  let { optionalchecks } = useFlags(["optionalchecks"]);
+export default function Form({ id, ignore, disabled = false }) {
+  let { optionalchecks, schedule } = useFlags(["optionalchecks", "schedule"]);
   optionalchecks = JSON.parse(optionalchecks.value);
+  schedule = JSON.parse(schedule.value);
   const [state, formAction] = useFormState(saveSettings, initialState);
 
   return (
@@ -55,9 +56,9 @@ export default function Form({ id, ignore, schedule, disabled = false }) {
           <legend className="text-sm font-semibold leading-6">Automate</legend>
           <div className="mt-2">
             <Checkbox
-              id="schedule"
-              name="schedule"
-              text="Schedule"
+              id="automate"
+              name="automate"
+              text="Automate"
               value={true}
               disabled={true}
               defaultChecked={true}
@@ -71,13 +72,9 @@ export default function Form({ id, ignore, schedule, disabled = false }) {
               id="schedule"
               name="schedule"
               text="How often to perform these checks? (days)"
-              options={[
-                { text: "1 day", value: 1 },
-                { text: "7 days", value: 7 },
-                { text: "30 days", value: 30 },
-              ]}
+              options={schedule}
               value={7}
-              disabled={true}
+              // disabled={true}
               // defaultChecked={schedule}
               classNameSelect="max-w-32"
             />
