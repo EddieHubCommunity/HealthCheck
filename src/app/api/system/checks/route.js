@@ -1,4 +1,4 @@
-import { differenceInHours } from "date-fns";
+import { differenceInSeconds } from "date-fns";
 import Flagsmith from "flagsmith-nodejs";
 
 import prisma from "@/models/db";
@@ -27,7 +27,7 @@ export async function GET(request, { params }) {
     console.log(e);
     refresh = 24 * 7;
   }
-  console.log("------", refresh);
+
   // get all repositories
   const repos = await prisma.repository.findMany({
     include: {
@@ -51,7 +51,7 @@ export async function GET(request, { params }) {
     try {
       if (
         !repo.checks[0] ||
-        differenceInHours(new Date(), repo.checks[0].createdAt) >= refresh
+        differenceInSeconds(new Date(), repo.checks[0].createdAt) >= refresh
       ) {
         repoStatus.run.push({
           id: repo.id,
@@ -75,56 +75,59 @@ export async function GET(request, { params }) {
     }
   });
 
-  console.log("CHECKS IGNORED", repoStatus.ignore);
-  console.log("CHECKS ERRORED", repoStatus.error);
+  console.log("CHECKS IGNORED", repoStatus.ignore.length);
+  console.log("CHECKS ERRORED", repoStatus.error.length);
+  console.log("CHECKS GOING TO RUN", repoStatus.run.length);
 
   // perform checks on these repositories
   // use the owners github token (repository->user->account.access_token)
   let runs = { attempted: [], successful: [] };
-  repoStatus.run.map(async (repo) => {
-    try {
-      const responses = await getAllRepoData(repo.url, repo.token);
+  await Promise.all(
+    repoStatus.run.map(async (repo) => {
+      try {
+        const responses = await getAllRepoData(repo.url, repo.token);
 
-      // save github api data
-      const githubResponseRepo = await prisma.githubResponse.create({
-        data: {
-          repository: {
-            connect: {
-              id: repo.id,
+        // save github api data
+        const githubResponseRepo = await prisma.githubResponse.create({
+          data: {
+            repository: {
+              connect: {
+                id: repo.id,
+              },
             },
+            ...responses,
           },
-          ...responses,
-        },
-      });
+        });
 
-      // perform check
-      const results = checks(githubResponseRepo);
+        // perform check
+        const results = checks(githubResponseRepo);
 
-      // save results
-      await prisma.check.create({
-        data: {
-          repository: {
-            connect: { id: repo.id },
+        // save results
+        await prisma.check.create({
+          data: {
+            repository: {
+              connect: { id: repo.id },
+            },
+            githubResponse: {
+              connect: { id: githubResponseRepo.id },
+            },
+            red: results.summary.error?.length || 0,
+            amber: results.summary.warning?.length || 0,
+            green: results.summary.success?.length || 0,
+            healthchecks: results.checks.map((check) => check.id),
+            data: results.checks,
+            allData: results.allChecks,
+            ignoreChecks: results.ignoreChecks,
           },
-          githubResponse: {
-            connect: { id: githubResponseRepo.id },
-          },
-          red: results.summary.error?.length || 0,
-          amber: results.summary.warning?.length || 0,
-          green: results.summary.success?.length || 0,
-          healthchecks: results.checks.map((check) => check.id),
-          data: results.checks,
-          allData: results.allChecks,
-          ignoreChecks: results.ignoreChecks,
-        },
-      });
+        });
 
-      runs.successful.push({ url: repo.url });
-    } catch (e) {
-      console.error(e);
-      runs.attempted.push({ url: repo.url });
-    }
-  });
+        runs.successful.push({ url: repo.url });
+      } catch (e) {
+        console.error(e);
+        runs.attempted.push({ url: repo.url });
+      }
+    }),
+  );
 
   console.log("CHECKS PERFORMED", runs);
 
