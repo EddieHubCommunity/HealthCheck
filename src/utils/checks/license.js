@@ -14,7 +14,7 @@ export default function license(communityMetrics) {
   if (!communityMetrics.files.license) {
     response.status = "error";
     response.description = "You do not have a license in your repo.";
-    response.extra = "This does not mean it is moe Open Source but less.";
+    response.extra = "This does not make it more Open Source, but less.";
   }
 
   return response;
