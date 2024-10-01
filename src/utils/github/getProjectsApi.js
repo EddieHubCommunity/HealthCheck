@@ -32,8 +32,6 @@ export default async function getProjectsApi(url, token) {
         repo,
       },
     );
-    console.log(response);
-    console.error(response);
     response = {
       status: 200,
       data: response.repository.projectsV2.nodes,
