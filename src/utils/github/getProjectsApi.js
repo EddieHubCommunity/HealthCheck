@@ -45,7 +45,6 @@ export default async function getProjectsApi(url, token) {
       data: [],
     };
   }
-  console.log(response);
 
   return response;
 }
