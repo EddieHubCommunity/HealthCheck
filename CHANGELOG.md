@@ -1,3 +1,12 @@
+## [0.37.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.37.0...v0.37.1) (2024-10-01)
+
+
+### Bug Fixes
+
+* boundary conditions in checks ([227a476](https://github.com/EddieHubCommunity/HealthCheck/commit/227a4767aac87eb65ec06d52d7ef4681ac5b93e0))
+
+
+
 # [0.37.0](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.36.0...v0.37.0) (2024-10-01)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * logo to favicon ([dce96fb](https://github.com/EddieHubCommunity/HealthCheck/commit/dce96fb1c954624a034c73f301d6a3dbfde591ce))
-
-
-
-## [0.34.7](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.34.6...v0.34.7) (2024-09-12)
-
-
-### Bug Fixes
-
-* length on undefined values ([7789426](https://github.com/EddieHubCommunity/HealthCheck/commit/77894267410e649edbe67fb287f6fac258a9f6ce))
 
 
 
