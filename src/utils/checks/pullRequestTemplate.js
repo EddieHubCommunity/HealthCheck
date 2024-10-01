@@ -5,13 +5,16 @@ export default function pullRequestTemplate(communityMetrics) {
     title: "Pull Request template",
   };
 
-  if (communityMetrics.files.pull_request_template) {
+  if (communityMetrics.files?.pull_request_template) {
     response.status = "success";
     response.description = "You have a Pull Request template.";
     response.extra = "No action required.";
   }
 
-  if (!communityMetrics.files.pull_request_template) {
+  if (
+    !communityMetrics.files ||
+    !communityMetrics.files.pull_request_template
+  ) {
     response.status = "error";
     response.description =
       "You do not have a pull request template in your repo.";

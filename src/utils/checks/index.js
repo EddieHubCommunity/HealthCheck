@@ -66,6 +66,9 @@ export function worstCheck(
   warning = "warning",
   success = "success",
 ) {
+  if (!check) {
+    return "unknow";
+  }
   return check.red > 0 ? error : check.amber > 0 ? warning : success;
 }
 

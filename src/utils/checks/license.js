@@ -5,13 +5,13 @@ export default function license(communityMetrics) {
     title: "License",
   };
 
-  if (communityMetrics.files.license) {
+  if (communityMetrics.files?.license) {
     response.status = "success";
     response.description = `You have a license ${communityMetrics.files.license.spdx_id}.`;
     response.extra = "No action required.";
   }
 
-  if (!communityMetrics.files.license) {
+  if (!communityMetrics.files || !communityMetrics.files.license) {
     response.status = "error";
     response.description = "You do not have a license in your repo.";
     response.extra = "This does not mean it is moe Open Source but less.";

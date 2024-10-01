@@ -5,13 +5,13 @@ export default function contributing(communityMetrics) {
     title: "Contributing",
   };
 
-  if (communityMetrics.files.contributing) {
+  if (communityMetrics.files?.contributing) {
     response.status = "success";
     response.description = "You have a contributing guide.";
     response.extra = "No action required.";
   }
 
-  if (!communityMetrics.files.contributing) {
+  if (!communityMetrics.files || !communityMetrics.files.contributing) {
     response.status = "error";
     response.description = "You do not have a contributing guide in your repo.";
     response.extra =
