@@ -1,0 +1,5 @@
+{
+  "access_token": "abcdefg",
+  "scope": "repo,gist",
+  "token_type": "bearer"
+}

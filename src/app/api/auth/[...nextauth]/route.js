@@ -5,19 +5,24 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
+let githubProvierConfig = {
+  clientId: process.env.GITHUB_ID,
+  clientSecret: process.env.GITHUB_SECRET,
+  authorization: {
+    params: {
+      scope: "read:user user:email public_repo read:project",
+    },
+  },
+};
+
+if (process.env.NEXT_RUNTIME === "nodejs" && process.env.APP_ENV === "test") {
+  githubProvierConfig.authorization.url =
+    "http://localhost:3000/api/auth/callback/github?code=abcd";
+}
+
 const authOptions = {
   adapter: PrismaAdapter(prisma),
-  providers: [
-    GithubProvider({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-      authorization: {
-        params: {
-          scope: "read:user user:email public_repo read:project",
-        },
-      },
-    }),
-  ],
+  providers: [GithubProvider(githubProvierConfig)],
   callbacks: {
     async session({ session, token, user }) {
       session.user.id = user.id;

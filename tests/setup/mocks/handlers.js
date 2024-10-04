@@ -9,10 +9,18 @@ import labels from "../../data/github/labels.json";
 import projects from "../../data/github/projects.json";
 import referrers from "../../data/github/referrers.json";
 import views from "../../data/github/views.json";
+import user from "../../data/github/user.json";
+import accessToken from "../../data/github/access_token.json";
 import identities from "../../data/flagsmith/identities.json";
 import flags from "../../data/flagsmith/flags.json";
 
 export const handlers = [
+  // authentication
+  http.post("https://github.com/login/oauth/access_token", () =>
+    HttpResponse.json(accessToken),
+  ),
+  http.get("https://api.github.com/user", () => HttpResponse.json(user)),
+
   // flagsmith
   http.post("https://edge.api.flagsmith.com/api/v1/identities/", () =>
     HttpResponse.json(identities),

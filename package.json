@@ -13,7 +13,7 @@
     "lint": "set TRUNK_TELEMETRY=off && trunk check",
     "fmt": "set TRUNK_TELEMETRY=off && trunk fmt",
     "lint-old": "next lint",
-    "test": "npx playwright test",
+    "test": "npx playwright test --trace on",
     "prepare": "husky",
     "postinstall": "shx cp -n ./.env.example ./.env",
     "format:write": "prettier . --write",
