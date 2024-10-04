@@ -1,3 +1,12 @@
+## [0.37.3](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.37.2...v0.37.3) (2024-10-04)
+
+
+### Bug Fixes
+
+* typos in license check ([#268](https://github.com/EddieHubCommunity/HealthCheck/issues/268)) ([09b4283](https://github.com/EddieHubCommunity/HealthCheck/commit/09b428353b4be0df4aa808f7d478c061a55c3e26))
+
+
+
 ## [0.37.2](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.37.1...v0.37.2) (2024-10-04)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * repo settings for schedule and frequency ([8db475a](https://github.com/EddieHubCommunity/HealthCheck/commit/8db475af2d1ae796df87606c541cd64e6bc94c9b))
-
-
-
-## [0.35.1](https://github.com/EddieHubCommunity/HealthCheck/compare/v0.35.0...v0.35.1) (2024-09-13)
-
-
-### Bug Fixes
-
-* disabled project check in report ([2bd924a](https://github.com/EddieHubCommunity/HealthCheck/commit/2bd924a0fe7df061dd7affbb3fa441b27ab141a0))
 
 
 
