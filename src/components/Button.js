@@ -1,10 +1,11 @@
 import Link from "next/link";
 import classNames from "@/utils/classNames";
 
-export default function Button({ url, type = "primary", children }) {
+export default function Button({ url, type = "primary", children, ...props }) {
   return (
     <Link
       href={url}
+      {...props}
       className={classNames(
         "inline-flex items-center gap-x-2 rounded-md px-3.5 py-2.5 text-sm font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
         type === "primary" &&

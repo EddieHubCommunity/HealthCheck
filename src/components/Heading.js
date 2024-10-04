@@ -28,7 +28,7 @@ export default function Heading({ title, actions = [], extras = [] }) {
         <div className="mt-5 flex lg:ml-4 lg:mt-0">
           {actions.map((action) => (
             <span className="sm:ml-3" key={action.icon}>
-              <Button url={action.url}>
+              <Button url={action.url} target="_blank">
                 <action.icon
                   aria-hidden="true"
                   className="-ml-0.5 mr-1.5 h-5 w-5"
