@@ -4,7 +4,7 @@ import {
   LanguageIcon,
   StarIcon,
   TicketIcon,
-  EyeIcon,
+  EyeSlashIcon,
 } from "@heroicons/react/20/solid";
 import { formatDistance } from "date-fns";
 
@@ -57,7 +57,7 @@ export default async function Page({ params }) {
             ),
           },
           { icon: TicketIcon, text: check.githubResponse.repo.open_issues },
-          { icon: EyeIcon, text: check.repository.ignoreChecks?.length },
+          { icon: EyeSlashIcon, text: check.repository.ignoreChecks?.length },
         ]}
       />
       {check.repository.ignoreChecks?.length ? (
